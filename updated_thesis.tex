@@ -77,29 +77,29 @@
 % Acknowledgements (Acceptable American spelling) are optional
 % So are Acknowledgments (proper English spelling)
     \chapter*{Acknowledgements}
-	I want to thank a few people.
+	%I want to thank a few people.
 
 % The preface is optional
 % To remove it, comment it out or delete it.
     \chapter*{Preface}
-	This is an example of a thesis setup to use the reed thesis document class.
+	%This is an example of a thesis setup to use the reed thesis document class.
 	
 	
 
     \chapter*{List of Abbreviations}
-		You can always change the way your abbreviations are formatted. Play around with it yourself, use tables, or come to CUS if you'd like to change the way it looks. You can also completely remove this chapter if you have no need for a list of abbreviations. Here is an example of what this could look like:
+		%You can always change the way your abbreviations are formatted. Play around with it yourself, use tables, or come to CUS if you'd like to change the way it looks. You can also completely remove this chapter if you have no need for a list of abbreviations. Here is an example of what this could look like:
 
 	\begin{table}[h]
 	\centering % You could remove this to move table to the left
 	\begin{tabular}{ll}
 		\textbf{Bb}  	&  \textit{Borrelia burgdorferi} \\
 		\textbf{rBosR}  	&  Recombinant BosR\\
-		\textbf{CDC}  	&  Center for Disease Control \\
-		\textbf{CIA}  	&  Central Intelligence Agency\\
-		\textbf{CLBR} 	&  Center for Life Beyond Reed\\
-		\textbf{CUS}  	&  Computer User Services\\
-		\textbf{FBI}  	&  Federal Bureau of Investigation\\
-		\textbf{NBC}  	&  National Broadcasting Corporation\\
+		%\textbf{CDC}  	&  Center for Disease Control \\
+		%\textbf{CIA}  	&  Central Intelligence Agency\\
+		%\textbf{CLBR} 	&  Center for Life Beyond Reed\\
+		%\textbf{CUS}  	&  Computer User Services\\
+		%\textbf{FBI}  	&  Federal Bureau of Investigation\\
+		%\textbf{NBC}  	&  National Broadcasting Corporation\\
 	\end{tabular}
 	\end{table}
 	
@@ -113,10 +113,10 @@
 % The abstract is not required if you're writing a creative thesis (but aren't they all?)
 % If your abstract is longer than a page, there may be a formatting issue.
     \chapter*{Abstract}
-	The preface pretty much says it all.
+	%The preface pretty much says it all.
 	
 	\chapter*{Dedication}
-	You can have a dedication here if you wish.
+	%You can have a dedication here if you wish.
 
   \mainmatter % here the regular arabic numbering starts
   \pagestyle{fancyplain} % turns page numbering back on
@@ -137,34 +137,83 @@
 \doublespacing
 	
 	%Welcome to the \LaTeX\ thesis template. If you've never used \TeX\ or \LaTeX\ before, you'll have an initial learning period to go through, but the results of a nicely formatted thesis are worth it for more than the aesthetic benefit: markup like \LaTeX\ is more consistent than the output of a word processor, much less prone to corruption or crashing and the resulting file is smaller than a Word file. While you may have never had problems using Word in the past, your thesis is going to be about twice as large and complex as anything you've written before, taxing Word's capabilities. If you're still on the fence about  using \LaTeX, read the Introduction to LaTeX on the CUS site as well as skim the following template and give it a few weeks. Pretty soon all the markup gibberish will become second nature.
+%put words here that should never be hyphenated in the document	
+\hyphenation{EMSAs}
+\hyphenation{rpoS}
+\hyphenation{BosR}
+\hyphenation{bosR}
+\hyphenation{rpoN}
 
 \section*{What is \textit{Borrelia burgdorferi}?}
+
+\textit{Borrelia burgdorferi} is a spiral, rod-shaped bacterium, and the etiological agent of Lyme disease. Since the 1970s, Lyme disease has become a rapidly emerging infectious disease in the United States. Over 90\% of vector-borne illnesses in the US are attributed to Lyme disease. In addition, many other strains of  \textit{Borrelia burgdorferi} have been identified to cause disease across the US, Western Europe, and Eurasia (Radolf et al., 2012).  
+
+
+	The bacteria are transmitted to mammalian hosts through an arthropod vector, mainly various tick species (Radolf et al., 2012).  The \textit{Borrelia burgdorferi} bacteria, therefore, have the challenge of adapting to two very different environments, the tick and the mammalian host. The life cycle of the bacterium starts when the tick larva feed on small mammals such as birds, mice, and squirrels, which are their first hosts. Small birds have \textit{Borrelia burgdorferi} in their blood, and it is transmitted to the tick during feeding. The tick larva fall off their first host when they are done feeding and have possibly acquired \textit{Borrelia burgdorferi}. The tick then matures to a nymph and feeds on a a second host, which are the same types of small mammals that they fed on in the larval stage. During this point the tick matures to an adult and can transmit the bacteria to a small mammal that was previously uninfected, thereby perpetuating the cycle. The adult tick can feed on incidental hosts that do not perpetuate the cycle, such as human or dogs, and transmit \textit{Borrelia burgdorferi} to them, resulting in infection that causes Lyme disease.  The adult tick could also feed on a third host, such as a deer, on which the tick can lay eggs and start the cycle all over again  (Radolf et al., 2012). 
+	
+	
+	 \textit{Borrelia burgdorferi} has many unusual characteristics that suggest it may have very different mechanisms for similar processes in other bacteria.  It has a linear rather than circular chromosome and has a variety of circular and linear plasmids. There is variability between strains in the identity of plasmids that are present. These plasmids encode genes necessary for outer surface lipoproteins. Genes encoded by these plasmids can be differentially expressed to suit the environment the of bacteria. OspA and OspC are notable proteins whose expression levels are altered during different points in the cycle (Radolf et al., 2012). %These outer surfaces proteins play important roles in immune recognition and response. have  (Radolf et al., 2012). 
 	
 %\LaTeX\ does a great job of formatting tables and paragraphs. Its line-breaking algorithm was the subject of a PhD.\thinspace thesis. It does a fine job of automatically inserting ligatures, and to top it all off it is the only way to typeset good-looking mathematics.
-
 \section*{BosR Function}
 
-BosR was originally identified as a potential Fur (regulator of iron uptake)  homolog. \textit{Borrelia burgdorferi} was discovered to is unique in its ability   BosR was initially characterized as the \textit{Borrelia burgdorferi} oxidative stress response regulator. 
-In contrast to previous work they claim BosR serves as a transcriptional activator rather than a repressor for the oxidative stress response(Boylan et al.(2003)) 
-\subsection*{Role of BosR in Gene Regulation}
-
-\section*{Previous BosR DNA Binding Studies}
+\textit{Borrelia burgdorferi}  protein, BosR, was originally identified as a potential Fur (regulator of iron uptake)  homolog. However, it was discovered that \textit{Borrelia burgdorferi} is quite different from other bacteria in that it does not use iron. Based on its homology to PerR, BosR was characterized as a potential \textit{Borrelia burgdorferi} oxidative stress response regulator. There was some debate as to whether that was its main function, since mutants of BosR were not particularly more sensitive to reactive oxygen species than wild-type (Samuels, 2011). Boylan et al. (2003), found that BosR serves as a transcriptional activator of the oxidative stress response, but Katona et al. (2004) found it to be a repressor. Contradictory evidence seems to be a theme in the literature surrounding BosR, resulting in ambiguous conclusions. It is clear, however, that BosR plays an important role in gene regulation. 
+% ask CUS how to change spacing between periods used for et al. to be normal spaces not end of sentence spaces
 
 
-		After determining the critical role BosR plays in regulation of genes that encode virulence factors, researchers investigated the mechanism behind regulation. Boylan et al.(2003)found that BosR binds in the promoter region of \textit{napA}  However, they noted that for optimal binding DTT and Zn were required. 
+BosR has been shown to be involved either directly or indirectly in the regulation of many genes in the \textit{Borrelia burgdorferi} genome. Without functional BosR, mammalian infection cannot be established. Research agrees that BosR mediates this phenotype through direct regulation of alternative sigma factor RpoS expression. RpoS in \textit{Borrelia burgdorferi}  is a regulator of virulence gene expression and is also required for mammalian infection (Samuels, 2011). RpoS activates transcription of \textit{ospC} and represses transcription of \textit{ospAB}. Analysis of the transcriptome suggests that it also directly or indirectly participates in the expression of over a hundred genes (Samuels, 2011). In light of this, through direct regulation of RpoS, BosR indirectly regulates many, many genes in the \textit{Borrelia burgdorferi} genome. 
 
-		 In 2011, Ouyang et al. investigated the mechanism by which BosR serves as a positve transcriptional activator of \textit{rpoS}, an alternative sigma factor. Based on \textit{in silico} analysis that suggested structural similarity in DNA binding domains to PerR protein from \textit{Bacillus subtilis} and Fur protein from \textit{Vibrio cholerae}, they wondered if BosR functioned by directly binding \textit{rpoS}. Electrophoretic mobility shift assays (EMSAs) were performed with labeled DNA that encompassed a 277 bp region upstream of \textit{rpoS} and a 245 bp region in the \textit{rpoS} encoding region. Recombinant BosR was found to bind the sequence in a dose-dependent manner and showed multiple bands, which suggested more than one binding site existed within the sequence. DNase I footprinting supported their hypothesis of three binding sites. Upon sequence analysis of the three regions identified by footprinting, they hypothesized that BosR bound to the direct repeat sequence (TAAATTAAAT). This sequence, however, was present in one perfect and one imperfect direct repeat in two of  regions and one imperfect direct repeat in the third region. Mutations to the direct repeat sequence did affect binding, in some cases completely abolishing it and in others simply decreasing it.  
+
+
+
+		After determining the critical role BosR plays in regulation of genes that encode virulence factors, researchers investigated the mechanism behind regulation. Boylan et al. (2003) found that BosR binds in the promoter region of \textit{napA}. However, they noted that for optimal binding DTT and Zn\textsuperscript{ 2+} are required. Consistent with these findings, Ouyang et al. (2011) found that  BosR had 1.4 mol of zinc per mol of protein and that even after chelation some zinc has persisted.
+		
+		
+
+		 In 2011, Ouyang et al. investigated the mechanism by which BosR serves as a positve transcriptional activator of \textit{rpoS}, an alternative sigma factor. Based on \textit{in silico} analysis that suggested structural similarity in DNA binding domains to PerR protein from \textit{Bacillus subtilis} and Fur protein from \textit{Vibrio cholerae}, they hypothesized that if BosR functioned by directly binding \textit{rpoS}. Electrophoretic mobility shift assays (EMSAs) were performed with labeled DNA that encompassed a 277 bp region upstream of \textit{rpoS} and a 245 bp region in the \textit{rpoS} encoding region. Recombinant BosR was found to bind the sequence in a dose-dependent manner and showed multiple bands, which suggests that more than one binding site exists within the sequence. DNase I footprinting supports the existence of three binding sites. BosR bound to the direct repeat sequence \-(TAAATTAAAT) upon sequence analysis of the three regions identified by footprinting. This sequence was present in one perfect and one imperfect direct repeat in two of  regions and one imperfect direct repeat in the third region. Mutations to the direct repeat sequence affect binding, in some cases completely abolishing it and in others simply decreasing it.  Approximate dissociation constants,  based on gel image results for different amounts of BosR protein added, include...(cite dissociation constants). 
+
+
+
+		 Through DNase I digestion, Wang et al. (2013)  did not find that BosR protects regions upstream of \textit{rpoS}, but found that it protects an upstream region of \textit{bosR}, suggesting it may auto-regulate its own transcription. They also found through EMSAs that BosR recognizes the Fur and Per box, which unsurprisingly, both contain many As and Ts. 
 		 
-		 Wang et al. (2013) through DNase I digestion did not find that BosR protected regions upstream of \textit{rpoS}, but found that it protected an upstream region of \textit{bosR}, suggesting it may auto-regulate its own transcription. They also found through EMSAs that BosR recognizes the Fur and Per box, which unsurprisingly both contain many As and Ts. 
-		 
-		  In 2014, Ouyang et al. published more work revising their hypothesized core binding sequence. They propose the sequence (ATTTAANTTAAAT) to be a putative 6-1-6 inverted repeat that serves as the "BosR box." This conclusion, however, was also made through  
-		 
-		 Given the amount of conflicting evidence from multiple research groups, a consensus target sequence for BosR has not been fully elucidated. Prior work has primarily used mutational or competitive binding approaches to tackle this issue. This thesis employs the CASTing (cyclic amplification and selection of targets) technique to determine the sequence(s) for which BosR has the highest affinity. 
-\section*{What is CASTing?}
-\section*{Github test}
+		  In 2014, Ouyang et al. published more work revising their hypothesized core binding sequence. They propose the sequence \-(ATTTAANTTAAAT) to be a putative 6-1-6 inverted repeat that serves as the BosR box. This conclusion, however, was also made solely through mutational analysis and subsequent EMSA results. 		 
+		  
+\section*{Aims of this Work}
 
-\section*{Personal Thesis Notes From Reading with Refs}
-"Rather, it contained 1.4 mol of zinc per mol of protein. Moreover, in order to remove bound metal(s) from BosR, we also dialyzed the protein in the presence of 10 mM EDTA. However, 0.3 mol of zinc/mol of proteins remained in the demetallated BosR (Fig. 3D), suggesting that the recombinant protein bound zinc avidly" ICP-AES data (Ouyang, 2011)
+Determining the DNA binding sequence of BosR is critical for identification of other genes that BosR might regulate. 	 Given the amount of conflicting evidence from multiple research groups, a consensus target sequence for BosR has not been clearly identified. Prior work has primarily used mutational or competitive binding approaches to tackle this issue. This thesis employs the CASTing (cyclic amplification and selection of targets) technique to determine the sequence(s) for which BosR has the highest affinity. 
+
+
+CASTing is an \textit{in vitro} selection tool that utilizes a random DNA library as a starting pool for selection. An immobilized protein of interest is incubated with the DNA library, and the sequences that bind are reserved while others are washed away. PCR is used to amplify the DNA to create the DNA pool for the next round of selection. After four to six cycles of this process, the remaining DNA pool should contain only sequences that bind with high affinity, hopefully leading to a consensus sequence. EMSAs can be performed for each cycle and the DNA  can be cloned and sequenced. 
+		 	 	\begin{figure}[h]
+		 	 		% the options are h = here, t = top, b = bottom, p = page of figures.
+		 	 		% you can add an exclamation mark to make it try harder, and multiple
+		 	 		% options if you have an order of preference, e.g.
+		 	 		% \begin{figure}[h!tbp]
+		 	 		
+		 	 		\centering
+		 	 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+		 	 		\includegraphics{Figures_Images/DNA_library_creation}
+		 	 		\caption[DNA Library Creation]{Scheme of PCR to create DNA Library}
+		 	 		 % square brackets here correspond to what is written in the list of figures
+		 	 		\label{DNALibrary}
+		 	 		 % this is label for the figure
+		 	 	\end{figure}
+		 	 	
+		 	\begin{figure}[h]
+		 		% the options are h = here, t = top, b = bottom, p = page of figures.
+		 		% you can add an exclamation mark to make it try harder, and multiple
+		 		% options if you have an order of preference, e.g.
+		 		% \begin{figure}[h!tbp]
+		 		
+		 		\centering
+		 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+		 		\includegraphics{Figures_Images/Binding_rxn_scheme}
+		 		\caption[Binding Reaction and Immunoprecipitation Scheme ]{CASTing scheme}
+		 		\label{CASTingScheme}
+		 	\end{figure}
+		 
+%\section*{Personal Thesis Notes From Reading with Refs}
+%"Rather, it contained 1.4 mol of zinc per mol of protein. Moreover, in order to remove bound metal(s) from BosR, we also dialyzed the protein in the presence of 10 mM EDTA. However, 0.3 mol of zinc/mol of proteins remained in the demetallated BosR (Fig. 3D), suggesting that the recombinant protein bound zinc avidly" ICP-AES data (Ouyang, 2011)
 
 %Anyone who needs to use math, tables, a lot of figures, complex cross-references, IPA or who just cares about the final appearance of their document should use \LaTeX. At Reed, math majors are required to use it, most physics majors will want to use it, and many other science majors may want it also.
 	
