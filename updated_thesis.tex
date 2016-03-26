@@ -37,6 +37,8 @@
 \usepackage[hyphens]{url}
 \usepackage{rotating}
 \usepackage{natbib}
+\usepackage{tabularx}
+
 % Comment out the natbib line above and uncomment the following two lines to use the new 
 % biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
 % bibliography is included. 
@@ -145,38 +147,169 @@
 \hyphenation{rpoN}
 
 \section*{What is \textit{Borrelia burgdorferi}?}
+\newcommand{\FAstdfit}{r = $\frac{\Delta r \cdot P}{K_{d} + P }$ + $r_{min}$}
 
-\textit{Borrelia burgdorferi} is a spiral, rod-shaped bacterium, and the etiological agent of Lyme disease. Since the 1970s, Lyme disease has become a rapidly emerging infectious disease in the United States. Over 90\% of vector-borne illnesses in the US are attributed to Lyme disease. In addition, many other strains of  \textit{Borrelia burgdorferi} have been identified to cause disease across the US, Western Europe, and Eurasia (Radolf et al., 2012).  
-
-
-	The bacteria are transmitted to mammalian hosts through an arthropod vector, mainly various tick species (Radolf et al., 2012).  The \textit{Borrelia burgdorferi} bacteria, therefore, have the challenge of adapting to two very different environments, the tick and the mammalian host. The life cycle of the bacterium starts when the tick larva feed on small mammals such as birds, mice, and squirrels, which are their first hosts. Small birds have \textit{Borrelia burgdorferi} in their blood, and it is transmitted to the tick during feeding. The tick larva fall off their first host when they are done feeding and have possibly acquired \textit{Borrelia burgdorferi}. The tick then matures to a nymph and feeds on a a second host, which are the same types of small mammals that they fed on in the larval stage. During this point the tick matures to an adult and can transmit the bacteria to a small mammal that was previously uninfected, thereby perpetuating the cycle. The adult tick can feed on incidental hosts that do not perpetuate the cycle, such as human or dogs, and transmit \textit{Borrelia burgdorferi} to them, resulting in infection that causes Lyme disease.  The adult tick could also feed on a third host, such as a deer, on which the tick can lay eggs and start the cycle all over again  (Radolf et al., 2012). 
+	\textit{Borrelia burgdorferi} is a spiral, rod-shaped bacterium, and the etiological agent of Lyme disease. Since the 1970s, Lyme disease has become a rapidly emerging infectious disease in the United States. Over 90\% of vector-borne illnesses in the US are attributed to Lyme disease and it was ranked as the fifth most common Nationally Notifiable disease in 2014 (Radolf et al., 2012 (ref 8) and CDC 2015). While around 30,000 cases of Lyme disease are reported annually in the US, the Center for Disease Control estimates that the actual  number of cases is approximately 300,000 (CDC 2015). Infected ticks transmit the \textit{Borrelia burgdorferi} when feeding, leading to human infection. Early onset symptoms of Lyme disease include flu-like symptoms, such as fever, fatigue, and chills, as well as muscle or joint pain. The most tell-tale symptom of Lyme disease is an erythema migrans rash, which is identifiable by its "bulls-eye" shape. The rash, however, does not present in every case. The absence of this symptom decreases the likelihood of early diagnosis. Late stage symptoms can be more severe, including arthritis, joint swelling, heart palpitations, dizziness, shortness of breath, brain and spinal cord inflammation, and nerve pain. Neurological symptoms such as facial paralysis and short-term memory loss may also occur (CDC 2015). Often ticks can transmit other co-infections, such as Babesiosis and Ehrlichiosis, further complicating diagnosis and treatment (Krause et al., 2002). Left untreated, a broad range of symptoms are associated with Lyme disease (CDC 2015). 
+	
+	Lyme disease occurrence in the US is not geographically uniform. Lyme disease is most commonly found in the northeast and the upper midwest (Figure 1).  Vector distribution and presence of the bacteria influence the distribution of the disease. (CDC, 2015).
+		 	 	\begin{figure}[h]
+		 	 		% the options are h = here, t = top, b = bottom, p = page of figures.
+		 	 		% you can add an exclamation mark to make it try harder, and multiple
+		 	 		% options if you have an order of preference, e.g.
+		 	 		% \begin{figure}[h!tbp]
+		 	 		
+		 	 		\centering
+		 	 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+		 	 		\includegraphics{Figures_Images/lyme_prevalence0711}
+		 	 		\caption[Geographic Distribution and Prevalence of Lyme Disease in the US]{Map of Lyme disease occurrence in the US between 2007-2011 showing geographic distribution and prevalence on the county level. Data used were counts of Lyme disease cases in each US county provided by the CDC. Prevalence was calculated as the number of confirmed cases in each county during 2007-2011 divided by the county population, as given by the 2000 census. Results were log transformed to better visualize relative differences. Bright green corresponds to high prevalence, while white, corresponds to zero.}
+		 	 		% square brackets here correspond to what is written in the list of figures
+		 	 		\label{Lymemap}
+		 	 		% this is label for the figure
+		 	 	\end{figure}
+		 	 	%cite ggplot packages used to create image
+ 	 	
+	
+	 Species from the genus \textit{Borrelia} are divided into two groups, responsible either for Lyme disease or relapsing fever. Those species associated with Lyme disease have been categorized as belonging to the \textit{Borrelia burgdorferi sensu lato} complex. Within this complex three strains have been identified as the primary causes of Lyme disease (Radolf et al., 2012 (cites Borrelia: Molecular bio...from Samuels and Radolf)).\textit{B. burgdorferi sensu stricto} is the species that is mostly responsible for causing Lyme disease in the US, while \textit{Borrelia garinii} and \textit{Borrelia afzelii} cause the disease in Asia (Radolf et al.,2012 \& Masuzawa, 2004). All three strains are present in Europe (Radolf et al., 2012 (ref 7)). The bacteria are transmitted to mammalian hosts through an arthropod vector, mainly various species of the genus \textit{Ixodes}, hard-bodied ticks (Radolf et al., 2012 and Burgdorfer et al., 1982). \textit{Ixodes scapularis} and \textit{Ixodes pacificus}, the blacklegged tick and western blacklegged tick, have been identified as species primarily responsible for transmission of the bacteria in North America (Radolf et al., 2012 (ref 7)). \textit{Ixodes ricinus} and \textit{Ixodes persulcatus} are the primary species responsible for Lyme disease in Europe and Asia, respectively (Dizij \& Kurtenbach, 1995; Chengxu et al., 1988). 
 	
 	
-	 \textit{Borrelia burgdorferi} has many unusual characteristics that suggest it may have very different mechanisms for similar processes in other bacteria.  It has a linear rather than circular chromosome and has a variety of circular and linear plasmids. There is variability between strains in the identity of plasmids that are present. These plasmids encode genes necessary for outer surface lipoproteins. Genes encoded by these plasmids can be differentially expressed to suit the environment the of bacteria. OspA and OspC are notable proteins whose expression levels are altered during different points in the cycle (Radolf et al., 2012). %These outer surfaces proteins play important roles in immune recognition and response. have  (Radolf et al., 2012). 
+	The \textit{Borrelia burgdorferi} bacteria, therefore, have the challenge of adapting to two very different environments, the tick and the mammalian host. The life cycle of the bacterium starts when the tick larva feed on small mammals such as birds, mice, and squirrels, which are their first hosts. Small birds, mice, and squirrels have \textit{Borrelia burgdorferi} in their blood, and it is transmitted to the tick during feeding. The tick larva fall off their first host when they are done feeding and have possibly acquired \textit{Borrelia burgdorferi}. The tick then matures to a nymph and feeds on a second host. The same types of small birds, mice, and squirrels that the tick fed on in the larval stage serve as second hosts. During this point the tick can transmit the bacteria to a small mammal that was previously uninfected, thereby perpetuating the cycle. The tick can also feed on incidental hosts that do not perpetuate the cycle, such as humans or dogs, and transmit \textit{Borrelia burgdorferi} to them, resulting in infection that causes Lyme disease. The adult tick could also feed on a third host, such as a deer, on which the tick can lay eggs and start the cycle all over again  (Radolf et al., 2012 (ref 7)). 
+	
+	Bites from nymphal ticks are often the cause of human infection. It usually requires 36-48 hours of attachment for the tick to transmit the bacteria. Since nymphal ticks are less than 2mm or about the size of a poppy seed, it can be difficult to find them on the body, allowing time for transmission of \textit{Borrelia burgdorferi}. In addition, the ticks' saliva, which transmits the bacteria, contains anesthetic properties so that the host is unable to feel the bite. Nymphs are most common when they are feeding in spring and summer, while adult ticks are more common in fall (CDC, 2015). Climate warming is expected to expand the distribution of ticks that transmit \textit{Borrelia burgdorferi}. Warmer temperatures could spread the disease into areas in which it previously was not a concern and could increase risk of Lyme disease in areas in which it is already endemic (Ogden et al., 2014). In northwestern California, nymph \textit{Ixodes pacificus} are active from January through October and adult ticks are active from late October to June. Both nymphs and adults can potentially transmit \textit{Borrelia burgdorferi}, posing a year-round potential for contraction of Lyme disease in California. This finding revealed an expanded time frame for tick activity (Salkeld et al., 2014). The active seasons of ticks coincide with when people spend the most time outdoors, making preventative measures and awareness extremely important. 
+	
+	
+	%add about ticks in spring in summer due to temperature and how warming climate could increase the season
+	%add how ticks locate hosts and discharge anesthetic saliva when biting + how protein salp15 has been show to be immunosuppressive
+	
+	
+	 \textit{Borrelia burgdorferi} has many unusual characteristics. It has a linear rather than circular chromosome and has a variety of circular and linear plasmids. The \textit{Borrelia burgdorferi} type strain B31, the first \textit{Borrelia} genome sequenced, has a 910 Kbp linear chromosome and 12 linear and nine circular plasmids, for a total of 610 Kbp of plasmid DNA (Fraser et al., 1997 \& Casjens et al., 2000). The plasmids contain a large number of non-functional pseudogenes, which is likely due to DNA rearrangement events in linear plasmids that produced duplications. More than 90\% of the plasmid genes are also not similar to those outside of the \textit{Borrelia} genus (Casjens et al., 2000). Genomic analysis of commonly used laboratory strains of \textit{Borrelia  burgdorferi}, including B31, shows variability in the identity of plasmids that are present. Linear plasmids appear to be especially variable. Plasmids lp54 and cp26, however, are quite stable (Casjens et al., 2012). These plasmids both contain genes that encode outer surface lipoproteins that are essential for the bacterium's survival in both the tick and mammal. Genes encoded by these plasmids can be differentially expressed to suit the environment of the bacteria. Plasmid lp54 encodes outer surface protein A and B (OspA and OspB). Plasmid cp26 encodes outer surface protein C (OspC), which is essential for mammalian infection (Casjens et al., 2012; Grimm eta la., 2004). OspA is not necessary for the bacteria to establish mammalian infection, but is needed for the bacteria to colonize and survive in the midgut of the tick (Yang et al., 2004). OspA protects the bacteria from host antibodies in the blood that ticks uptake during feeding (Battisti et al., 2008). Expression of OspA decreases as the bacteria move into the tick salivary gland out of the midgut, along with an increase in expression of OspC (Samuels, 2011).    (Casjens et al., 2012). In the early stages of infection, OspC expression is downregulated in the bacteria as a mechanism for immune system evasion (Tilly et al., 2006; Liang et al., 2002). Environmental cues, such as temperature and pH, signal when to express OspA and OspC. There is conflicting evidence in the literature as to whether the regulation of OspA and OspC is independent or correlated (Samuels, 2011). Silencing of the \textit{ospAB} operon results in increased production of OspC as well as other lipoproteins, suggesting that the regulation of OspA and OspC is not exclusively independent (He et al., 2008). Along with several other borrelial proteins,  regulation of OspAB and OspC is important for bacterial survival throughout the enzootic cycle. 
+	 
+	 In \textit{Escherichia coli} and other related bacteria, the alternative sigma factor RpoS functions as a global regulator of the general stress response by altering expression of dependent genes that have protective functions (Hengge-Aronis, 2002). In \textit{Borrelia burgdorferi} RpoS is not fundamental to the general stress response, but is involved in the activation of OspC and decorin-binding protein A (DbpA), another lipoprotein involved in mammalian infection (Caimano et al., 2004; H\"ubner et al., 2001). RpoS in \textit{Borrelia} is also necessary for the spirochete to move to the tick salivary gland to be transmitted to hosts (Samuels, 2011; Fisher et al., 2005). Analysis of the transcriptome suggests
+	 that it is also directly or indirectly involved in the expression of over a hundred genes, many of which participate in maintenance during the enzootic cycle  (Samuels, 2011). 
+	 
+		In \textit{Borrelia burgdorferi} there are two pathways for RpoS transcription that lead to either a short or long transcript of mRNA. The short RpoS transcript is produced through an RpoN dependent mechanism. RpoN is another alternative sigma factor, which in combination with enhancer-binding protein, Rrp2, activates \textit{rpoS} transcription (Figure 2). 
+		
+		
+				\begin{figure}[h]
+					% the options are h = here, t = top, b = bottom, p = page of figures. 
+					% you can add an exclamation mark to make it try harder, and multiple
+					% options if you have an order of preference, e.g.
+					% \begin{figure}[h!tbp]
+					
+					\centering
+					% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+					\includegraphics[width = \textwidth]{Figures_Images/rposregulation}
+					\caption[RpoS Regulation]{Scheme of RpoS regulation in \textit{Borrelia burgdorferi}.}
+					% square brackets here correspond to what is written in the list of figures
+					\label{RpoSReg}
+					% this is label for the figure
+				\end{figure}
+				
+		
+		Rrp2 is activated by phosphorylation from acetyl phosphate, which is an intermediate in the acetate kinase-phosphate acetyltransferase pathway (Samuels, 2011; Xu et al., 2010). Increased temperature and decreased pH increase the amount of the \textit{Borrelia burgdorferi} homolog of carbon storage regulator A, an RNA binding protein. CsrA, through repression of Pta (phosphate acetyltransferase), mediates \textit{rpoS} transcription through the Rrp2-RpoN dependent pathway (Figure 2) (Samuels, 2011; Xu et al., 2010). The long rpoS transcript lacks an RpoN promoter and \textit{rpoN} mutant produces long RpoS transcript. Both \textit{rpoN} and \textit{rpoS} mutants cannot establish mammalian infection. \textit{rpoN} mutants can move into the tick salivary gland from the midgut while \textit{rpoS} mutants cannot. In \textit{Borrelia burgdorferi}, DsrA is a small RNA that can sense an increase in temperature and at low cell density posttranscriptionally regulates the long \textit{rpoS} mRNA transript but not the short. Hfq is RNA chaperone for DsrA, but is also required for mammalian infection, suggesting it has other functions (Samuels, 2011). 
+		
+		\section*{BosR Function and Structure}
+		
+	  BosR was originally identified in \textit{Borrelia burgdorferi} as a Fur family member based on its sequence similarity to Fur, a regulator of iron uptake. However, it was discovered that \textit{Borrelia burgdorferi} is quite different from other bacteria in that it does not use iron. Based on its homology to PerR, BosR was characterized as a potential \textit{Borrelia burgdorferi} oxidative stress response regulator. There was some debate as to whether that was its main function, since mutants of BosR did not show significantly greater sensitivity to reactive oxygen species compared to wild-type (Samuels, 2011). Some researchers found that BosR serves as a transcriptional activator of the oxidative stress response, while others found it to be a repressor (Boylan et al. 2003;  Katona et al., 2004). Contradictory evidence seems to be a theme in the literature surrounding BosR, resulting in ambiguous conclusions. However, BosR is known to play an important role in \textit{Borrelia burgdorferi} gene regulation. 
+		% ask CUS how to change spacing between periods used for et al. to be normal spaces not end of sentence spaces
+		
+		
+		BosR has been shown to be involved either directly or indirectly in the regulation of many genes in the \textit{Borrelia burgdorferi} genome. Without functional BosR, mammalian infection cannot be established. Research agrees that BosR mediates this phenotype through direct regulation of alternative sigma factor RpoS expression. RpoS activates transcription of \textit{ospC} and represses transcription of \textit{ospAB}. As noted previous, RpoS  participates in the expression of over a hundred genes (Samuels, 2011). In light of this, through direct regulation of RpoS, BosR indirectly regulates many genes in the \textit{Borrelia burgdorferi} genome. Microarray analysis of a \textit{bosR} mutant compared to wild-type B31 revealed that BosR differentially regulates 199 genes, upregulates 137 genes, and downregulates 62 genes (Ouyang et al., 2009).  
+		
+		
+		
+		
+		After determining the critical role BosR plays in regulation of genes that encode virulence factors, researchers investigated the mechanism behind regulation.  BosR binds in the promoter region of \textit{napA}, a gene that encodes an oxidative stress related protein. However, DTT and Zn\textsuperscript{ 2+} are required  for optimal binding to \textit{napA} (Boylan, Posey \& Gherardini, 2003). Consistent with these findings, BosR has been shown to have 1.4 mol of zinc per mol of protein and that even after chelation some zinc has persisted.
+		
+		
+		
+	The Norgard lab has investigated the mechanism by which BosR serves as a positive transcriptional activator of \textit{rpoS}, an alternative sigma factor ()Ouyang et al., 2011). Based on \textit{in silico} analysis that suggested structural similarity in DNA binding domains to PerR protein from \textit{Bacillus subtilis} and Fur protein from \textit{Vibrio cholerae}, they hypothesized that BosR functioned by directly binding \textit{rpoS}. Electrophoretic mobility shift assays (EMSAs) were performed with labeled DNA that encompassed a 277 bp region upstream of \textit{rpoS} and a 245 bp region in the \textit{rpoS} encoding region. Recombinant BosR was found to bind the sequence in a dose-dependent manner and showed multiple bands, which suggests that more than one binding site exists within the sequence. DNase I footprinting supports the existence of three binding sites. BosR bound to the direct repeat sequence \-(TAAATTAAAT) upon sequence analysis of the three regions identified by footprinting. This sequence was present in one perfect and one imperfect direct repeat in two of the regions and one imperfect direct repeat in the third region. Mutations to the direct repeat sequence affect binding, in some cases completely abolishing it and in others simply decreasing it.  Approximate dissociation constants for BosR binding sites BS1 and BS2, are 210.2 nM and 36.6 nM, respectively. Binding constants were determined  based on gel image results of showing the amount of DNA bound when different amounts of BosR protein are added (Ouyang et al., 2011).
+		
+		
+		
+		 DNase I digestion, did not show that BosR protects regions upstream of \textit{rpoS}, but found that it protects an upstream region of \textit{bosR}, suggesting it may auto-regulate its own transcription (Wang et al., 2013). EMSAs show that BosR recognizes the Fur and Per box, which unsurprisingly, both contain many As and Ts (Wang et al., 2013). 
+	
+		In 2014, the Norgard revised their hypothesized BosR core binding sequence. Instead the sequence \-(ATTTAANTTAAAT) is predicted to be a putative 6-1-6 inverted repeat that serves as the BosR box. This conclusion, however, was also made solely through mutational analysis and subsequent EMSA results. 
+		
+	$*$Will add more here about DNA binding$*$
+	 
+	 
+	 The predicted structure of BosR is based on its sequence similarity to Fur family members, Fur, PerR and Zur. Conserved domains include the helix turn helix DNA binding domain, which consists of a three-winged helix with a pocket for DNA, and four cysteine residues that make up the structural zinc binding site. The structural zinc binding site is highly conserved, while two other possible metal binding sites are variable (Gilston et al., 2014) .  
+	 
+	 $*$Will write more about structure and talk to you. Also fill out captions$*$
+	 \clearpage
+		
+	
+		 	\begin{figure}[t]
+		 		% the options are h = here, t = top, b = bottom, p = page of figures.
+		 		% you can add an exclamation mark to make it try harder, and multiple
+		 		% options if you have an order of preference, e.g.
+		 		% \begin{figure}[h!tbp]
+		 		
+		 		\centering
+		 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+		 		\includegraphics[width = \textwidth]{Figures_Images/finalBosRmonomer}
+		 		\caption[Predicted structure BosR Monomer]{Structure of BosR monomer based on Phyre2 prediction given the template 4MTD}
+		 		% square brackets here correspond to what is written in the list of figures
+		 		\label{BosRMonomer}
+		 		% this is label for the figure
+		 		\end{figure}
+		 		
+		 		 	\begin{figure}[h]
+		 		 		% the options are h = here, t = top, b = bottom, p = page of figures. 
+		 		 		% you can add an exclamation mark to make it try harder, and multiple
+		 		 		% options if you have an order of preference, e.g.
+		 		 		% \begin{figure}[h!tbp]
+		 		 		
+		 		 		\centering
+		 		 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+		 		 		\includegraphics[width = \textwidth]{Figures_Images/strucznbindingBosR}
+		 		 		\caption[BosR Structural $Zn^{2+}$ Binding Site]{BosR structural $Zn^{2+}$ binding site as predicted by Phyre2 and based on alignment of \textit{E. coli} Zur protein and BosR.}
+		 		 		% square brackets here correspond to what is written in the list of figures
+		 		 		\label{StrucZnBosR}
+		 		 		% this is label for the figure
+		 		 	\end{figure}
+		 		 	
+		 		
+		 \clearpage
+		 			\begin{figure}[h!tbp]
+		 				% the options are h = here, t = top, b = bottom, p = page of figures. 
+		 				% you can add an exclamation mark to make it try harder, and multiple
+		 				% options if you have an order of preference, e.g.
+		 				% \begin{figure}[h!tbp]
+		 				
+		 				\centering
+		 				% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+		 				\includegraphics[width = \textwidth]{Figures_Images/ZurDNA}
+		 				\caption[Structure of \textit{E. coli} Zur Protein Bound to DNA]{Structure of \textit{E. coli} Zur protein bound to DNA.}
+		 				% square brackets here correspond to what is written in the list of figures
+		 				\label{ZurDNA}
+		 				% this is label for the figure
+		 			\end{figure}
+		 	\clearpage
+		
+		 
+		 		 	\begin{figure}[h]
+		 		 		% the options are h = here, t = top, b = bottom, p = page of figures. 
+		 		 		% you can add an exclamation mark to make it try harder, and multiple
+		 		 		% options if you have an order of preference, e.g.
+		 		 		% \begin{figure}[h!tbp]
+		 		 		
+		 		 		\centering
+		 		 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+		 		 		\includegraphics[width = \textwidth]{Figures_Images/proteinalignment}
+		 		 		\caption[BosR Protein Multiple Alignment]{Multiple alignment of protein sequences that are most similiar to BosR. Structural characterizations correspond to the results of Phyre2 prediction of BosR with the template $4MTD$ (\textit{E. coli} Zur).}
+		 		 		% square brackets here correspond to what is written in the list of figures
+		 		 		\label{Alignnment}
+		 		 		% this is label for the figure
+		 		 	\end{figure}
+		 	 
+	
+	
+	%texshade, msa alignment r, pymol, phyre (The Phyre2 web portal for protein modeling, prediction and analysis Kelley LA et al. Nature Protocols 10, 845-858 (2015))
+	
 	
 %\LaTeX\ does a great job of formatting tables and paragraphs. Its line-breaking algorithm was the subject of a PhD.\thinspace thesis. It does a fine job of automatically inserting ligatures, and to top it all off it is the only way to typeset good-looking mathematics.
-\section*{BosR Function}
-
-\textit{Borrelia burgdorferi}  protein, BosR, was originally identified as a potential Fur (regulator of iron uptake)  homolog. However, it was discovered that \textit{Borrelia burgdorferi} is quite different from other bacteria in that it does not use iron. Based on its homology to PerR, BosR was characterized as a potential \textit{Borrelia burgdorferi} oxidative stress response regulator. There was some debate as to whether that was its main function, since mutants of BosR were not particularly more sensitive to reactive oxygen species than wild-type (Samuels, 2011). Boylan et al. (2003), found that BosR serves as a transcriptional activator of the oxidative stress response, but Katona et al. (2004) found it to be a repressor. Contradictory evidence seems to be a theme in the literature surrounding BosR, resulting in ambiguous conclusions. It is clear, however, that BosR plays an important role in gene regulation. 
-% ask CUS how to change spacing between periods used for et al. to be normal spaces not end of sentence spaces
-
-
-BosR has been shown to be involved either directly or indirectly in the regulation of many genes in the \textit{Borrelia burgdorferi} genome. Without functional BosR, mammalian infection cannot be established. Research agrees that BosR mediates this phenotype through direct regulation of alternative sigma factor RpoS expression. RpoS in \textit{Borrelia burgdorferi}  is a regulator of virulence gene expression and is also required for mammalian infection (Samuels, 2011). RpoS activates transcription of \textit{ospC} and represses transcription of \textit{ospAB}. Analysis of the transcriptome suggests that it also directly or indirectly participates in the expression of over a hundred genes (Samuels, 2011). In light of this, through direct regulation of RpoS, BosR indirectly regulates many, many genes in the \textit{Borrelia burgdorferi} genome. 
-
-
-
-
-		After determining the critical role BosR plays in regulation of genes that encode virulence factors, researchers investigated the mechanism behind regulation. Boylan et al. (2003) found that BosR binds in the promoter region of \textit{napA}. However, they noted that for optimal binding DTT and Zn\textsuperscript{ 2+} are required. Consistent with these findings, Ouyang et al. (2011) found that  BosR had 1.4 mol of zinc per mol of protein and that even after chelation some zinc has persisted.
-		
-		
-
-		 In 2011, Ouyang et al. investigated the mechanism by which BosR serves as a positve transcriptional activator of \textit{rpoS}, an alternative sigma factor. Based on \textit{in silico} analysis that suggested structural similarity in DNA binding domains to PerR protein from \textit{Bacillus subtilis} and Fur protein from \textit{Vibrio cholerae}, they hypothesized that if BosR functioned by directly binding \textit{rpoS}. Electrophoretic mobility shift assays (EMSAs) were performed with labeled DNA that encompassed a 277 bp region upstream of \textit{rpoS} and a 245 bp region in the \textit{rpoS} encoding region. Recombinant BosR was found to bind the sequence in a dose-dependent manner and showed multiple bands, which suggests that more than one binding site exists within the sequence. DNase I footprinting supports the existence of three binding sites. BosR bound to the direct repeat sequence \-(TAAATTAAAT) upon sequence analysis of the three regions identified by footprinting. This sequence was present in one perfect and one imperfect direct repeat in two of  regions and one imperfect direct repeat in the third region. Mutations to the direct repeat sequence affect binding, in some cases completely abolishing it and in others simply decreasing it.  Approximate dissociation constants,  based on gel image results for different amounts of BosR protein added, include...(cite dissociation constants). 
-
-
-
-		 Through DNase I digestion, Wang et al. (2013)  did not find that BosR protects regions upstream of \textit{rpoS}, but found that it protects an upstream region of \textit{bosR}, suggesting it may auto-regulate its own transcription. They also found through EMSAs that BosR recognizes the Fur and Per box, which unsurprisingly, both contain many As and Ts. 
 		 
-		  In 2014, Ouyang et al. published more work revising their hypothesized core binding sequence. They propose the sequence \-(ATTTAANTTAAAT) to be a putative 6-1-6 inverted repeat that serves as the BosR box. This conclusion, however, was also made solely through mutational analysis and subsequent EMSA results. 		 
 		  
 \section*{Aims of this Work}
 
@@ -211,12 +344,199 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
 		 		\caption[Binding Reaction and Immunoprecipitation Scheme ]{CASTing scheme}
 		 		\label{CASTingScheme}
 		 	\end{figure}
+		 	
+		 	$*$ will fill out captions and add surface entropy reduction mutation goals.$*$
 		 
 %\section*{Personal Thesis Notes From Reading with Refs}
 %"Rather, it contained 1.4 mol of zinc per mol of protein. Moreover, in order to remove bound metal(s) from BosR, we also dialyzed the protein in the presence of 10 mM EDTA. However, 0.3 mol of zinc/mol of proteins remained in the demetallated BosR (Fig. 3D), suggesting that the recombinant protein bound zinc avidly" ICP-AES data (Ouyang, 2011)
 
 %Anyone who needs to use math, tables, a lot of figures, complex cross-references, IPA or who just cares about the final appearance of their document should use \LaTeX. At Reed, math majors are required to use it, most physics majors will want to use it, and many other science majors may want it also.
-	
+    \chapter*{Materials and Methods}
+    \addcontentsline{toc}{chapter}{Materials and Methods}
+    \chaptermark{Materials and Methods}
+    \markboth{Materials and Methods}{Materials and Methods}
+    % The three lines above are to make sure that the headers are right, that the intro gets included in the table of contents, and that it doesn't get numbered 1 so that chapter one is 1.
+   \section*{Recombinant DNA Constructs}
+   
+   \subsection*{pSMT3 Vector}
+   
+   	\begin{figure}[h]
+   		% the options are h = here, t = top, b = bottom, p = page of figures. 
+   		% you can add an exclamation mark to make it try harder, and multiple
+   		% options if you have an order of preference, e.g.
+   		% \begin{figure}[h!tbp]
+   		
+   		\centering
+   		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+   		\includegraphics[width = 0.5\textwidth]{Figures_Images/pET_SUMO}
+   		\caption[pET SUMO Vector with BosR Insert]{The pET SUMO vector with BosR gene insert. Figure borrowed from Levitz, 2014. fig cap from tallys thesis = Map of the pSMT3 vector containing a BosR sequence used in this study.
+   			Vector map partially created using SnapGene Viewer™.}
+   		% square brackets here correspond to what is written in the list of figures
+   		\label{pETSUMOBosR}
+   		% this is label for the figure
+   	\end{figure}
+   	
+   The pET SUMO vector, pSMT3, was used for all of the constructs in this study (Figure ~\ref{pETSUMOBosR}). An N terminal His$_{6}$ tagged SUMO (small ubiquitin like modifier protein) is located upstream of the gene of interest (GOI). The His-SUMO-GOI is downstream of a T7 promoter and  under control of a \textit{lac} operator. Addition of isopropyl $\beta$-D-1-thiogalactopyranoside (IPTG) inhibits activity of the \textit{lac} repressor, allowing for the expression of the construct. The hexahistidine tag aides in purifying the protein using immobilized metal ion affinity chromatography (IMAC). The His-SUMO domain can be cleaved from the protein of interest by ULP-1 (Ubl-specific protease 1). The pSMT3 vector also contains a kanamycin resistance gene for plasmid selection. 
+   
+   \subsection*{\textit{E. coli} Strains}
+   
+   DH5$\alpha$ and NiCo21 competent \textit{E. coli} cells (New England Biolabs) were used in this study. Plasmid was transformed into DH5$\alpha$ cells, which do not contain a T7 RNA polymerase, when preparing samples for sequencing or making more plasmid. Plasmid was transformed into NiCo21 cells containing a T7 RNA polymerase when creating glycerol stocks for plasmid expression. 
+   
+   \subsection*{\textit{E. coli} Growth Conditions}
+   \textit{E. coli} cells were grown in sterile Luria  Broth (LB) (25 g per L DI water). 
+   
+   \subsection*{Transformation}
+   
+
+   
+  \chapter*{Results}
+  
+  
+  \section*{BosR-FLAG}
+  
+         	\begin{figure}[h]
+         		% the options are h = here, t = top, b = bottom, p = page of figures. 
+         		% you can add an exclamation mark to make it try harder, and multiple
+         		% options if you have an order of preference, e.g.
+         		% \begin{figure}[h!tbp]
+         		\centering
+         		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+         		\includegraphics[width = \textwidth]{Figures_Images/FA_BosR_poly.pdf}
+         		\caption[Determining DNA Activity of BosR-FLAG by Fluorescence Anistropy]{Fluorescence Anistropy for BosR-FLAG with F-SREzy and 2 $\mu$g of poly dI$\cdot$dC in CASTing Binding Buffer  a $K_{d}$ of 0.97 $\pm$ 0.09 $\mu$M based on fit to the equation \FAstdfit , where P refers to protein concentration.}
+         		% square brackets here correspond to what is written in the list of figures
+         		\label{BosRFLAGFApoly}
+         		% this is label for the figure
+         	\end{figure}
+  
+  
+  \section*{CASTing} 
+  
+    	%\begin{figure}[h]
+    		% the options are h = here, t = top, b = bottom, p = page of figures. 
+    		% you can add an exclamation mark to make it try harder, and multiple
+    		% options if you have an order of preference, e.g.
+    		 \begin{figure}[h!tbp]
+    		\centering
+    		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+    		\includegraphics[width = 0.5\textwidth]{Figures_Images/PCR_9_26_15.pdf}
+    		\caption[PCR to Create Pool of Random DNA]{PCR Ran 76 with 10 pg of Ran76 template cleaned and concentrated}
+    		% square brackets here correspond to what is written in the list of figures
+    		\label{PCRRan76}
+    		% this is label for the figure
+    	\end{figure}
+ 
+ 
+      	%\begin{figure}[h]
+      		% the options are h = here, t = top, b = bottom, p = page of figures. 
+      		% you can add an exclamation mark to make it try harder, and multiple
+      		% options if you have an order of preference, e.g.
+      		 \begin{figure}[h!tbp]
+      		\centering
+      		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+      		\includegraphics[width = 0.5\textwidth]{Figures_Images/qPCR_cycle1_10_19_15.pdf}
+      		\caption[qPCR of 1st Cycle of CASTing Gel Analysis]{qPCR samples run on 3\% agarose/TBE gel. Lane L contains 2 $\mu$l of 2-log ladder (NEB), lanes 1-6 are qPCR reactions with various templates. Template lane 1, $H_{2}O$, lane 2, poly dI $\cdot$ dC, lane 3, DNA from binding reaction without BosR-FLAG, lane 4, DNA from binding reaction without FLAG antibody, lane 5 DNA from binding reaction with 5 $\mu$g of both BosR-FLAG and FLAG antibody, lane 6, 2 pg standard of ds Ran76.}
+      		% square brackets here correspond to what is written in the list of figures
+      		\label{qPCRcycle1}
+      		% this is label for the figure
+      	\end{figure}
+ 
+ \clearpage
+      	
+      	
+      	
+  
+  \section*{MntR-FLAG}
+        	%\begin{figure}[h]
+        	% the options are h = here, t = top, b = bottom, p = page of figures. 
+        	% you can add an exclamation mark to make it try harder, and multiple
+        	% options if you have an order of preference, e.g.
+        	\begin{figure}[h!tbp]
+        		\centering
+        		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+        		\includegraphics[width = \textwidth]{Figures_Images/SC_PCR_MntRFLAG.pdf}
+        		\caption[PCR to Create MntR-FLAG]{PCR to check MntR in pSMT3 plasmid. PCR 1 and 2 for final construct.}
+        		% square brackets here correspond to what is written in the list of figures
+        		\label{PCRMntRFLAG}
+        		% this is label for the figure
+        	\end{figure}
+     
+        	\begin{figure}[h!tbp]
+        		\centering
+        		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+        		\includegraphics[width = \textwidth]{Figures_Images/MntR_FLAG_Protein.pdf}
+        		\caption[MntR-FLAG Purification]{SDS Page Gel of fractions for MntR-FLAG purification}
+        		% square brackets here correspond to what is written in the list of figures
+        		\label{PurificationMntRFLAG}
+        		% this is label for the figure
+        	\end{figure}
+     
+       	\begin{figure}[h!tbp]
+       		% the options are h = here, t = top, b = bottom, p = page of figures. 
+       		% you can add an exclamation mark to make it try harder, and multiple
+       		% options if you have an order of preference, e.g.
+       		% \begin{figure}[h!tbp]
+       		\centering
+       		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+       		\includegraphics[width = \textwidth]{Figures_Images/MntR_FLAG_FA.pdf}
+       		\caption[Determining DNA Activity of MntR-FLAG by Fluorescence Anistropy]{Fluorescence Anistropy for MntR-FLAG with 1 mM Mn$^2+$ F-M21 with a $K_{d}$ of 29 $\pm$ 3 nM based on fit to the equation \FAstdfit , where P refers to protein concentration.}
+       		% square brackets here correspond to what is written in the list of figures
+       		\label{MntRFLAGFA}
+       		% this is label for the figure
+       	\end{figure}
+      
+      %only table example
+ \begin{table}[ht]
+ 	\caption{Coefficients for Standard Binding Fit for MntR-FLAG bound to F-M21 DNA Sequence} 
+ 	\label{MntRFLAGCoef}
+ 	\begin{tabularx}{3.0in}{|X|X|X|}
+ 		\hline
+ 		\textbf{ } & \textbf{Estimate} & \textbf{SE} \\ 
+ 		\hline
+ 		$\Delta$r & 0.027 & 0.0009 \\ 
+ 		\hline
+ 		$K_{d}$ ($nM$) &  29  &  3  \\ 
+ 		\hline
+ 		$r_{min}$ & 0.028 & 0.0008 \\ 
+ 		\hline
+ 	\end{tabularx}
+ \end{table}\begin{table}[ht]
+ \centering
+ \parbox{5.0in}{\caption{Error associated with Specific Binding Fit}} 
+ \begin{tabularx}{3.0in}{|X|X|X|}
+ 	\hline
+ 	\textbf{Residual Std. Error} & \textbf{Deviance} & \textbf{Variance of Residuals} \\ 
+ 	\hline
+ 	8.719e-04 & 6.082e-06 & 6.082e-07 \\ 
+ 	\hline
+ \end{tabularx}
+\end{table}
+
+
+Add gelshift image 
+
+\clearpage
+
+   \section*{BosR Reduced Surface Entropy}
+   
+   insert site directed mutagenesis pcr for wt and cndt
+\appendix
+\chapter{Summer Research} 
+   
+           	\begin{figure}[h]
+           		% the options are h = here, t = top, b = bottom, p = page of figures. 
+           		% you can add an exclamation mark to make it try harder, and multiple
+           		% options if you have an order of preference, e.g.
+           		% \begin{figure}[h!tbp]
+           		\centering
+           		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+           		\includegraphics[width = \textwidth]{Figures_Images/FA_BosR_active_sum.pdf}
+           		\caption[Determining DNA Activity of BosR-FLAG by Fluorescence Anistropy]{Fluorescence Anistropy for BosR-FLAG with F-SREzy in TL BosR FA Buffer  a $K_{d}$ of 0.99 $\pm$ 0.09 $\mu$M based on fit to the equation \FAstdfit , where P refers to protein concentration.}
+           		% square brackets here correspond to what is written in the list of figures
+           		\label{BosRFLAGFAactive}
+           		% this is label for the figure
+           	\end{figure}
+           	
+           		
     \chapter{The First}
     	This is the first page of the first chapter. You may delete the contents of this chapter so you can add your own text; it's just here to show you some examples. 
 	
@@ -232,9 +552,9 @@ Sometimes you'd like to refer to a table or figure, e.g. you can see in Figure \
 Are you sick of writing the same complex equation or phrase over and over? 
 
 The custom commands should be placed in the preamble, or at least prior to the first usage of the command. The structure of the \verb=\newcommand= consists of the name of the new command in curly braces, the number of arguments to be made in square brackets and then, inside a new set of curly braces, the command(s) that make up the new command. The whole thing is sandwiched inside a larger set of curly braces. 
-
 % Note: you cannot use numbers in your commands!
 \newcommand{\hydro}{H$_2$SO$_4$}
+
 
 In other words, if you want to make a shorthand for H$_2$SO$_4$, which doesn't include an argument, you would write: \verb=\newcommand{\hydro}{H$_2$SO$_4$}= and then when you needed  to use the command you would type \verb=\hydro=. (sans verb and the equals sign brackets, if you're looking at the .tex version). For example: \hydro
 
@@ -361,26 +681,6 @@ You will probably find the resources at \url{http://www.lecb.ncifcrf.gov/~toms/l
 \section{Tables}
 	The following section contains examples of tables, most of which have been commented out for brevity. (They will show up in the .tex document in red, but not at all in the .pdf). For more help in constructing a table (or anything else in this document), please see the LaTeX pages on the CUS site. 
 
-\begin{table}[htdp] % begins the table floating environment. This enables LaTeX to fit the table where it works best and lets you add a caption.
-\caption[Correlation of Inheritance Factors between Parents and Child]{Correlation of Inheritance Factors between Parents and Child} 
-% The words in square brackets of the caption command end up in the Table of Tables. The words in curly braces are the caption directly over the table.
-\begin{center} 
-% makes the table centered
-\begin{tabular}{c c c c} 
-% the tabular environment is used to make the table itself. The {c c c c} specify that the table will have four columns and they will all be center-aligned. You can make the cell contents left aligned by replacing the Cs with Ls or right aligned by using Rs instead. Add more letters for more columns, and pipes (the vertical line above the backslash) for vertical lines. Another useful type of column is the p{width} column, which forces text to wrap within whatever width you specify e.g. p{1in}. Text will wrap badly in narrow columns though, so beware.
-\toprule % a horizontal line, slightly thicker than \hline, depends on the booktabs package
-  Factors &  Correlation between Parents \& Child & Inherited \\ % the first row of the table. Separate columns with ampersands and end the line with two backslashes. An environment begun in one cell will not carry over to adjacent rows.
-  \midrule % another horizontal line
-	Education 				& -0.49 & Yes 	 \\ % another row
-	Socio-Economic Status 	& 0.28 	& Slight \\
-	Income 					& 0.08 	& No	 \\
-	Family Size 			& 0.19 	& Slight \\
-	Occupational Prestige 	& 0.21 	& Slight \\
-\bottomrule % yet another horizontal line
-\end{tabular}
-\end{center}
-\label{inheritance} % labels are useful when you have more than one table or figure in your document. See our online documentation for more on this.
-\end{table}
 
 	\clearpage 
 %% \clearpage ends the page, and also dumps out all floats. 
