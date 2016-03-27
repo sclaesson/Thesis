@@ -38,6 +38,9 @@
 \usepackage{rotating}
 \usepackage{natbib}
 \usepackage{tabularx}
+\usepackage[
+singlelinecheck=false % <-- important
+]{caption}
 
 % Comment out the natbib line above and uncomment the following two lines to use the new 
 % biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
@@ -387,6 +390,29 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
    
    \subsection*{Transformation}
    
+   \section*{Polymerase Chain Reaction}
+   
+   \subsection*{Amplification of Ran76 for CASTing}
+   
+\begin{table}
+	\caption{Conditions for Ran76 PCR} 
+	\label{Ran76PCR}
+	\begin{tabular}{|l | l|}
+		\hline
+		Taq Buffer (10X) & 5 $\mu$l \\ 
+		MgCl$_{2}$ (25 mM) & 3 $\mu$l \\  
+		dNTPs (10 mM) & 1 $\mu$l \\   
+		PrimF (10 $\mu$M) & 1 $\mu$l \\ 
+		Primer R (10 $\mu$M) & 1 $\mu$l \\  			
+		ds Ran76 (1 pg/$\mu$l) & 10 $\mu$l \\  
+		Sterile H$_{2}$O & 28.75 $\mu$l \\
+		Taq Polymerase (5 units/$\mu$l) & 0.25 $\mu$l \\
+		\hline   
+		Total Volume & 50 $\mu$l  \\
+		\hline
+	\end{tabular}
+\end{table}
+
 
    
   \chapter*{Results}
@@ -424,6 +450,18 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
     		\label{PCRRan76}
     		% this is label for the figure
     	\end{figure}
+ 
+ 
+ \begin{figure}[h!tbp]
+ 	\centering
+ 	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+ 	\includegraphics[width =\textwidth]{Figures_Images/SC_qPCR_cycle1_Ran76_Fluor_curves.pdf}
+ 	\caption[qPCR of 1st Cycle of CASTing Fluorescence Curves]{qPCR performed with different templates}
+ 	% square brackets here correspond to what is written in the list of figures
+ 	\label{qPCRcycle1fluorcurves}
+ 	% this is label for the figure
+ \end{figure}
+
  
  
       	%\begin{figure}[h]
@@ -499,7 +537,9 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
  		$r_{min}$ & 0.028 & 0.0008 \\ 
  		\hline
  	\end{tabularx}
- \end{table}\begin{table}[ht]
+ \end{table}
+ 
+ \begin{table}[ht]
  \centering
  \parbox{5.0in}{\caption{Error associated with Specific Binding Fit}} 
  \begin{tabularx}{3.0in}{|X|X|X|}
@@ -519,6 +559,18 @@ Add gelshift image
    \section*{BosR Reduced Surface Entropy}
    
    insert site directed mutagenesis pcr for wt and cndt
+   
+    		 \begin{figure}[h!tbp]
+    		 	\centering
+    		 	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+    		 	\includegraphics[width = 0.5\textwidth]{Figures_Images/SC_BosR_Mut_PCR.pdf}
+    		 	\caption[BosR QKE --> AAA Site Directied Mutagenesis PCR Gel]{PCR of pSMT3-BosR WT and CNDT for site directed mutagenesis, QKE to AAA. gradient}
+    		 	% square brackets here correspond to what is written in the list of figures
+    		 	\label{BosRmutPCR}
+    		 	% this is label for the figure
+    		 \end{figure}
+  
+   
 \appendix
 \chapter{Summer Research} 
    
@@ -535,6 +587,28 @@ Add gelshift image
            		\label{BosRFLAGFAactive}
            		% this is label for the figure
            	\end{figure}
+           	
+           	
+       		 \begin{figure}[h!tbp]
+       		 	\centering
+       		 	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+       		 	\includegraphics[width =\textwidth]{Figures_Images/SC_Std_Fluorescence}
+       		 	\caption[qPCR Fluorescence Curves for Ran76 Standards]{qPCR Fluorescence Curves for Ran76 Standards. From left to right increasing concentration 0.002 ng, 0.0002 ng etc...}
+       		 	% square brackets here correspond to what is written in the list of figures
+       		 	\label{qPCRRan76Stds}
+       		 	% this is label for the figure
+       		 \end{figure}
+       		 
+       		 
+       		     		 \begin{figure}[h!tbp]
+       		     		 	\centering
+       		     		 	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+       		     		 	\includegraphics[width =\textwidth]{Figures_Images/SC_Std_curve}
+       		     		 	\caption[qPCR Standard Curves for Ran76 Amplification]{qPCR standard curve for Ran76. From left to right decreasing concentration  to 0.2 ng}
+       		     		 	% square brackets here correspond to what is written in the list of figures
+       		     		 	\label{qPCRRan76Stdcurve}
+       		     		 	% this is label for the figure
+       		     		 \end{figure}
            	
            		
     \chapter{The First}
