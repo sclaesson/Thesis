@@ -41,6 +41,7 @@
 \usepackage[
 singlelinecheck=false % <-- important
 ]{caption}
+\usepackage{float}
 
 % Comment out the natbib line above and uncomment the following two lines to use the new 
 % biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
@@ -78,6 +79,15 @@ singlelinecheck=false % <-- important
   \maketitle
   \frontmatter % this stuff will be roman-numbered
   \pagestyle{empty} % this removes page numbers from the frontmatter
+  
+  \newcommand{\sofiachapter}[1]{
+  	\chapter*{#1}
+  	\addcontentsline{toc}{chapter}{#1}
+  	\chaptermark{#1}
+  	\markboth{#1}{#1}
+  }
+  
+    \setcounter{secnumdepth}{0}
 
 % Acknowledgements (Acceptable American spelling) are optional
 % So are Acknowledgments (proper English spelling)
@@ -129,10 +139,8 @@ singlelinecheck=false % <-- important
 %The \introduction command is provided as a convenience.
 %if you want special chapter formatting, you'll probably want to avoid using it altogether
 
-    \chapter*{Introduction}
-         \addcontentsline{toc}{chapter}{Introduction}
-	\chaptermark{Introduction}
-	\markboth{Introduction}{Introduction}
+   \sofiachapter{Introduction}
+         
 	% The three lines above are to make sure that the headers are right, that the intro gets included in the table of contents, and that it doesn't get numbered 1 so that chapter one is 1.
 
 % Double spacing: if you want to double space, or one and a half 
@@ -149,8 +157,10 @@ singlelinecheck=false % <-- important
 \hyphenation{bosR}
 \hyphenation{rpoN}
 
-\section*{What is \textit{Borrelia burgdorferi}?}
+\section{What is \textit{Borrelia burgdorferi}?}
 \newcommand{\FAstdfit}{r = $\frac{\Delta r \cdot P}{K_{d} + P }$ + $r_{min}$}
+\newcommand{\micro}{$\mu$}
+
 
 	\textit{Borrelia burgdorferi} is a spiral, rod-shaped bacterium, and the etiological agent of Lyme disease. Since the 1970s, Lyme disease has become a rapidly emerging infectious disease in the United States. Over 90\% of vector-borne illnesses in the US are attributed to Lyme disease and it was ranked as the fifth most common Nationally Notifiable disease in 2014 (Radolf et al., 2012 (ref 8) and CDC 2015). While around 30,000 cases of Lyme disease are reported annually in the US, the Center for Disease Control estimates that the actual  number of cases is approximately 300,000 (CDC 2015). Infected ticks transmit the \textit{Borrelia burgdorferi} when feeding, leading to human infection. Early onset symptoms of Lyme disease include flu-like symptoms, such as fever, fatigue, and chills, as well as muscle or joint pain. The most tell-tale symptom of Lyme disease is an erythema migrans rash, which is identifiable by its "bulls-eye" shape. The rash, however, does not present in every case. The absence of this symptom decreases the likelihood of early diagnosis. Late stage symptoms can be more severe, including arthritis, joint swelling, heart palpitations, dizziness, shortness of breath, brain and spinal cord inflammation, and nerve pain. Neurological symptoms such as facial paralysis and short-term memory loss may also occur (CDC 2015). Often ticks can transmit other co-infections, such as Babesiosis and Ehrlichiosis, further complicating diagnosis and treatment (Krause et al., 2002). Left untreated, a broad range of symptoms are associated with Lyme disease (CDC 2015). 
 	
@@ -210,7 +220,7 @@ singlelinecheck=false % <-- important
 		
 		Rrp2 is activated by phosphorylation from acetyl phosphate, which is an intermediate in the acetate kinase-phosphate acetyltransferase pathway (Samuels, 2011; Xu et al., 2010). Increased temperature and decreased pH increase the amount of the \textit{Borrelia burgdorferi} homolog of carbon storage regulator A, an RNA binding protein. CsrA, through repression of Pta (phosphate acetyltransferase), mediates \textit{rpoS} transcription through the Rrp2-RpoN dependent pathway (Figure 2) (Samuels, 2011; Xu et al., 2010). The long rpoS transcript lacks an RpoN promoter and \textit{rpoN} mutant produces long RpoS transcript. Both \textit{rpoN} and \textit{rpoS} mutants cannot establish mammalian infection. \textit{rpoN} mutants can move into the tick salivary gland from the midgut while \textit{rpoS} mutants cannot. In \textit{Borrelia burgdorferi}, DsrA is a small RNA that can sense an increase in temperature and at low cell density posttranscriptionally regulates the long \textit{rpoS} mRNA transript but not the short. Hfq is RNA chaperone for DsrA, but is also required for mammalian infection, suggesting it has other functions (Samuels, 2011). 
 		
-		\section*{BosR Function and Structure}
+		\section{BosR Function and Structure}
 		
 	  BosR was originally identified in \textit{Borrelia burgdorferi} as a Fur family member based on its sequence similarity to Fur, a regulator of iron uptake. However, it was discovered that \textit{Borrelia burgdorferi} is quite different from other bacteria in that it does not use iron. Based on its homology to PerR, BosR was characterized as a potential \textit{Borrelia burgdorferi} oxidative stress response regulator. There was some debate as to whether that was its main function, since mutants of BosR did not show significantly greater sensitivity to reactive oxygen species compared to wild-type (Samuels, 2011). Some researchers found that BosR serves as a transcriptional activator of the oxidative stress response, while others found it to be a repressor (Boylan et al. 2003;  Katona et al., 2004). Contradictory evidence seems to be a theme in the literature surrounding BosR, resulting in ambiguous conclusions. However, BosR is known to play an important role in \textit{Borrelia burgdorferi} gene regulation. 
 		% ask CUS how to change spacing between periods used for et al. to be normal spaces not end of sentence spaces
@@ -314,7 +324,7 @@ singlelinecheck=false % <-- important
 %\LaTeX\ does a great job of formatting tables and paragraphs. Its line-breaking algorithm was the subject of a PhD.\thinspace thesis. It does a fine job of automatically inserting ligatures, and to top it all off it is the only way to typeset good-looking mathematics.
 		 
 		  
-\section*{Aims of this Work}
+\section{Aims of this Work}
 
 Determining the DNA binding sequence of BosR is critical for identification of other genes that BosR might regulate. 	 Given the amount of conflicting evidence from multiple research groups, a consensus target sequence for BosR has not been clearly identified. Prior work has primarily used mutational or competitive binding approaches to tackle this issue. This thesis employs the CASTing (cyclic amplification and selection of targets) technique to determine the sequence(s) for which BosR has the highest affinity. 
 
@@ -343,7 +353,7 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
 		 		
 		 		\centering
 		 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
-		 		\includegraphics{Figures_Images/Binding_rxn_scheme}
+		 		\includegraphics[width = \textwidth]{Figures_Images/Blown_up_Casting}
 		 		\caption[Binding Reaction and Immunoprecipitation Scheme ]{CASTing scheme}
 		 		\label{CASTingScheme}
 		 	\end{figure}
@@ -354,14 +364,14 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
 %"Rather, it contained 1.4 mol of zinc per mol of protein. Moreover, in order to remove bound metal(s) from BosR, we also dialyzed the protein in the presence of 10 mM EDTA. However, 0.3 mol of zinc/mol of proteins remained in the demetallated BosR (Fig. 3D), suggesting that the recombinant protein bound zinc avidly" ICP-AES data (Ouyang, 2011)
 
 %Anyone who needs to use math, tables, a lot of figures, complex cross-references, IPA or who just cares about the final appearance of their document should use \LaTeX. At Reed, math majors are required to use it, most physics majors will want to use it, and many other science majors may want it also.
-    \chapter*{Materials and Methods}
+    \sofiachapter{Materials and Methods}
     \addcontentsline{toc}{chapter}{Materials and Methods}
     \chaptermark{Materials and Methods}
     \markboth{Materials and Methods}{Materials and Methods}
     % The three lines above are to make sure that the headers are right, that the intro gets included in the table of contents, and that it doesn't get numbered 1 so that chapter one is 1.
-   \section*{Recombinant DNA Constructs}
+   \section{Recombinant DNA Constructs}
    
-   \subsection*{pSMT3 Vector}
+   \subsection{pSMT3 Vector}
    
    	\begin{figure}[h]
    		% the options are h = here, t = top, b = bottom, p = page of figures. 
@@ -379,46 +389,172 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
    		% this is label for the figure
    	\end{figure}
    	
-   The pET SUMO vector, pSMT3, was used for all of the constructs in this study (Figure ~\ref{pETSUMOBosR}). An N terminal His$_{6}$ tagged SUMO (small ubiquitin like modifier protein) is located upstream of the gene of interest (GOI). The His-SUMO-GOI is downstream of a T7 promoter and  under control of a \textit{lac} operator. Addition of isopropyl $\beta$-D-1-thiogalactopyranoside (IPTG) inhibits activity of the \textit{lac} repressor, allowing for the expression of the construct. The hexahistidine tag aides in purifying the protein using immobilized metal ion affinity chromatography (IMAC). The His-SUMO domain can be cleaved from the protein of interest by ULP-1 (Ubl-specific protease 1). The pSMT3 vector also contains a kanamycin resistance gene for plasmid selection. 
+   The pET SUMO vector, pSMT3, was used for all of the constructs in this study (Figure ~\ref{pETSUMOBosR}). An N terminal His$_{6}$ tagged SUMO (small ubiquitin like modifier protein) is located upstream of the gene of interest (GOI). The His-SUMO-GOI is downstream of a T7 promoter and  under control of a \textit{lac} operator. Addition of isopropyl $\beta$-D-1-thiogalactopyranoside (IPTG) inhibits activity of the \textit{lac} repressor, allowing for the expression of the construct. The hexahistidine tag aides in purifying the protein using immobilized metal ion affinity chromatography (IMAC). The His-SUMO domain can be cleaved from the protein of interest by ULP-1 (Ubl-specific protease 1). The pSMT3 vector also contains a kanamycin resistance gene for plasmid selection. All plasmids in this study were sequenced through genscript to confirm desired inserts. 
    
-   \subsection*{\textit{E. coli} Strains}
+   \subsection{\textit{E. coli} Strains}
    
    DH5$\alpha$ and NiCo21 competent \textit{E. coli} cells (New England Biolabs) were used in this study. Plasmid was transformed into DH5$\alpha$ cells, which do not contain a T7 RNA polymerase, when preparing samples for sequencing or making more plasmid. Plasmid was transformed into NiCo21 cells containing a T7 RNA polymerase when creating glycerol stocks for plasmid expression. 
    
-   \subsection*{\textit{E. coli} Growth Conditions}
-   \textit{E. coli} cells were grown in sterile Luria  Broth (LB) (25 g per L DI water). 
+   \subsection{\textit{E. coli} Growth Conditions}
+   \textit{E. coli} cells were grown in sterile Luria  Broth (LB) (25 g per L DI water). All cells in this study were incubated at 37 $^\circ$C. Shaking incubations were at ~200-250 RPM
    
-   \subsection*{Transformation}
+   \subsection{Transformation}
+   Plasmid was transformed into competent cells. Aliquots of competent cells (50 $\mu$l) stored at -80 $^\circ$C were thawed on ice for 15 minutes. Plasmid (1 or 5 $\mu$l, depending on plasmid prep) was added to cell pellet at the bottom of the tube. Cells were let rest on ice for 30 minutes. Cells were incubated in a 42 $^\circ$C water bath for 30 seconds. Sterile LB (950 $\mu$l) was added to the cells. Cells were put in a shaking incubator (200 RPM) at 37 $^\circ$C for 1 hour and then 250 $\mu$l of culture was plated on LB agar plates containing kanamycin. Plates were allowed to dry and put in a stationary incubator at 37 $^\circ$C overnight. 
    
-   \section*{Polymerase Chain Reaction}
+   \subsection{Plasmid Mini-Prep}
+   Overnight cultures were spun down for 10 minutes at 4 $^\circ$C between 2000-3260 xg. Supernatant was carefully decanted off and 1.2 mL of sterile H$_{2}$O was added. Pellet was resuspended in water and 600 $\mu$l was used with Zymogen mini-prep kit. Kit instructions were followed to isolate plasmid, with the exception of an additional wash with zyppy wash buffer. 
    
-   \subsection*{Amplification of Ran76 for CASTing}
    
-\begin{table}
-	\caption{Conditions for Ran76 PCR} 
-	\label{Ran76PCR}
-	\begin{tabular}{|l | l|}
+   
+   
+   \section{Polymerase Chain Reaction}
+   
+   \subsection{Amplification of Ran76 for CASTing}
+   
+\begin{table}[H]
+	\caption{Conditions for Ran76 PCR to Create Pool of Random DNA Sequences and Conditions of qPCR to Quantify Amount of Recovered Ran76} 
+	\label{Ran76PCRandqPCR}
+	\begin{tabular}{|l | l| |l| l|}
 		\hline
-		Taq Buffer (10X) & 5 $\mu$l \\ 
-		MgCl$_{2}$ (25 mM) & 3 $\mu$l \\  
-		dNTPs (10 mM) & 1 $\mu$l \\   
-		PrimF (10 $\mu$M) & 1 $\mu$l \\ 
-		Primer R (10 $\mu$M) & 1 $\mu$l \\  			
-		ds Ran76 (1 pg/$\mu$l) & 10 $\mu$l \\  
-		Sterile H$_{2}$O & 28.75 $\mu$l \\
-		Taq Polymerase (5 units/$\mu$l) & 0.25 $\mu$l \\
+		Ran76 PCR & Volume ($\mu$l) & Ran76 qPCR & Volume ($\mu$l) \\
+		\hline 
+		PrimF (10 $\mu$M) & 1 & PrimF (10 $\mu$M) & 1   \\ 
+		Primer R (10 $\mu$M) & 1  & Primer R (10 $\mu$M) & 1  \\  			
+		ds Ran76 (1 pg/$\mu$l) & 10  & Recovered ds Ran76 &  1  \\
+		Taq Buffer (10X) & 5 & Sterile H$_{2}$O & 6.4 \\ 
+		MgCl$_{2}$ (25 mM) & 3 & DMSO & 0.6 \\  
+		dNTPs (10 mM) & 1 & 2X Phusion & 10 \\     
+		Sterile H$_{2}$O & 28.75  & & \\
+		Taq Polymerase (5 units/$\mu$l) & 0.25 & & \\
 		\hline   
-		Total Volume & 50 $\mu$l  \\
+		Total Volume & 50 & Total Volume & 20  \\
 		\hline
 	\end{tabular}
 \end{table}
 
+Cycling protocol for Ran76 is initial denaturation for 30 seconds at 95 $^{\circ}$C, denaturation for 15 seconds at 95 $^{\circ}$C, annealing for 15 seconds at 60 $^{\circ}$C, elongation for 10 seconds at 68 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 68 $^{\circ}$C. 
+
+ \subsection{Creation of MntR-FLAG}
+
+\begin{table}[H]
+	\caption{PCR Conditions to Create MntR-FLAG} 
+	\label{MntRFLAGPCR}
+	\begin{tabular}{|l | l| |l| l|}
+		\hline
+		MntR-FLAG PCR 1 & Volume ($\mu$l) & MntR-FLAG PCR 2  & Volume ($\mu$l) \\
+		\hline 
+		MntRFF (50 $\mu$M) & 0.5 & MntRFF (50 $\mu$M) & 0.5   \\ 
+		MntRFR1 (50 $\mu$M) & 0.5 & MntRFR3 (50 $\mu$M) & 0.5 \\  			
+		pSMT3 MntR & 1  & MntR-FLAG PCR 1 &  1  \\
+		Taq Buffer (10X) & 5 & Sterile H$_{2}$O & 6.4 \\ 
+		MgCl$_{2}$ (25 mM) & 3 & DMSO & 0.6 \\  
+		dNTPs (10 mM) & 1 & 2X Phusion & 10 \\     
+		Sterile H$_{2}$O & 7.4  & Sterile H$_{2}$O & 0  \\
+		DMSO & 0.6 &  &  \\
+		2X Phusion & 10 & 2X Phusion & 10 \\
+		\hline   
+		Total Volume & 20 & Total Volume & 20  \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Cycling protocol for MntR-FLAG PCR is initial denaturation for 30 seconds at 98 $^{\circ}$C, denaturation for 10 seconds at 98 $^{\circ}$C, annealing for 10 seconds at 60 $^{\circ}$C, elongation for 30 seconds at 72 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 72 $^{\circ}$C. 
+
+
+ \subsection{Site-directed Mutagenesis of BosR}
+\begin{table}[H]
+	\caption{BosR Mutagenesis PCR} 
+	\label{BosRmutpcr}
+	\begin{tabular}{|l| | l|}
+		\hline
+		BosR Mutagenesis PCR & Volume ($\mu$l)  \\
+		\hline 
+		AAAf (50 $\mu$M) & 0.5   \\ 
+		AAAr (50 $\mu$M) & 0.5 \\  			
+		pSMT3 WT BosR or CNDT BosR & 1   \\
+		Sterile H$_{2}$O & 7.0   \\ 
+		DMSO & 1.0 \\  
+		2X Phusion & 10  \\     
+		\hline   
+		Total Volume & 20  \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Cycling protocol for BosR mutagenesis PCR is initial denaturation for 30 seconds at 98 $^{\circ}$C, denaturation for 10 seconds at 98 $^{\circ}$C, annealing for 10 seconds at 50 $^{\circ}$C, elongation for 3 minutes at 72 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 72 $^{\circ}$C. 
+
+
+\section{Gel Purification of DNA}
+
+MntR-FLAG PCR 1 was gel purified using the Zymo Clean Gel DNA Recovery Kit according to kit instructions. DNA was eluted with 15 \micro l of sterile $H_{2}O$.
+
+\section{Gibson Cloning}
+MntR-FLAG PCR product was cloned into a linearized pSMT3 plasmid using the Gibson Assembly master mix. Three times excess of insert (MntR-FLAG PCR 2 product) to plasmid was used. Gibson Assembly reaction was performed in a thermocycler set to 50 $^\circ$C for 20 minutes. 
+
+
+ 
+\section{Agarose Gel Electrophoresis}
+
+Gels to visualize Ran76 DNA contained 3\% agarose with 0.5x TBE (Tris-borate-EDTA) buffer. Gels to visualize all other DNA in this study contained 1.5\% agarose with 1x TAE (Tris-acetate-EDTA) buffer. All gels in this study contained 1x SYBR Safe DNA stain from Invitrogen. Gels were run at $\sim$ 100 V. 
+
+\section{Protein Purification}
+
+\subsection{MntR-FLAG}
+
+An overnight culture (10 mL LB + 10 \micro l 50 \micro g/mL) of cells expressing pSMT3-MntR-FLAG were inoculated from a glycerol stock and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM. Liter cultures containing 50 \micro g/L kanamycin were inoculated with 5 mL of overnight culture and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM until OD between 0.06-0.1 was reached. Cells were induced with 0.15 g IPTG and returned to the shaking incubator for 3 hours. Cultures were spun down at 5000 RPM in big centrifuge for 10 minutes. Pellets were scraped out and the centrifuge bottles were rinsed with $\sim$ 20 mL of chilled MntR lysis buffer (25 mM HEPES, 300 mM NaCl, 10 mM imidazole, 5\% v/v glycerol, pH 7.5). Tube was spun down at 4 $^\circ$C for 10 minutes at 3850 xg and buffer was poured off. Pellet was either stored at -80 $^\circ$C or resuspended in 25 mL chilled MntR lysis buffer. PMSF (phenyl-methyl-sulfonyl chloride, 2.5 mg) and 15.5 mg lysozyme were added to the buffer. Cells were lysed by sonication (see Appendix for protocol). Lysed cells were centrifuged for 20 min, 12,000 RPM in SS-34 rotor at 4 $^\circ$C. Lysate was loaded onto a Co$^{2+}$ column pre-equilibrated with 50 mLs of MntR lysis buffer. The flow through was pumped out at 1.5 mL/min and 5 minute fractions were collected. The column was washed with 50 mL of MntR lysis buffer and eluted with 50 mLs of MntR elution buffer (25 mM HEPES, 300 mM NaCl, 300 mM imidazole, 5\% v/v glycerol, pH 7.5). A dot blot of fractions was used to determine which fractions to combine for dialysis. Fractions 10-13 were pooled and dialyzed with 50 \micro l of Ulp against 1 L of MntR dialysis buffer (25 mM HEPES, 300 mM NaCl, 10\% v/v glycerol, pH 7.5) overnight. The protein was added to a Ni$^{2+}$ column pre-equilibrated with chilled MntR lysis buffer. The flow rate was 1.5 mL/min and 5 minute fractions were collected. The column was washed with 30 mLs of MntR lysis buffer and eluted with 50 mLs MntR elution buffer. Fractions 2-7 were combined after analysis by dot blot and dialyzed overnight against MntR dialysis buffer with 75 \micro l $\beta$-mercaptoethanol. The buffer was changed twice more and the protein was concentrated using an Amicon filter... . 
+
+
+\section{Fluorescence Anisotropy}
+All FA experiments were performed with the Beacon... The machine was blanked on 1 mL of buffer. Three recordings were taken after adding 1 \micro l of 1 \micro M fluorinated DNA to the tube. Intensity was monitored to ensure a decrease and the last mP value was used in the analysis as a zero point. Protein was added in the following increments: 0.5, 0.6, 0.9, 1.2, 1.8, 3.4, 4.7, 7.3, 11.6, 18 \micro l. Readings were taken after 30 seconds and samples were gently vortexed after each addition. * Add what filter was used *  
+
+\section{CASTing}
+
+\begin{figure}[[h!tbp]
+	% the options are h = here, t = top, b = bottom, p = page of figures. 
+	% you can add an exclamation mark to make it try harder, and multiple
+	% options if you have an order of preference, e.g.
+	% \begin{figure}[h!tbp]
+	\centering
+	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+	\includegraphics[width = \textwidth]{Figures_Images/Casting_cycle.pdf}
+	\caption[CASTing Overal Cycle Scheme]{CASTing Process}
+	% square brackets here correspond to what is written in the list of figures
+	\label{overallcastingscheme}
+	% this is label for the figure
+\end{figure}
+
+\begin{figure}[[h!tbp]
+	% the options are h = here, t = top, b = bottom, p = page of figures. 
+	% you can add an exclamation mark to make it try harder, and multiple
+	% options if you have an order of preference, e.g.
+	% \begin{figure}[h!tbp]
+	\centering
+	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+	\includegraphics[width = \textwidth]{Figures_Images/Casting_Limited}
+	\caption[CASTing Selection Scheme]{Selection Step of CASTing Process}
+	% square brackets here correspond to what is written in the list of figures
+	\label{Selectionscheme}
+	% this is label for the figure
+\end{figure}
+
+\clearpage
+
+
+\section{Gel Shift and Gel Supershift Assay}
+
+Binding reaction conditions include the following: fluorinated DNA (F-DNA) with expected specific binding alone, with antibody, with protein, with protein and antibody, non-binding F-DNA alone, with antibody, with protein and antibody. All binding reactions were performed in binding buffer (pH 7.4, 10 mM Tris, 5 mM NaCl, 50 mM KCl, 50 \micro g/mL BSA, 1 mM DTT; 1 mM MnCl for use with MntR-FLAG) and contained $\sim$ 100 ng of fluorinated DNA and 1 \micro g of poly dI$\cdot$dC. For the relevant conditions 1 \micro g of protein and/or 1 \micro g of FLAG antibody was added.
+
+Binding reactions were performed at room temperature for 30 minutes. Antibody was added and then incubated for another 30 minutes at room temperature. Glycerol (2.5\% v/v) was added to binding reactions prior to gel loading. 
+
+DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels in either Tris-borate buffer (MntR-FLAG) or Tris-borate-EDTA buffer (BosR-FLAG) at 4 $^\circ$C and $\sim$ 35 V for $\sim$ 5 hours. 
+  
+ 
 
    
-  \chapter*{Results}
+\sofiachapter{Results}
   
   
-  \section*{BosR-FLAG}
+  \section{BosR-FLAG}
   
          	\begin{figure}[h]
          		% the options are h = here, t = top, b = bottom, p = page of figures. 
@@ -435,7 +571,7 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
          	\end{figure}
   
   
-  \section*{CASTing} 
+  \section{CASTing} 
   
     	%\begin{figure}[h]
     		% the options are h = here, t = top, b = bottom, p = page of figures. 
@@ -483,7 +619,7 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
       	
       	
   
-  \section*{MntR-FLAG}
+  \section{MntR-FLAG}
         	%\begin{figure}[h]
         	% the options are h = here, t = top, b = bottom, p = page of figures. 
         	% you can add an exclamation mark to make it try harder, and multiple
@@ -556,7 +692,7 @@ Add gelshift image
 
 \clearpage
 
-   \section*{BosR Reduced Surface Entropy}
+   \section{BosR Reduced Surface Entropy}
    
    insert site directed mutagenesis pcr for wt and cndt
    
@@ -572,7 +708,7 @@ Add gelshift image
   
    
 \appendix
-\chapter{Summer Research} 
+\sofiachapter{Summer Research} 
    
            	\begin{figure}[h]
            		% the options are h = here, t = top, b = bottom, p = page of figures. 
@@ -611,9 +747,39 @@ Add gelshift image
        		     		 \end{figure}
            	
            		
-    \chapter{The First}
-    	This is the first page of the first chapter. You may delete the contents of this chapter so you can add your own text; it's just here to show you some examples. 
-	
+    \sofiachapter{Supplemental Methods}
+    
+    	\begin{table}[!hp]
+    		\caption{DNA Sequences for Manipulation of DNA} 
+    		\label{DNAsequences}
+    		\begin{tabular}{|l | p{12cm}|}
+    			\hline
+    			Label & Sequence \\
+    			\hline 
+    			PrimF & 5'-GCT GCA GTT GCA CTG AAT TCG CCT C-3'  \\ 
+    			\hline
+    			Primer R  & 5'-CAG GTC AGT TCA GCG GAT CCT GTC G-3' \\  			
+    			\hline
+    			MntRFF & 5'-ACA GAG AAC AGA TTG GTG GAA CAA CAC CAA G-3'    \\
+    			\hline
+    			MntRF1  & 5'-GTC GTC GTC GTC TTT GTA GTC CTG ATT ATG TTC TGT TTT CTT TTG GAT TG-3'  \\ 
+    			\hline
+    			MntRF3 & 5'CGA AGT GCG GCC GCA AGC TTT TAT TTG TCG TCG TCG TCT TTG TAG TCC TG-3'  \\  
+    			\hline
+    			AAAf & 5'-ACT GAT GCA GCA GCA ACA AAA TTT TAT CTA AGC TTG-3'  \\     
+    			\hline
+    			AAAr & 5'-TTT TGT TGC TGC TGC ATC AGT AGT TTT TAT ATC TTT TAG-3' \\
+    			\hline
+    			F-M21 & 5'-F-GAG TTT CCT TAA GGC AAA TTG-3'  \\
+    			\hline
+    			MDR1 & *need to find seq* \\  
+    			\hline
+    			SRE & *need to find seq*  \\
+    			\hline
+    		\end{tabular}
+    	\end{table}
+
+\clearpage
 \section{References, Labels, Custom Commands and Footnotes}
 It is easy to refer to anything within your document using the \texttt{label} and \texttt{ref} tags.  Labels must be unique and shouldn't use any odd characters; generally sticking to letters and numbers (no spaces) should be fine. Put the label on whatever you want to refer to, and put the reference where you want the reference. \LaTeX\ will keep track of the chapter, section, and figure or table numbers for you. 
 
