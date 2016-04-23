@@ -359,6 +359,10 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
 		 	\end{figure}
 		 	
 		 	$*$ will fill out captions and add surface entropy reduction mutation goals.$*$
+		 	
+		 	
+		 	$*$ Sorry!! Will definitely work up intro, haven't really changed much yet$*$
+		 	
 		 
 %\section*{Personal Thesis Notes From Reading with Refs}
 %"Rather, it contained 1.4 mol of zinc per mol of protein. Moreover, in order to remove bound metal(s) from BosR, we also dialyzed the protein in the presence of 10 mM EDTA. However, 0.3 mol of zinc/mol of proteins remained in the demetallated BosR (Fig. 3D), suggesting that the recombinant protein bound zinc avidly" ICP-AES data (Ouyang, 2011)
@@ -369,6 +373,8 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
     \chaptermark{Materials and Methods}
     \markboth{Materials and Methods}{Materials and Methods}
     % The three lines above are to make sure that the headers are right, that the intro gets included in the table of contents, and that it doesn't get numbered 1 so that chapter one is 1.
+    
+    $*$ Will fill this out a bit more with specific machines, reagents, etc. Also will add CASTing methods and write actual figure captions. Any weird formatting I will talk to CUS (or Jazz) about. Some placements will change once all text is added.$*$
    \section{Recombinant DNA Constructs}
    
    \subsection{pSMT3 Vector}
@@ -389,7 +395,7 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
    		% this is label for the figure
    	\end{figure}
    	
-   The pET SUMO vector, pSMT3, was used for all of the constructs in this study (Figure ~\ref{pETSUMOBosR}). An N terminal His$_{6}$ tagged SUMO (small ubiquitin like modifier protein) is located upstream of the gene of interest (GOI). The His-SUMO-GOI is downstream of a T7 promoter and  under control of a \textit{lac} operator. Addition of isopropyl $\beta$-D-1-thiogalactopyranoside (IPTG) inhibits activity of the \textit{lac} repressor, allowing for the expression of the construct. The hexahistidine tag aides in purifying the protein using immobilized metal ion affinity chromatography (IMAC). The His-SUMO domain can be cleaved from the protein of interest by ULP-1 (Ubl-specific protease 1). The pSMT3 vector also contains a kanamycin resistance gene for plasmid selection. All plasmids in this study were sequenced through genscript to confirm desired inserts. 
+   The pSMT3 vector was used for all cloning and expression if of all constructs in this study (Figure ~\ref{pETSUMOBosR}). An N terminal His$_{6}$ tagged SMT3 is located upstream of the protein encoding the gene of interest (GOI). The His-SUMO-GOI is downstream of a T7 promoter and  under control of a \textit{lac} operator. Addition of isopropyl $\beta$-D-1-thiogalactopyranoside (IPTG) inhibits activity of the \textit{lac} repressor, allowing for the expression of the construct. The hexahistidine tag aides in purifying the protein using immobilized metal ion affinity chromatography (IMAC). The His-SUMO domain can be cleaved from the protein of interest by ULP-1 (Ubl-specific protease 1). The pSMT3 vector also contains a kanamycin resistance gene for plasmid selection. All plasmids in this study were sequenced through genscript to confirm desired inserts. 
    
    \subsection{\textit{E. coli} Strains}
    
@@ -404,12 +410,9 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
    \subsection{Plasmid Mini-Prep}
    Overnight cultures were spun down for 10 minutes at 4 $^\circ$C between 2000-3260 xg. Supernatant was carefully decanted off and 1.2 mL of sterile H$_{2}$O was added. Pellet was resuspended in water and 600 $\mu$l was used with Zymogen mini-prep kit. Kit instructions were followed to isolate plasmid, with the exception of an additional wash with zyppy wash buffer. 
    
-   
-   
-   
    \section{Polymerase Chain Reaction}
    
-   \subsection{Amplification of Ran76 for CASTing}
+   \subsection{Amplification and Quantification of Ran76 for CASTing}
    
 \begin{table}[H]
 	\caption{Conditions for Ran76 PCR to Create Pool of Random DNA Sequences and Conditions of qPCR to Quantify Amount of Recovered Ran76} 
@@ -420,11 +423,11 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
 		\hline 
 		PrimF (10 $\mu$M) & 1 & PrimF (10 $\mu$M) & 1   \\ 
 		Primer R (10 $\mu$M) & 1  & Primer R (10 $\mu$M) & 1  \\  			
-		ds Ran76 (1 pg/$\mu$l) & 10  & Recovered ds Ran76 &  1  \\
-		Taq Buffer (10X) & 5 & Sterile H$_{2}$O & 6.4 \\ 
+		ds Ran76 (1 pg/$\mu$l) & 10  & Template &  1  \\
+		Taq Buffer (10X) & 5 & Sterile H$_{2}$O & 7.8 \\ 
 		MgCl$_{2}$ (25 mM) & 3 & DMSO & 0.6 \\  
-		dNTPs (10 mM) & 1 & 2X Phusion & 10 \\     
-		Sterile H$_{2}$O & 28.75  & & \\
+		dNTPs (10 mM) & 1 & Sybr Green (50X) & 0.2 \\     
+		Sterile H$_{2}$O & 28.75 & 2X Phusion & 10 \\
 		Taq Polymerase (5 units/$\mu$l) & 0.25 & & \\
 		\hline   
 		Total Volume & 50 & Total Volume & 20  \\
@@ -432,9 +435,15 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
 	\end{tabular}
 \end{table}
 
-Cycling protocol for Ran76 is initial denaturation for 30 seconds at 95 $^{\circ}$C, denaturation for 15 seconds at 95 $^{\circ}$C, annealing for 15 seconds at 60 $^{\circ}$C, elongation for 10 seconds at 68 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 68 $^{\circ}$C. 
+The cycling protocol for Ran76 has an initial denaturation for 30 seconds at 95 $^{\circ}$C, denaturation for 15 seconds at 95 $^{\circ}$C, annealing for 15 seconds at 60 $^{\circ}$C, elongation for 10 seconds at 68 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 68 $^{\circ}$C. 
+
+Quanitative PCR (qPCR) templates include H$_{2}$O, poly dI$\cdot$dC (100 ng/\micro l), recovered DNA from no BosR-FLAG CASTing, recovered DNA from no FLAG antibody CASTing, recovered DNA from BosR-FLAG and FLAG antibody CASTing, and an internal standard of Ran76 (2 pg). The cycling protocol for qPCR has an initial denaturation for 30 seconds at 98 $^{\circ}$C, denaturation for 10 seconds at 98 $^{\circ}$C, annealing for 10 seconds at 60 $^{\circ}$C, elongation for 15 seconds at 72 $^{\circ}$C, repeat from denaturation 29 times, melt from 55 $^{\circ}$C to 95 $^{\circ}$C at a ramp rate of 0.11 $^{\circ}$C/s taking 5 acquistions/$^{\circ}$C.
 
  \subsection{Creation of MntR-FLAG}
+
+
+
+
 
 \begin{table}[H]
 	\caption{PCR Conditions to Create MntR-FLAG} 
@@ -458,10 +467,12 @@ Cycling protocol for Ran76 is initial denaturation for 30 seconds at 95 $^{\circ
 	\end{tabular}
 \end{table}
 
-Cycling protocol for MntR-FLAG PCR is initial denaturation for 30 seconds at 98 $^{\circ}$C, denaturation for 10 seconds at 98 $^{\circ}$C, annealing for 10 seconds at 60 $^{\circ}$C, elongation for 30 seconds at 72 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 72 $^{\circ}$C. 
+The cycling protocol for MntR-FLAG PCR has an initial denaturation for 30 seconds at 98 $^{\circ}$C, denaturation for 10 seconds at 98 $^{\circ}$C, annealing for 10 seconds at 60 $^{\circ}$C, elongation for 30 seconds at 72 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 72 $^{\circ}$C. 
 
 
  \subsection{Site-directed Mutagenesis of BosR}
+ 
+ 
 \begin{table}[H]
 	\caption{BosR Mutagenesis PCR} 
 	\label{BosRmutpcr}
@@ -481,12 +492,12 @@ Cycling protocol for MntR-FLAG PCR is initial denaturation for 30 seconds at 98 
 	\end{tabular}
 \end{table}
 
-Cycling protocol for BosR mutagenesis PCR is initial denaturation for 30 seconds at 98 $^{\circ}$C, denaturation for 10 seconds at 98 $^{\circ}$C, annealing for 10 seconds at 50 $^{\circ}$C, elongation for 3 minutes at 72 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 72 $^{\circ}$C. 
+The cycling protocol for BosR mutagenesis PCR has an initial denaturation for 30 seconds at 98 $^{\circ}$C, denaturation for 10 seconds at 98 $^{\circ}$C, annealing for 10 seconds at 50 $^{\circ}$C, elongation for 3 minutes at 72 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 72 $^{\circ}$C. 
 
 
-\section{Gel Purification of DNA}
+\section{Gel Purification of DNA and Cleaning DNA}
 
-MntR-FLAG PCR 1 was gel purified using the Zymo Clean Gel DNA Recovery Kit according to kit instructions. DNA was eluted with 15 \micro l of sterile $H_{2}O$.
+MntR-FLAG PCR 1 was gel purified using the Zymo Clean Gel DNA Recovery Kit according to kit instructions. DNA was eluted with 15 \micro l of sterile $H_{2}O$. All DNA in this study that was cleaned and concentrated was performed with DNA Clean and Concentrator (Zymo Research) according to manufacturer instructions.  
 
 \section{Gibson Cloning}
 MntR-FLAG PCR product was cloned into a linearized pSMT3 plasmid using the Gibson Assembly master mix. Three times excess of insert (MntR-FLAG PCR 2 product) to plasmid was used. Gibson Assembly reaction was performed in a thermocycler set to 50 $^\circ$C for 20 minutes. 
@@ -501,7 +512,7 @@ Gels to visualize Ran76 DNA contained 3\% agarose with 0.5x TBE (Tris-borate-EDT
 
 \subsection{MntR-FLAG}
 
-An overnight culture (10 mL LB + 10 \micro l 50 \micro g/mL) of cells expressing pSMT3-MntR-FLAG were inoculated from a glycerol stock and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM. Liter cultures containing 50 \micro g/L kanamycin were inoculated with 5 mL of overnight culture and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM until OD between 0.06-0.1 was reached. Cells were induced with 0.15 g IPTG and returned to the shaking incubator for 3 hours. Cultures were spun down at 5000 RPM in big centrifuge for 10 minutes. Pellets were scraped out and the centrifuge bottles were rinsed with $\sim$ 20 mL of chilled MntR lysis buffer (25 mM HEPES, 300 mM NaCl, 10 mM imidazole, 5\% v/v glycerol, pH 7.5). Tube was spun down at 4 $^\circ$C for 10 minutes at 3850 xg and buffer was poured off. Pellet was either stored at -80 $^\circ$C or resuspended in 25 mL chilled MntR lysis buffer. PMSF (phenyl-methyl-sulfonyl chloride, 2.5 mg) and 15.5 mg lysozyme were added to the buffer. Cells were lysed by sonication (see Appendix for protocol). Lysed cells were centrifuged for 20 min, 12,000 RPM in SS-34 rotor at 4 $^\circ$C. Lysate was loaded onto a Co$^{2+}$ column pre-equilibrated with 50 mLs of MntR lysis buffer. The flow through was pumped out at 1.5 mL/min and 5 minute fractions were collected. The column was washed with 50 mL of MntR lysis buffer and eluted with 50 mLs of MntR elution buffer (25 mM HEPES, 300 mM NaCl, 300 mM imidazole, 5\% v/v glycerol, pH 7.5). A dot blot of fractions was used to determine which fractions to combine for dialysis. Fractions 10-13 were pooled and dialyzed with 50 \micro l of Ulp against 1 L of MntR dialysis buffer (25 mM HEPES, 300 mM NaCl, 10\% v/v glycerol, pH 7.5) overnight. The protein was added to a Ni$^{2+}$ column pre-equilibrated with chilled MntR lysis buffer. The flow rate was 1.5 mL/min and 5 minute fractions were collected. The column was washed with 30 mLs of MntR lysis buffer and eluted with 50 mLs MntR elution buffer. Fractions 2-7 were combined after analysis by dot blot and dialyzed overnight against MntR dialysis buffer with 75 \micro l $\beta$-mercaptoethanol. The buffer was changed twice more and the protein was concentrated using an Amicon filter... . 
+An overnight culture (10 mL LB + 10 \micro l 50 \micro g/mL) of cells expressing pSMT3-MntR-FLAG were inoculated from a glycerol stock and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM. Liter cultures containing 50 \micro g/L kanamycin were inoculated with 5 mL of overnight culture and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM until OD between 0.06-0.1 was reached. Cells were induced with 0.15 g IPTG and returned to the shaking incubator for 3 hours. Cultures were spun down at 5000 RPM in big centrifuge for 10 minutes. Pellets were scraped out and the centrifuge bottles were rinsed with $\sim$ 20 mL of chilled MntR lysis buffer (25 mM HEPES, 300 mM NaCl, 10 mM imidazole, 5\% v/v glycerol, pH 7.5). Tube was spun down at 4 $^\circ$C for 10 minutes at 3850 xg and buffer was poured off. Pellet was either stored at -80 $^\circ$C or resuspended in 25 mL chilled MntR lysis buffer. PMSF (phenyl-methyl-sulfonyl chloride, 2.5 mg) and 15.5 mg lysozyme were added to the buffer. Cells were lysed by sonication (see Appendix for protocol). Lysed cells were centrifuged for 20 min, 12,000 RPM in SS-34 rotor at 4 $^\circ$C. Lysate was loaded onto a Co$^{2+}$ column pre-equilibrated with 50 mLs of MntR lysis buffer. The flow through was pumped out at 1.5 mL/min and 5 minute fractions were collected. The column was washed with 50 mL of MntR lysis buffer and eluted with 50 mLs of MntR elution buffer (25 mM HEPES, 300 mM NaCl, 300 mM imidazole, 5\% v/v glycerol, pH 7.5). A dot blot of fractions was used to determine which fractions to combine for dialysis. Fractions 10-13 were pooled and dialyzed with 50 \micro l of Ulp against 1 L of MntR dialysis buffer (25 mM HEPES, 300 mM NaCl, 10\% v/v glycerol, pH 7.5) overnight. The protein was added to a Ni$^{2+}$ column pre-equilibrated with chilled MntR lysis buffer. The flow rate was 1.5 mL/min and 5 minute fractions were collected. The column was washed with 30 mLs of MntR lysis buffer and eluted with 50 mLs MntR elution buffer. Fractions 2-7 were combined after analysis by dot blot and dialyzed overnight against MntR dialysis buffer with 75 \micro l $\beta$-mercaptoethanol. The buffer was changed twice more and the protein was concentrated using an Amicon filter... . Protein was frozen and stored at -20 $^{\circ}$C. 
 
 
 \section{Fluorescence Anisotropy}
@@ -509,33 +520,16 @@ All FA experiments were performed with the Beacon... The machine was blanked on 
 
 \section{CASTing}
 
-\begin{figure}[[h!tbp]
-	% the options are h = here, t = top, b = bottom, p = page of figures. 
-	% you can add an exclamation mark to make it try harder, and multiple
-	% options if you have an order of preference, e.g.
-	% \begin{figure}[h!tbp]
-	\centering
-	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
-	\includegraphics[width = \textwidth]{Figures_Images/Casting_cycle.pdf}
-	\caption[CASTing Overal Cycle Scheme]{CASTing Process}
-	% square brackets here correspond to what is written in the list of figures
-	\label{overallcastingscheme}
-	% this is label for the figure
-\end{figure}
+Binding buffer (20 mM HEPES, pH 7.9, 100 mM KCl, 0.2 mM EDTA, 0.2 mM EGTA, 20\% v/v glycerol, 0.1\% Nonidet P-40 (NP-40), 0.5 mM DTT)
 
-\begin{figure}[[h!tbp]
-	% the options are h = here, t = top, b = bottom, p = page of figures. 
-	% you can add an exclamation mark to make it try harder, and multiple
-	% options if you have an order of preference, e.g.
-	% \begin{figure}[h!tbp]
-	\centering
-	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
-	\includegraphics[width = \textwidth]{Figures_Images/Casting_Limited}
-	\caption[CASTing Selection Scheme]{Selection Step of CASTing Process}
-	% square brackets here correspond to what is written in the list of figures
-	\label{Selectionscheme}
-	% this is label for the figure
-\end{figure}
+Wash buffer (20 mM HEPES, pH 7.9, 100 mM KCl, 0.2 mM EDTA, 0.2 mM EGTA, 20\% v/v glycerol)
+
+Elution buffer (0.5 mM ammonium acetate, 1 mM EDTA, 0.1\% SDS)
+
+Recovery buffer(50 mM Tris$\cdot$Cl, pH 8, 100 mM sodium acetate, 5 mM EDTA, 0.5\% SDS)
+
+
+
 
 \clearpage
 
@@ -553,73 +547,136 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
    
 \sofiachapter{Results}
   
+  $*$ Just lots of figures, will write actual captions and fill in info about what figures mean! $*$
   
-  \section{BosR-FLAG}
+    \section{CASTing} 
+    
+          	\begin{figure}[[h!tbp]
+          		% the options are h = here, t = top, b = bottom, p = page of figures. 
+          		% you can add an exclamation mark to make it try harder, and multiple
+          		% options if you have an order of preference, e.g.
+          		% \begin{figure}[h!tbp]
+          		\centering
+          		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+          		\includegraphics[width = \textwidth]{Figures_Images/Casting_cycle.pdf}
+          		\caption[CASTing Overal Cycle Scheme]{CASTing Process}
+          		% square brackets here correspond to what is written in the list of figures
+          		\label{overallcastingscheme}
+          		% this is label for the figure
+          	\end{figure}
+          	
+          	\begin{figure}[[h!tbp]
+          		% the options are h = here, t = top, b = bottom, p = page of figures. 
+          		% you can add an exclamation mark to make it try harder, and multiple
+          		% options if you have an order of preference, e.g.
+          		% \begin{figure}[h!tbp]
+          		\centering
+          		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+          		\includegraphics[width = \textwidth]{Figures_Images/Casting_Limited}
+          		\caption[CASTing Selection Scheme]{Selection Step of CASTing Process}
+          		% square brackets here correspond to what is written in the list of figures
+          		\label{Selectionscheme}
+          		% this is label for the figure
+          	\end{figure}
+    
+    %\begin{figure}[h]
+    % the options are h = here, t = top, b = bottom, p = page of figures. 
+    % you can add an exclamation mark to make it try harder, and multiple
+    % options if you have an order of preference, e.g.
+    \begin{figure}[h!tbp]
+    	\centering
+    	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+    	\includegraphics[width = 0.5\textwidth]{Figures_Images/PCR_9_26_15.pdf}
+    	\caption[PCR to Create Pool of Random DNA]{PCR Ran 76 with 10 pg of Ran76 template cleaned and concentrated}
+    	% square brackets here correspond to what is written in the list of figures
+    	\label{PCRRan76}
+    	% this is label for the figure
+    \end{figure}
+    
+      \section{BosR-FLAG}
+      
+      \begin{figure}[h]
+      	% the options are h = here, t = top, b = bottom, p = page of figures. 
+      	% you can add an exclamation mark to make it try harder, and multiple
+      	% options if you have an order of preference, e.g.
+      	% \begin{figure}[h!tbp]
+      	\centering
+      	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+      	\includegraphics[width = \textwidth]{Figures_Images/FA_BosR_poly.pdf}
+      	\caption[Determining DNA Activity of BosR-FLAG by Fluorescence Anistropy]{Fluorescence Anistropy for BosR-FLAG with F-SREzy and 2 $\mu$g of poly dI$\cdot$dC in CASTing Binding Buffer  a $K_{d}$ of 0.97 $\pm$ 0.09 $\mu$M based on fit to the equation \FAstdfit , where P refers to protein concentration.}
+      	% square brackets here correspond to what is written in the list of figures
+      	\label{BosRFLAGFApoly}
+      	% this is label for the figure
+      \end{figure}
+      
+            \begin{figure}[h]
+            	% the options are h = here, t = top, b = bottom, p = page of figures. 
+            	% you can add an exclamation mark to make it try harder, and multiple
+            	% options if you have an order of preference, e.g.
+            	% \begin{figure}[h!tbp]
+            	\centering
+            	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+            	\includegraphics[width = \textwidth]{Figures_Images/size_exclusion}
+            	\caption[Size Exclusion Chromatography of BosR-FLAG]{Size Exclusion Chromatography of BosR-FLAG. Protein observed by absorbance at 280 nm.}
+            	% square brackets here correspond to what is written in the list of figures
+            	\label{BosRFLAGSizeEx}
+            	% this is label for the figure
+            \end{figure}
+      
+      
+    \begin{figure}[h!tbp]
+    	\centering
+    	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+    	\includegraphics[width =\textwidth]{Figures_Images/SC_qPCR_cycle1_Ran76_Fluor_curves.pdf}
+    	\caption[qPCR of 1st Cycle of CASTing Fluorescence Curves]{qPCR performed with different templates}
+    	% square brackets here correspond to what is written in the list of figures
+    	\label{qPCRcycle1fluorcurves}
+    	% this is label for the figure
+    \end{figure}
+    
+    
+    
+    %\begin{figure}[h]
+    % the options are h = here, t = top, b = bottom, p = page of figures. 
+    % you can add an exclamation mark to make it try harder, and multiple
+    % options if you have an order of preference, e.g.
+    \begin{figure}[h!tbp]
+    	\centering
+    	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+    	\includegraphics[width = 0.5\textwidth]{Figures_Images/qPCR_cycle1_10_19_15.pdf}
+    	\caption[qPCR of 1st Cycle of CASTing Gel Analysis]{qPCR samples run on 3\% agarose/TBE gel. Lane L contains 2 $\mu$l of 2-log ladder (NEB), lanes 1-6 are qPCR reactions with various templates. Template lane 1, $H_{2}O$, lane 2, poly dI $\cdot$ dC, lane 3, DNA from binding reaction without BosR-FLAG, lane 4, DNA from binding reaction without FLAG antibody, lane 5 DNA from binding reaction with 5 $\mu$g of both BosR-FLAG and FLAG antibody, lane 6, 2 pg standard of ds Ran76.}
+    	% square brackets here correspond to what is written in the list of figures
+    	\label{qPCRcycle1}
+    	% this is label for the figure
+    \end{figure}
+    
+    
+    
+    \clearpage
+
+  \section{MntR-FLAG}
   
-         	\begin{figure}[h]
-         		% the options are h = here, t = top, b = bottom, p = page of figures. 
-         		% you can add an exclamation mark to make it try harder, and multiple
-         		% options if you have an order of preference, e.g.
-         		% \begin{figure}[h!tbp]
-         		\centering
-         		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
-         		\includegraphics[width = \textwidth]{Figures_Images/FA_BosR_poly.pdf}
-         		\caption[Determining DNA Activity of BosR-FLAG by Fluorescence Anistropy]{Fluorescence Anistropy for BosR-FLAG with F-SREzy and 2 $\mu$g of poly dI$\cdot$dC in CASTing Binding Buffer  a $K_{d}$ of 0.97 $\pm$ 0.09 $\mu$M based on fit to the equation \FAstdfit , where P refers to protein concentration.}
-         		% square brackets here correspond to what is written in the list of figures
-         		\label{BosRFLAGFApoly}
-         		% this is label for the figure
-         	\end{figure}
-  
-  
-  \section{CASTing} 
-  
-    	%\begin{figure}[h]
-    		% the options are h = here, t = top, b = bottom, p = page of figures. 
+    	\begin{figure}[h]
+    		% the options are h = here, t = top, b = bottom, p = page of figures.
     		% you can add an exclamation mark to make it try harder, and multiple
     		% options if you have an order of preference, e.g.
-    		 \begin{figure}[h!tbp]
+    		% \begin{figure}[h!tbp]
+    		
     		\centering
     		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
-    		\includegraphics[width = 0.5\textwidth]{Figures_Images/PCR_9_26_15.pdf}
-    		\caption[PCR to Create Pool of Random DNA]{PCR Ran 76 with 10 pg of Ran76 template cleaned and concentrated}
-    		% square brackets here correspond to what is written in the list of figures
-    		\label{PCRRan76}
-    		% this is label for the figure
+    		\includegraphics[width = \textwidth]{Figures_Images/mntR_FLAG_PCR_scheme_final}
+    		\caption[MntR-FLAG PCR Scheme]{MntR-FLAG was constructed by designing primers...}
+    		\label{MntRFLAG_Scheme}
     	\end{figure}
- 
- 
- \begin{figure}[h!tbp]
- 	\centering
- 	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
- 	\includegraphics[width =\textwidth]{Figures_Images/SC_qPCR_cycle1_Ran76_Fluor_curves.pdf}
- 	\caption[qPCR of 1st Cycle of CASTing Fluorescence Curves]{qPCR performed with different templates}
- 	% square brackets here correspond to what is written in the list of figures
- 	\label{qPCRcycle1fluorcurves}
- 	% this is label for the figure
- \end{figure}
-
- 
- 
-      	%\begin{figure}[h]
-      		% the options are h = here, t = top, b = bottom, p = page of figures. 
-      		% you can add an exclamation mark to make it try harder, and multiple
-      		% options if you have an order of preference, e.g.
-      		 \begin{figure}[h!tbp]
-      		\centering
-      		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
-      		\includegraphics[width = 0.5\textwidth]{Figures_Images/qPCR_cycle1_10_19_15.pdf}
-      		\caption[qPCR of 1st Cycle of CASTing Gel Analysis]{qPCR samples run on 3\% agarose/TBE gel. Lane L contains 2 $\mu$l of 2-log ladder (NEB), lanes 1-6 are qPCR reactions with various templates. Template lane 1, $H_{2}O$, lane 2, poly dI $\cdot$ dC, lane 3, DNA from binding reaction without BosR-FLAG, lane 4, DNA from binding reaction without FLAG antibody, lane 5 DNA from binding reaction with 5 $\mu$g of both BosR-FLAG and FLAG antibody, lane 6, 2 pg standard of ds Ran76.}
-      		% square brackets here correspond to what is written in the list of figures
-      		\label{qPCRcycle1}
-      		% this is label for the figure
-      	\end{figure}
- 
- \clearpage
-      	
-      	
-      	
+    	
+    	
   
-  \section{MntR-FLAG}
+
+   
+    	
+
+  
+
         	%\begin{figure}[h]
         	% the options are h = here, t = top, b = bottom, p = page of figures. 
         	% you can add an exclamation mark to make it try harder, and multiple
@@ -658,58 +715,143 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
        		% this is label for the figure
        	\end{figure}
       
-      %only table example
- \begin{table}[ht]
- 	\caption{Coefficients for Standard Binding Fit for MntR-FLAG bound to F-M21 DNA Sequence} 
- 	\label{MntRFLAGCoef}
- 	\begin{tabularx}{3.0in}{|X|X|X|}
- 		\hline
- 		\textbf{ } & \textbf{Estimate} & \textbf{SE} \\ 
- 		\hline
- 		$\Delta$r & 0.027 & 0.0009 \\ 
- 		\hline
- 		$K_{d}$ ($nM$) &  29  &  3  \\ 
- 		\hline
- 		$r_{min}$ & 0.028 & 0.0008 \\ 
- 		\hline
- 	\end{tabularx}
- \end{table}
- 
- \begin{table}[ht]
- \centering
- \parbox{5.0in}{\caption{Error associated with Specific Binding Fit}} 
- \begin{tabularx}{3.0in}{|X|X|X|}
- 	\hline
- 	\textbf{Residual Std. Error} & \textbf{Deviance} & \textbf{Variance of Residuals} \\ 
- 	\hline
- 	8.719e-04 & 6.082e-06 & 6.082e-07 \\ 
- 	\hline
- \end{tabularx}
-\end{table}
+
+  		\begin{figure}[h!tbp]
+  			% the options are h = here, t = top, b = bottom, p = page of figures.
+  			% you can add an exclamation mark to make it try harder, and multiple
+  			% options if you have an order of preference, e.g.
+  			% \begin{figure}[h!tbp]
+  			
+  			\centering
+  			% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+  			\includegraphics[width = \textwidth]{Figures_Images/Gel_Shift_BosR}
+  			\caption[Gel Shift and Super Shift]{Visual representation of gel shift and super shift for BosR-FLAG. The same shift was performed with MntR-FLAG with appropriate specific and non-specific fluorinated DNA.}
+  			\label{GelShift_Scheme}
+  		\end{figure}
+
+		\begin{figure}[h!tbp]
+			% the options are h = here, t = top, b = bottom, p = page of figures.
+			% you can add an exclamation mark to make it try harder, and multiple
+			% options if you have an order of preference, e.g.
+			% \begin{figure}[h!tbp]
+			
+			\centering
+			% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+			\includegraphics[width = \textwidth]{Figures_Images/BosR_gel_shift_real}
+			\caption[BosR-FLAG Gel Shift]{Gel shift with BosR-FLAG. Controls included non-specific fluorinated DNA (Sca1.24) and lanes with F-DNA only and F-DNA with Anti-FLAG antibody.}
+			\label{GelShift_BosRFLAG}
+		\end{figure}
 
 
-Add gelshift image 
+		\begin{figure}[h!tbp]
+			% the options are h = here, t = top, b = bottom, p = page of figures.
+			% you can add an exclamation mark to make it try harder, and multiple
+			% options if you have an order of preference, e.g.
+			% \begin{figure}[h!tbp]
+			
+			\centering
+			% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+			\includegraphics[width = \textwidth]{Figures_Images/MntRFLAG_gel_shift_real}
+			\caption[MntR-FLAG Gel Shift]{Gel shift with MntR-FLAG. Controls included non-specific fluorinated DNA (MDR1 oligos) and lanes with F-DNA only and F-DNA with Anti-FLAG antibody. Edited in Adobe Photo shop for better visualization of faint bands. The white spots are artifacts of the enhancement.} 
+			\label{GelShift_MntRFLAG}
+		\end{figure}
+
+
 
 \clearpage
 
    \section{BosR Reduced Surface Entropy}
    
-   insert site directed mutagenesis pcr for wt and cndt
+   	 	\begin{figure}[t]
+   	 		% the options are h = here, t = top, b = bottom, p = page of figures.
+   	 		% you can add an exclamation mark to make it try harder, and multiple
+   	 		% options if you have an order of preference, e.g.
+   	 		% \begin{figure}[h!tbp]
+   	 		
+   	 		\centering
+   	 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+   	 		\includegraphics[width = 0.75\textwidth]{Figures_Images/finalBosRmonomer}
+   	 		\caption[Predicted structure BosR Monomer]{Structure of BosR monomer based on Phyre2 prediction given the template 4MTD}
+   	 		% square brackets here correspond to what is written in the list of figures
+   	 		\label{BosRMonomer_results}
+   	 		% this is label for the figure
+   	 	\end{figure}
+   	 	
+      	\begin{figure}[h!tbp]
+      		% the options are h = here, t = top, b = bottom, p = page of figures.
+      		% you can add an exclamation mark to make it try harder, and multiple
+      		% options if you have an order of preference, e.g.
+      		% \begin{figure}[h!tbp]
+      		
+      		\centering
+      		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+      		\includegraphics[width = 0.6\textwidth]{Figures_Images/BosR_Mut_2}
+      		\caption[BosR Site-Directed Mutagenesis]{Residues 96-98 (QKE) of WT BosR and CNDT BosR  were mutated to AAA through PCR of the plasmid using primers with sequences complementary to the mutations. }
+      		\label{BosRMut_Scheme}
+      	\end{figure}
+      	
    
     		 \begin{figure}[h!tbp]
     		 	\centering
     		 	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
     		 	\includegraphics[width = 0.5\textwidth]{Figures_Images/SC_BosR_Mut_PCR.pdf}
-    		 	\caption[BosR QKE --> AAA Site Directied Mutagenesis PCR Gel]{PCR of pSMT3-BosR WT and CNDT for site directed mutagenesis, QKE to AAA. gradient}
+    		 	\caption[BosR QKE --> AAA Site Directed Mutagenesis PCR Gel]{PCR of pSMT3-BosR WT and CNDT for site directed mutagenesis, QKE to AAA. gradient}
     		 	% square brackets here correspond to what is written in the list of figures
     		 	\label{BosRmutPCR}
     		 	% this is label for the figure
     		 \end{figure}
   
+  		 \begin{figure}[h!tbp]
+  		 	\centering
+  		 	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+  		 	\includegraphics[width = 
+  		 	\textwidth]{Figures_Images/BosRCNDTMUT}
+  		 	\caption[Purification of BosR CNDT Mutant QKE --> AAA]{SDS-PAGE (15\%) gel of fractions from BosR CNDT QKE to AAA mutant}
+  		 	% square brackets here correspond to what is written in the list of figures
+  		 	\label{BosRmutCNDTPurification}
+  		 	% this is label for the figure
+  		 \end{figure}
+  
+  
+  
    
 \appendix
+
+ \sofiachapter{Supplemental Methods}
+ 
+ \begin{table}[!hp]
+ 	\caption{DNA Sequences for Manipulation of DNA} 
+ 	\label{DNAsequences}
+ 	\begin{tabular}{|l | p{12cm}|}
+ 		\hline
+ 		Label & Sequence \\
+ 		\hline 
+ 		PrimF & 5'-GCT GCA GTT GCA CTG AAT TCG CCT C-3'  \\ 
+ 		\hline
+ 		Primer R  & 5'-CAG GTC AGT TCA GCG GAT CCT GTC G-3' \\  			
+ 		\hline
+ 		MntRFF & 5'-ACA GAG AAC AGA TTG GTG GAA CAA CAC CAA G-3'    \\
+ 		\hline
+ 		MntRF1  & 5'-GTC GTC GTC GTC TTT GTA GTC CTG ATT ATG TTC TGT TTT CTT TTG GAT TG-3'  \\ 
+ 		\hline
+ 		MntRF3 & 5'CGA AGT GCG GCC GCA AGC TTT TAT TTG TCG TCG TCG TCT TTG TAG TCC TG-3'  \\  
+ 		\hline
+ 		AAAf & 5'-ACT GAT GCA GCA GCA ACA AAA TTT TAT CTA AGC TTG-3'  \\     
+ 		\hline
+ 		AAAr & 5'-TTT TGT TGC TGC TGC ATC AGT AGT TTT TAT ATC TTT TAG-3' \\
+ 		\hline
+ 		F-M21 & 5'-F-GAG TTT CCT TAA GGC AAA TTG-3'  \\
+ 		\hline
+ 		MDR1 & *need to find seq* \\  
+ 		\hline
+ 		SRE & *need to find seq*  \\
+ 		\hline
+ 	\end{tabular}
+ \end{table}
+
 \sofiachapter{Summer Research} 
    
+   \section{Fluorescence Anisotropy}
            	\begin{figure}[h]
            		% the options are h = here, t = top, b = bottom, p = page of figures. 
            		% you can add an exclamation mark to make it try harder, and multiple
@@ -724,6 +866,7 @@ Add gelshift image
            		% this is label for the figure
            	\end{figure}
            	
+           	\section{qPCR}
            	
        		 \begin{figure}[h!tbp]
        		 	\centering
@@ -747,37 +890,6 @@ Add gelshift image
        		     		 \end{figure}
            	
            		
-    \sofiachapter{Supplemental Methods}
-    
-    	\begin{table}[!hp]
-    		\caption{DNA Sequences for Manipulation of DNA} 
-    		\label{DNAsequences}
-    		\begin{tabular}{|l | p{12cm}|}
-    			\hline
-    			Label & Sequence \\
-    			\hline 
-    			PrimF & 5'-GCT GCA GTT GCA CTG AAT TCG CCT C-3'  \\ 
-    			\hline
-    			Primer R  & 5'-CAG GTC AGT TCA GCG GAT CCT GTC G-3' \\  			
-    			\hline
-    			MntRFF & 5'-ACA GAG AAC AGA TTG GTG GAA CAA CAC CAA G-3'    \\
-    			\hline
-    			MntRF1  & 5'-GTC GTC GTC GTC TTT GTA GTC CTG ATT ATG TTC TGT TTT CTT TTG GAT TG-3'  \\ 
-    			\hline
-    			MntRF3 & 5'CGA AGT GCG GCC GCA AGC TTT TAT TTG TCG TCG TCG TCT TTG TAG TCC TG-3'  \\  
-    			\hline
-    			AAAf & 5'-ACT GAT GCA GCA GCA ACA AAA TTT TAT CTA AGC TTG-3'  \\     
-    			\hline
-    			AAAr & 5'-TTT TGT TGC TGC TGC ATC AGT AGT TTT TAT ATC TTT TAG-3' \\
-    			\hline
-    			F-M21 & 5'-F-GAG TTT CCT TAA GGC AAA TTG-3'  \\
-    			\hline
-    			MDR1 & *need to find seq* \\  
-    			\hline
-    			SRE & *need to find seq*  \\
-    			\hline
-    		\end{tabular}
-    	\end{table}
 
 \clearpage
 \section{References, Labels, Custom Commands and Footnotes}
