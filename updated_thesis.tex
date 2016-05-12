@@ -55,7 +55,7 @@ singlelinecheck=false % <-- important
 \author{Sofia-Mari Claesson}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
 \date{May 2016}
-\thedivisionof{The Established Interdisciplinary Committee for Biochemistry and Molecular Biology}
+\thedivisionof{the Established Interdisciplinary Committee for Biochemistry and Molecular Biology}
 \advisor{Arthur Glasfeld}
 %If you have two advisors for some reason, you can use the following
 %\altadvisor{Your Other Advisor}
@@ -64,10 +64,11 @@ singlelinecheck=false % <-- important
 % if you're writing a thesis in an interdisciplinary major,
 % uncomment the line below and change the text as appropriate.
 % check the Senior Handbook if unsure.
-%\thedivisionof{The Established Interdisciplinary Committee for}
+\thedivisionof{The Established Interdisciplinary Committee for Biochemistry and Molecular Biology}
 % if you want the approval page to say "Approved for the Committee",
 % uncomment the next line
-%\approvedforthe{Committee}
+\department{Biochemistry and Molecular Biology}
+\approvedforthe{Committee}
 
 \setlength{\parskip}{0pt}
 %%
@@ -92,32 +93,10 @@ singlelinecheck=false % <-- important
 % Acknowledgements (Acceptable American spelling) are optional
 % So are Acknowledgments (proper English spelling)
     \chapter*{Acknowledgements}
+    
+    still to come
 	%I want to thank a few people.
 
-% The preface is optional
-% To remove it, comment it out or delete it.
-    \chapter*{Preface}
-	%This is an example of a thesis setup to use the reed thesis document class.
-	
-	
-
-    \chapter*{List of Abbreviations}
-		%You can always change the way your abbreviations are formatted. Play around with it yourself, use tables, or come to CUS if you'd like to change the way it looks. You can also completely remove this chapter if you have no need for a list of abbreviations. Here is an example of what this could look like:
-
-	\begin{table}[h]
-	\centering % You could remove this to move table to the left
-	\begin{tabular}{ll}
-		\textbf{Bb}  	&  \textit{Borrelia burgdorferi} \\
-		\textbf{rBosR}  	&  Recombinant BosR\\
-		%\textbf{CDC}  	&  Center for Disease Control \\
-		%\textbf{CIA}  	&  Central Intelligence Agency\\
-		%\textbf{CLBR} 	&  Center for Life Beyond Reed\\
-		%\textbf{CUS}  	&  Computer User Services\\
-		%\textbf{FBI}  	&  Federal Bureau of Investigation\\
-		%\textbf{NBC}  	&  National Broadcasting Corporation\\
-	\end{tabular}
-	\end{table}
-	
 
     \tableofcontents
 % if you want a list of tables, optional
@@ -128,9 +107,15 @@ singlelinecheck=false % <-- important
 % The abstract is not required if you're writing a creative thesis (but aren't they all?)
 % If your abstract is longer than a page, there may be a formatting issue.
     \chapter*{Abstract}
+    
+    \doublespacing
+    
+    BosR is a DNA-binding protein from \textit{Borrelia burgdorferi}, the causative agent of Lyme disease. Lyme disease is a rapidly emerging infectious disease in the United States and Europe. An estimated 300,000 cases of the disease are reported to occur each year in the US alone. BosR is involved in the regulation of genes necessary to cause mammalian infection, yet the consensus operator sequence to which it binds has not been definitively determined. This thesis aimed to determine the BosR consensus operator through cyclic amplification and selection of targets (CASTing). Since there is a gap in the BosR research regarding protein structure, this thesis also attempted to use surface entropy reduction to aid in crystallization. This thesis began the optimization of the CASTing experiment and created the constructs necessary to reduce surface entropy for a wild-type (WT) and a C and N terminal doubly truncated form of BosR.
 	%The preface pretty much says it all.
 	
 	\chapter*{Dedication}
+	
+	still to come
 	%You can have a dedication here if you wish.
 
   \mainmatter % here the regular arabic numbering starts
@@ -162,9 +147,9 @@ singlelinecheck=false % <-- important
 \newcommand{\micro}{$\mu$}
 
 
-	\textit{Borrelia burgdorferi} is a spiral, rod-shaped bacterium, and the etiological agent of Lyme disease. Since the 1970s, Lyme disease has become a rapidly emerging infectious disease in the United States. Over 90\% of vector-borne illnesses in the US are attributed to Lyme disease and it was ranked as the fifth most common Nationally Notifiable disease in 2014 (Radolf et al., 2012 (ref 8) and CDC 2015). While around 30,000 cases of Lyme disease are reported annually in the US, the Center for Disease Control estimates that the actual  number of cases is approximately 300,000 (CDC 2015). Infected ticks transmit the \textit{Borrelia burgdorferi} when feeding, leading to human infection. Early onset symptoms of Lyme disease include flu-like symptoms, such as fever, fatigue, and chills, as well as muscle or joint pain. The most tell-tale symptom of Lyme disease is an erythema migrans rash, which is identifiable by its "bulls-eye" shape. The rash, however, does not present in every case. The absence of this symptom decreases the likelihood of early diagnosis. Late stage symptoms can be more severe, including arthritis, joint swelling, heart palpitations, dizziness, shortness of breath, brain and spinal cord inflammation, and nerve pain. Neurological symptoms such as facial paralysis and short-term memory loss may also occur (CDC 2015). Often ticks can transmit other co-infections, such as Babesiosis and Ehrlichiosis, further complicating diagnosis and treatment (Krause et al., 2002). Left untreated, a broad range of symptoms are associated with Lyme disease (CDC 2015). 
+	\textit{Borrelia burgdorferi} is a spiral, rod-shaped bacterium, and the etiological agent of Lyme disease. Since the 1970s, Lyme disease has become a rapidly emerging infectious disease in the United States. Over 90\% of vector-borne illnesses in the US are attributed to Lyme disease and it was ranked as the fifth most common Nationally Notifiable disease in 2014 (Radolf et al., 2012 and CDC 2015). While around 30,000 cases of Lyme disease are reported annually in the US, the Center for Disease Control estimates that the actual  number of cases is approximately 300,000 (CDC 2015). Infected ticks transmit the \textit{Borrelia burgdorferi} when feeding, leading to human infection. Early onset symptoms of Lyme disease include flu-like symptoms, such as fever, fatigue, and chills, as well as muscle or joint pain. The most tell-tale symptom of Lyme disease is an erythema migrans rash, which is identifiable by its "bulls-eye" shape. The rash, however, does not present in every case. The absence of this symptom decreases the likelihood of early diagnosis. Late stage symptoms can be more severe, including arthritis, joint swelling, heart palpitations, dizziness, shortness of breath, brain and spinal cord inflammation, and nerve pain. Neurological symptoms such as facial paralysis and short-term memory loss may also occur (CDC 2015). Often ticks can transmit other co-infections, such as Babesiosis and Ehrlichiosis, further complicating diagnosis and treatment (Radolf and Samuels, 2010). Left untreated, a broad range of symptoms are associated with Lyme disease (CDC 2015). 
 	
-	Lyme disease occurrence in the US is not geographically uniform. Lyme disease is most commonly found in the northeast and the upper midwest (Figure 1).  Vector distribution and presence of the bacteria influence the distribution of the disease. (CDC, 2015).
+	Lyme disease occurrence in the US is not geographically uniform. It is most commonly found in the northeast and the upper midwest (Figure 1).  Vector distribution and presence of the bacteria influence the distribution of the disease. (CDC, 2015).
 		 	 	\begin{figure}[h]
 		 	 		% the options are h = here, t = top, b = bottom, p = page of figures.
 		 	 		% you can add an exclamation mark to make it try harder, and multiple
@@ -174,7 +159,7 @@ singlelinecheck=false % <-- important
 		 	 		\centering
 		 	 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
 		 	 		\includegraphics{Figures_Images/lyme_prevalence0711}
-		 	 		\caption[Geographic Distribution and Prevalence of Lyme Disease in the US]{Map of Lyme disease occurrence in the US between 2007-2011 showing geographic distribution and prevalence on the county level. Data used were counts of Lyme disease cases in each US county provided by the CDC. Prevalence was calculated as the number of confirmed cases in each county during 2007-2011 divided by the county population, as given by the 2000 census. Results were log transformed to better visualize relative differences. Bright green corresponds to high prevalence, while white, corresponds to zero.}
+		 	 		\caption[Map of Lyme disease occurrence in the US between 2007-2011 showing geographic distribution and prevalence on the county level]{Map of Lyme disease occurrence in the US between 2007-2011 showing geographic distribution and prevalence on the county level. Data used were counts of Lyme disease cases in each US county provided by the CDC. Prevalence was calculated as the number of confirmed cases in each county during 2007-2011 divided by the county population, as given by the 2000 census. Results were log transformed to better visualize relative differences. Bright green corresponds to high prevalence, while white, corresponds to zero.}
 		 	 		% square brackets here correspond to what is written in the list of figures
 		 	 		\label{Lymemap}
 		 	 		% this is label for the figure
@@ -182,24 +167,24 @@ singlelinecheck=false % <-- important
 		 	 	%cite ggplot packages used to create image
  	 	
 	
-	 Species from the genus \textit{Borrelia} are divided into two groups, responsible either for Lyme disease or relapsing fever. Those species associated with Lyme disease have been categorized as belonging to the \textit{Borrelia burgdorferi sensu lato} complex. Within this complex three strains have been identified as the primary causes of Lyme disease (Radolf et al., 2012 (cites Borrelia: Molecular bio...from Samuels and Radolf)).\textit{B. burgdorferi sensu stricto} is the species that is mostly responsible for causing Lyme disease in the US, while \textit{Borrelia garinii} and \textit{Borrelia afzelii} cause the disease in Asia (Radolf et al.,2012 \& Masuzawa, 2004). All three strains are present in Europe (Radolf et al., 2012 (ref 7)). The bacteria are transmitted to mammalian hosts through an arthropod vector, mainly various species of the genus \textit{Ixodes}, hard-bodied ticks (Radolf et al., 2012 and Burgdorfer et al., 1982). \textit{Ixodes scapularis} and \textit{Ixodes pacificus}, the blacklegged tick and western blacklegged tick, have been identified as species primarily responsible for transmission of the bacteria in North America (Radolf et al., 2012 (ref 7)). \textit{Ixodes ricinus} and \textit{Ixodes persulcatus} are the primary species responsible for Lyme disease in Europe and Asia, respectively (Dizij \& Kurtenbach, 1995; Chengxu et al., 1988). 
+	 Species from the genus \textit{Borrelia} are divided into two groups, responsible either for Lyme disease or relapsing fever. Those species associated with Lyme disease have been categorized as belonging to the \textit{Borrelia burgdorferi sensu lato} complex. Within this complex three strains have been identified as the primary causes of Lyme disease (Radolf et al., 2012). \textit{B. burgdorferi sensu stricto} is the species that is mostly responsible for causing Lyme disease in the US, while \textit{Borrelia garinii} and \textit{Borrelia afzelii} cause the disease in Asia (Radolf et al., 2012 \& Masuzawa, 2004). All three strains are present in Europe (Radolf et al., 2012). The bacteria are transmitted to mammalian hosts through an arthropod vector, mainly various species of the genus \textit{Ixodes}, hard-bodied ticks (Radolf et al., 2012 and Burgdorfer et al., 1982). \textit{Ixodes scapularis} and \textit{Ixodes pacificus}, the blacklegged tick and western blacklegged tick, have been identified as species primarily responsible for transmission of the bacteria in North America (Radolf et al., 2012). \textit{Ixodes ricinus} and \textit{Ixodes persulcatus} are the primary species responsible for Lyme disease in Europe and Asia, respectively (Dizij \& Kurtenbach, 1995; Chengxu et al., 1988). 
 	
 	
-	The \textit{Borrelia burgdorferi} bacteria, therefore, have the challenge of adapting to two very different environments, the tick and the mammalian host. The life cycle of the bacterium starts when the tick larva feed on small mammals such as birds, mice, and squirrels, which are their first hosts. Small birds, mice, and squirrels have \textit{Borrelia burgdorferi} in their blood, and it is transmitted to the tick during feeding. The tick larva fall off their first host when they are done feeding and have possibly acquired \textit{Borrelia burgdorferi}. The tick then matures to a nymph and feeds on a second host. The same types of small birds, mice, and squirrels that the tick fed on in the larval stage serve as second hosts. During this point the tick can transmit the bacteria to a small mammal that was previously uninfected, thereby perpetuating the cycle. The tick can also feed on incidental hosts that do not perpetuate the cycle, such as humans or dogs, and transmit \textit{Borrelia burgdorferi} to them, resulting in infection that causes Lyme disease. The adult tick could also feed on a third host, such as a deer, on which the tick can lay eggs and start the cycle all over again  (Radolf et al., 2012 (ref 7)). 
+	The \textit{Borrelia burgdorferi} bacteria, therefore, have the challenge of adapting to two very different environments, the tick and the mammalian host. The life cycle of the bacterium starts when the tick larvae feed on small mammals such as birds, mice, and squirrels, which are their first hosts. Small birds, mice, and squirrels have \textit{Borrelia burgdorferi} in their blood, and it is transmitted to the tick during feeding. The tick larvae fall off their first host when they are done feeding and have possibly acquired \textit{Borrelia burgdorferi}. The tick then matures to a nymph and feeds on a second host. The same types of small birds, mice, and squirrels that the tick fed on in the larval stage serve as second hosts. During this point the tick can transmit the bacteria to a small mammal that was previously uninfected, thereby perpetuating the cycle. The tick can also feed on incidental hosts that do not perpetuate the cycle, such as humans or dogs, and transmit \textit{Borrelia burgdorferi} to them, resulting in infection that causes Lyme disease. The adult tick could also feed on a third host, such as a deer, on which the tick can lay eggs and start the cycle all over again (Radolf et al., 2012). 
 	
-	Bites from nymphal ticks are often the cause of human infection. It usually requires 36-48 hours of attachment for the tick to transmit the bacteria. Since nymphal ticks are less than 2mm or about the size of a poppy seed, it can be difficult to find them on the body, allowing time for transmission of \textit{Borrelia burgdorferi}. In addition, the ticks' saliva, which transmits the bacteria, contains anesthetic properties so that the host is unable to feel the bite. Nymphs are most common when they are feeding in spring and summer, while adult ticks are more common in fall (CDC, 2015). Climate warming is expected to expand the distribution of ticks that transmit \textit{Borrelia burgdorferi}. Warmer temperatures could spread the disease into areas in which it previously was not a concern and could increase risk of Lyme disease in areas in which it is already endemic (Ogden et al., 2014). In northwestern California, nymph \textit{Ixodes pacificus} are active from January through October and adult ticks are active from late October to June. Both nymphs and adults can potentially transmit \textit{Borrelia burgdorferi}, posing a year-round potential for contraction of Lyme disease in California. This finding revealed an expanded time frame for tick activity (Salkeld et al., 2014). The active seasons of ticks coincide with when people spend the most time outdoors, making preventative measures and awareness extremely important. 
+	Bites from nymphal ticks are often the cause of human infection. It usually requires 36-48 hours of attachment for the tick to transmit the bacteria. Since nymphal ticks are less than 2 mm or about the size of a poppy seed, it can be difficult to find them on the body, allowing time for transmission of \textit{Borrelia burgdorferi}. In addition, the ticks' saliva, which transmits the bacteria, contains anesthetic properties so that the host is unable to feel the bite. Nymphs are most common when they are feeding in spring and summer, while adult ticks are more common in fall (CDC, 2015). Climate warming is expected to expand the distribution of ticks that transmit \textit{Borrelia burgdorferi}. Warmer temperatures could spread the disease into areas in which it previously was not a concern and could increase risk of Lyme disease in areas in which it is already endemic (Dibernardo et al., 2014). In northwestern California, nymph \textit{Ixodes pacificus} are active from January through October and adult ticks are active from late October to June. Both nymphs and adults can potentially transmit \textit{Borrelia burgdorferi}, posing a year-round potential for contraction of Lyme disease in California. This finding revealed an expanded time frame for tick activity (Salkeld et al., 2014). The active seasons of ticks coincide with when people spend the most time outdoors, making preventative measures and awareness extremely important. In order to better understand Lyme disease, research has been focused on studying \textit{Borrelia burgdorferi}, the bacteria that causes the disease. 
 	
 	
 	%add about ticks in spring in summer due to temperature and how warming climate could increase the season
 	%add how ticks locate hosts and discharge anesthetic saliva when biting + how protein salp15 has been show to be immunosuppressive
 	
 	
-	 \textit{Borrelia burgdorferi} has many unusual characteristics. It has a linear rather than circular chromosome and has a variety of circular and linear plasmids. The \textit{Borrelia burgdorferi} type strain B31, the first \textit{Borrelia} genome sequenced, has a 910 Kbp linear chromosome and 12 linear and nine circular plasmids, for a total of 610 Kbp of plasmid DNA (Fraser et al., 1997 \& Casjens et al., 2000). The plasmids contain a large number of non-functional pseudogenes, which is likely due to DNA rearrangement events in linear plasmids that produced duplications. More than 90\% of the plasmid genes are also not similar to those outside of the \textit{Borrelia} genus (Casjens et al., 2000). Genomic analysis of commonly used laboratory strains of \textit{Borrelia  burgdorferi}, including B31, shows variability in the identity of plasmids that are present. Linear plasmids appear to be especially variable. Plasmids lp54 and cp26, however, are quite stable (Casjens et al., 2012). These plasmids both contain genes that encode outer surface lipoproteins that are essential for the bacterium's survival in both the tick and mammal. Genes encoded by these plasmids can be differentially expressed to suit the environment of the bacteria. Plasmid lp54 encodes outer surface protein A and B (OspA and OspB). Plasmid cp26 encodes outer surface protein C (OspC), which is essential for mammalian infection (Casjens et al., 2012; Grimm eta la., 2004). OspA is not necessary for the bacteria to establish mammalian infection, but is needed for the bacteria to colonize and survive in the midgut of the tick (Yang et al., 2004). OspA protects the bacteria from host antibodies in the blood that ticks uptake during feeding (Battisti et al., 2008). Expression of OspA decreases as the bacteria move into the tick salivary gland out of the midgut, along with an increase in expression of OspC (Samuels, 2011).    (Casjens et al., 2012). In the early stages of infection, OspC expression is downregulated in the bacteria as a mechanism for immune system evasion (Tilly et al., 2006; Liang et al., 2002). Environmental cues, such as temperature and pH, signal when to express OspA and OspC. There is conflicting evidence in the literature as to whether the regulation of OspA and OspC is independent or correlated (Samuels, 2011). Silencing of the \textit{ospAB} operon results in increased production of OspC as well as other lipoproteins, suggesting that the regulation of OspA and OspC is not exclusively independent (He et al., 2008). Along with several other borrelial proteins,  regulation of OspAB and OspC is important for bacterial survival throughout the enzootic cycle. 
+	 \textit{Borrelia burgdorferi} has many unusual characteristics. It has a linear rather than circular chromosome and has a variety of circular and linear plasmids. The \textit{Borrelia burgdorferi} type strain B31, the first \textit{Borrelia} genome sequenced, has a 910 kbp linear chromosome and 12 linear and nine circular plasmids, for a total of 610 kbp of plasmid DNA (Fraser et al., 1997 \& Casjens et al., 2000). The plasmids contain a large number of non-functional pseudogenes, which is likely due to DNA rearrangement events in linear plasmids that produced duplications. More than 90\% of the plasmid genes are also not similar to those outside of the \textit{Borrelia} genus (Casjens et al., 2000). Genomic analysis of commonly used laboratory strains of \textit{Borrelia  burgdorferi}, including B31, shows variability in the identity of plasmids that are present. Linear plasmids appear to be especially variable. Plasmids lp54 and cp26, however, are quite stable (Casjens et al., 2012). These plasmids both contain genes that encode outer surface lipoproteins that are essential for the bacterium's survival in both the tick and mammal. Genes encoded by these plasmids can be differentially expressed to suit the environment of the bacteria. Plasmid lp54 encodes outer surface protein A and B (OspA and OspB). Plasmid cp26 encodes outer surface protein C (OspC), which is essential for mammalian infection (Casjens et al., 2012; Grimm et al., 2004). OspA is not necessary for the bacteria to establish mammalian infection, but is needed for the bacteria to colonize and survive in the midgut of the tick (Yang et al., 2004). OspA protects the bacteria from host antibodies in the blood that ticks uptake during feeding (Battisti et al., 2008). Expression of OspA decreases as the bacteria move into the tick salivary gland out of the midgut, along with an increase in expression of OspC (Samuels, 2011; Casjens et al., 2012). In the early stages of infection, OspC expression is downregulated in the bacteria as a mechanism for immune system evasion (Tilly et al., 2006; Liang et al., 2002). Environmental cues, such as temperature and pH, signal when to express OspA and OspC. There is conflicting evidence in the literature as to whether the regulation of OspA and OspC is independent or correlated (Samuels, 2011). Silencing of the \textit{ospAB} operon results in increased production of OspC as well as other lipoproteins, suggesting that the regulation of OspA and OspC is not exclusively independent (He et al., 2008). Along with several other borrelial proteins,  regulation of OspAB and OspC is important for bacterial survival throughout the enzootic cycle. 
 	 
 	 In \textit{Escherichia coli} and other related bacteria, the alternative sigma factor RpoS functions as a global regulator of the general stress response by altering expression of dependent genes that have protective functions (Hengge-Aronis, 2002). In \textit{Borrelia burgdorferi} RpoS is not fundamental to the general stress response, but is involved in the activation of OspC and decorin-binding protein A (DbpA), another lipoprotein involved in mammalian infection (Caimano et al., 2004; H\"ubner et al., 2001). RpoS in \textit{Borrelia} is also necessary for the spirochete to move to the tick salivary gland to be transmitted to hosts (Samuels, 2011; Fisher et al., 2005). Analysis of the transcriptome suggests
 	 that it is also directly or indirectly involved in the expression of over a hundred genes, many of which participate in maintenance during the enzootic cycle  (Samuels, 2011). 
 	 
-		In \textit{Borrelia burgdorferi} there are two pathways for RpoS transcription that lead to either a short or long transcript of mRNA. The short RpoS transcript is produced through an RpoN dependent mechanism. RpoN is another alternative sigma factor, which in combination with enhancer-binding protein, Rrp2, activates \textit{rpoS} transcription (Figure 2). 
+		In \textit{Borrelia burgdorferi} there are two pathways for \textit{rpoS} transcription that lead to either a short or long transcript of mRNA. The short \textit{rpoS} transcript is produced through an RpoN-dependent mechanism. RpoN is another alternative sigma factor, which in combination with enhancer-binding protein, Rrp2, activates \textit{rpoS} transcription (Figure 2). 
 		
 		
 				\begin{figure}[h]
@@ -211,45 +196,44 @@ singlelinecheck=false % <-- important
 					\centering
 					% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
 					\includegraphics[width = \textwidth]{Figures_Images/rposregulation}
-					\caption[RpoS Regulation]{Scheme of RpoS regulation in \textit{Borrelia burgdorferi}.}
+					\caption[Scheme of RpoS regulation in \textit{Borrelia burgdorferi}]{Scheme of RpoS regulation in \textit{Borrelia burgdorferi}.}
 					% square brackets here correspond to what is written in the list of figures
 					\label{RpoSReg}
 					% this is label for the figure
 				\end{figure}
 				
 		
-		Rrp2 is activated by phosphorylation from acetyl phosphate, which is an intermediate in the acetate kinase-phosphate acetyltransferase pathway (Samuels, 2011; Xu et al., 2010). Increased temperature and decreased pH increase the amount of the \textit{Borrelia burgdorferi} homolog of carbon storage regulator A, an RNA binding protein. CsrA, through repression of Pta (phosphate acetyltransferase), mediates \textit{rpoS} transcription through the Rrp2-RpoN dependent pathway (Figure 2) (Samuels, 2011; Xu et al., 2010). The long rpoS transcript lacks an RpoN promoter and \textit{rpoN} mutant produces long RpoS transcript. Both \textit{rpoN} and \textit{rpoS} mutants cannot establish mammalian infection. \textit{rpoN} mutants can move into the tick salivary gland from the midgut while \textit{rpoS} mutants cannot. In \textit{Borrelia burgdorferi}, DsrA is a small RNA that can sense an increase in temperature and at low cell density posttranscriptionally regulates the long \textit{rpoS} mRNA transript but not the short. Hfq is RNA chaperone for DsrA, but is also required for mammalian infection, suggesting it has other functions (Samuels, 2011). 
+		Rrp2 is activated by phosphorylation from acetyl phosphate, which is an intermediate in the acetate kinase-phosphate acetyltransferase pathway (Samuels, 2011; Xu et al., 2010). Increased temperature and decreased pH increase the amount of the \textit{Borrelia burgdorferi} homolog of carbon storage regulator A (CsrA), an RNA binding protein. CsrA, through repression of Pta (phosphate acetyltransferase), mediates \textit{rpoS} transcription through the Rrp2-RpoN dependent pathway (Figure 2) (Samuels, 2011; Xu et al., 2010). The long \textit{rpoS} transcript lacks an RpoN promoter and \textit{rpoN} mutant produces long \textit{rpoS} transcript. Both \textit{rpoN} and \textit{rpoS} mutants cannot establish mammalian infection. \textit{rpoN} mutants can move into the tick salivary gland from the midgut while \textit{rpoS} mutants cannot. In \textit{Borrelia burgdorferi}, DsrA is a small RNA that can sense an increase in temperature and at low cell density posttranscriptionally regulates the long \textit{rpoS} mRNA transript but not the short \textit{rpoS} mRNA transcript. Hfq is RNA chaperone for DsrA, but is also required for mammalian infection, suggesting it has other functions (Samuels, 2011). 
+		
 		
 		\section{BosR Function and Structure}
 		
-	  BosR was originally identified in \textit{Borrelia burgdorferi} as a Fur family member based on its sequence similarity to Fur, a regulator of iron uptake. However, it was discovered that \textit{Borrelia burgdorferi} is quite different from other bacteria in that it does not use iron. Based on its homology to PerR, BosR was characterized as a potential \textit{Borrelia burgdorferi} oxidative stress response regulator. There was some debate as to whether that was its main function, since mutants of BosR did not show significantly greater sensitivity to reactive oxygen species compared to wild-type (Samuels, 2011). Some researchers found that BosR serves as a transcriptional activator of the oxidative stress response, while others found it to be a repressor (Boylan et al. 2003;  Katona et al., 2004). Contradictory evidence seems to be a theme in the literature surrounding BosR, resulting in ambiguous conclusions. However, BosR is known to play an important role in \textit{Borrelia burgdorferi} gene regulation. 
+	  BosR was originally identified in \textit{Borrelia burgdorferi} as a Fur family member based on its sequence similarity to Fur, a regulator of iron uptake. However, it was discovered that \textit{Borrelia burgdorferi} is different from other bacteria in that it does not use iron. Based on its homology to PerR, BosR was characterized as a potential \textit{Borrelia burgdorferi} oxidative stress response regulator. There was some debate as to whether that was its main function, since mutants of BosR did not show significantly greater sensitivity to reactive oxygen species compared to wild-type (Samuels, 2011). Some researchers found that BosR serves as a transcriptional activator of the oxidative stress response, while others found it to be a repressor (Boylan et al. 2003;  Katona et al., 2004). Contradictory evidence seems to be a theme in the literature surrounding BosR, resulting in ambiguous conclusions. However, BosR is known to play an important role in \textit{Borrelia burgdorferi} gene regulation (Samuels, 2011). 
 		% ask CUS how to change spacing between periods used for et al. to be normal spaces not end of sentence spaces
 		
 		
-		BosR has been shown to be involved either directly or indirectly in the regulation of many genes in the \textit{Borrelia burgdorferi} genome. Without functional BosR, mammalian infection cannot be established. Research agrees that BosR mediates this phenotype through direct regulation of alternative sigma factor RpoS expression. RpoS activates transcription of \textit{ospC} and represses transcription of \textit{ospAB}. As noted previous, RpoS  participates in the expression of over a hundred genes (Samuels, 2011). In light of this, through direct regulation of RpoS, BosR indirectly regulates many genes in the \textit{Borrelia burgdorferi} genome. Microarray analysis of a \textit{bosR} mutant compared to wild-type B31 revealed that BosR differentially regulates 199 genes, upregulates 137 genes, and downregulates 62 genes (Ouyang et al., 2009).  
+		BosR has been shown to be involved either directly or indirectly in the regulation of many genes in the \textit{Borrelia burgdorferi} genome. Without functional BosR, mammalian infection cannot be established (Ouyang et al., 2011). Research agrees that BosR mediates this phenotype through direct regulation of alternative sigma factor RpoS expression. RpoS activates transcription of \textit{ospC} and represses transcription of \textit{ospAB}. As noted previously, RpoS  participates in the expression of over a hundred genes (Samuels, 2011). In light of this, through direct regulation of RpoS, BosR indirectly regulates many genes in the \textit{Borrelia burgdorferi} genome. Microarray analysis of a \textit{bosR} mutant compared to wild-type B31 revealed that BosR differentially regulates 199 genes, upregulates 137 genes, and downregulates 62 genes (Ouyang et al., 2009).  
 		
 		
 		
 		
-		After determining the critical role BosR plays in regulation of genes that encode virulence factors, researchers investigated the mechanism behind regulation.  BosR binds in the promoter region of \textit{napA}, a gene that encodes an oxidative stress related protein. However, DTT and Zn\textsuperscript{ 2+} are required  for optimal binding to \textit{napA} (Boylan, Posey \& Gherardini, 2003). Consistent with these findings, BosR has been shown to have 1.4 mol of zinc per mol of protein and that even after chelation some zinc has persisted.
+		After determining the critical role BosR plays in regulation of genes that encode virulence factors, researchers investigated the mechanism behind regulation.  BosR binds in the promoter region of \textit{napA}, a gene that encodes an oxidative stress related protein. However, dithiothreitol (DTT) and Zn\textsuperscript{2+} are required  for optimal binding to the \textit{napA} operator (Boylan, Posey \& Gherardini, 2003). Consistent with these findings, BosR has been shown to have 1.4 mol of zinc per mol of protein and even after chelation, some zinc has persisted.
 		
 		
 		
-	The Norgard lab has investigated the mechanism by which BosR serves as a positive transcriptional activator of \textit{rpoS}, an alternative sigma factor ()Ouyang et al., 2011). Based on \textit{in silico} analysis that suggested structural similarity in DNA binding domains to PerR protein from \textit{Bacillus subtilis} and Fur protein from \textit{Vibrio cholerae}, they hypothesized that BosR functioned by directly binding \textit{rpoS}. Electrophoretic mobility shift assays (EMSAs) were performed with labeled DNA that encompassed a 277 bp region upstream of \textit{rpoS} and a 245 bp region in the \textit{rpoS} encoding region. Recombinant BosR was found to bind the sequence in a dose-dependent manner and showed multiple bands, which suggests that more than one binding site exists within the sequence. DNase I footprinting supports the existence of three binding sites. BosR bound to the direct repeat sequence \-(TAAATTAAAT) upon sequence analysis of the three regions identified by footprinting. This sequence was present in one perfect and one imperfect direct repeat in two of the regions and one imperfect direct repeat in the third region. Mutations to the direct repeat sequence affect binding, in some cases completely abolishing it and in others simply decreasing it.  Approximate dissociation constants for BosR binding sites BS1 and BS2, are 210.2 nM and 36.6 nM, respectively. Binding constants were determined  based on gel image results of showing the amount of DNA bound when different amounts of BosR protein are added (Ouyang et al., 2011).
+	The Norgard lab has investigated the mechanism by which BosR serves as a positive transcriptional activator of the \textit{rpoS} gene encoding an alternative sigma factor (Ouyang et al., 2011). Based on \textit{in silico} analysis that suggested structural similarity in DNA binding domains to PerR protein from \textit{Bacillus subtilis} and Fur protein from \textit{Vibrio cholerae}, they hypothesized that BosR functions by directly binding the \textit{rpoS} operator. Electrophoretic mobility shift assays (EMSAs) were performed with labeled DNA that encompassed a 277 bp region upstream of \textit{rpoS} and a 245 bp region in the \textit{rpoS} encoding region. Recombinant BosR was found to bind the sequence in a dose-dependent manner and showed multiple bands, which suggests that more than one binding site exists within the sequence. DNase I footprinting supports the existence of three binding sites. BosR bound to the direct repeat sequence \-(TAAATTAAAT) upon sequence analysis of the three regions identified by footprinting. This sequence was present in one perfect and one imperfect direct repeat in two of the regions and one imperfect direct repeat in the third region. Mutations to the direct repeat sequence affect binding, in some cases completely abolishing it and in others simply decreasing it.  Dissociation constants for BosR binding sites BS1 and BS2, are 210.2 nM and 36.6 nM, respectively. Binding constants were determined  based on gel image results showing the amount of DNA bound when different amounts of BosR protein are added (Ouyang et al., 2011).
 		
 		
 		
-		 DNase I digestion, did not show that BosR protects regions upstream of \textit{rpoS}, but found that it protects an upstream region of \textit{bosR}, suggesting it may auto-regulate its own transcription (Wang et al., 2013). EMSAs show that BosR recognizes the Fur and Per box, which unsurprisingly, both contain many As and Ts (Wang et al., 2013). 
+		 DNase I digestion did not show that BosR protects regions upstream of \textit{rpoS}, but found that it protects an upstream region of \textit{bosR}, suggesting it may auto-regulate its own transcription (Wang et al., 2013). Electrophoretic mobility shift assays show that BosR binds to the Fur and Per box, which unsurprisingly, both contain many As and Ts (Wang et al., 2013). 
 	
-		In 2014, the Norgard revised their hypothesized BosR core binding sequence. Instead the sequence \-(ATTTAANTTAAAT) is predicted to be a putative 6-1-6 inverted repeat that serves as the BosR box. This conclusion, however, was also made solely through mutational analysis and subsequent EMSA results. 
+		In 2014, the Norgard lab revised their hypothesized BosR core binding sequence. Instead the sequence \-(ATTTAANTTAAAT) is predicted to be a putative 6-1-6 inverted repeat that serves as the BosR box. This conclusion, however, was also made solely through mutational analysis and subsequent EMSA results. Additional experiments to confirm the consensus operator or alternative approaches to determine the BosR consensus operator are needed. It is important to determine the BosR operator to know what other genes in the \textit{Borrelia} genome BosR regulates. 
 		
-	$*$Will add more here about DNA binding$*$
+	
 	 
 	 
-	 The predicted structure of BosR is based on its sequence similarity to Fur family members, Fur, PerR and Zur. Conserved domains include the helix turn helix DNA binding domain, which consists of a three-winged helix with a pocket for DNA, and four cysteine residues that make up the structural zinc binding site. The structural zinc binding site is highly conserved, while two other possible metal binding sites are variable (Gilston et al., 2014) .  
+	 The structure of BosR is also currently unknown. BosR stucture is predicted based on its sequence similarity to Fur family members, Fur, PerR and Zur (Figure \ref{BosRMonomer}). Conserved domains include the helix turn helix DNA binding domain, which consists of a three-winged helix with a pocket for DNA, and four cysteine residues that make up the structural zinc binding site (Figure \ref{StrucZnBosR}). The structural zinc binding site is highly conserved, while two other possible metal binding sites are variable (Gilston et al., 2014). BosR also has a conserved arginine (R) residue (shown in green, Figure \ref{Alignnment}). These conserved structural features are shown in an alignment of the amino acid sequences of BosR, Fur, PerR, and Zur (Figure \ref{Alignnment}). Research has shown that mutation of arginine (R39) produces**********  The crystal structure of Zur bound to its cognate DNA sequence shows the conserved arginine (teal residue in Figure \ref{ZurDNA}) is oriented towards the DNA. This structure reveals the importance of arginine at this position for DNA binding. 
 	 
-	 $*$Will write more about structure and talk to you. Also fill out captions$*$
-	 \clearpage
 		
 	
 		 	\begin{figure}[t]
@@ -261,7 +245,7 @@ singlelinecheck=false % <-- important
 		 		\centering
 		 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
 		 		\includegraphics[width = \textwidth]{Figures_Images/finalBosRmonomer}
-		 		\caption[Predicted structure BosR Monomer]{Structure of BosR monomer based on Phyre2 prediction given the template 4MTD}
+		 		\caption[Predicted structure BosR Monomer]{Structure of BosR subunit based on Phyre2 prediction given Zur as the template protein (PDB ID 4MTD). This figure was generated with PyMOL.}
 		 		% square brackets here correspond to what is written in the list of figures
 		 		\label{BosRMonomer}
 		 		% this is label for the figure
@@ -276,30 +260,15 @@ singlelinecheck=false % <-- important
 		 		 		\centering
 		 		 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
 		 		 		\includegraphics[width = \textwidth]{Figures_Images/strucznbindingBosR}
-		 		 		\caption[BosR Structural $Zn^{2+}$ Binding Site]{BosR structural $Zn^{2+}$ binding site as predicted by Phyre2 and based on alignment of \textit{E. coli} Zur protein and BosR.}
+		 		 		\caption[BosR Structural $Zn^{2+}$ Binding Site]{BosR structural $Zn^{2+}$ binding site as predicted by Phyre2 and based on alignment of \textit{E. coli} Zur protein (PDB ID 4MTD) and BosR. Conserved cysteine residues coordinate to a $Zn^{2+}$ ion in BosR subunits. This figure was generated with PyMOL.}
 		 		 		% square brackets here correspond to what is written in the list of figures
 		 		 		\label{StrucZnBosR}
 		 		 		% this is label for the figure
 		 		 	\end{figure}
 		 		 	
-		 		
-		 \clearpage
-		 			\begin{figure}[h!tbp]
-		 				% the options are h = here, t = top, b = bottom, p = page of figures. 
-		 				% you can add an exclamation mark to make it try harder, and multiple
-		 				% options if you have an order of preference, e.g.
-		 				% \begin{figure}[h!tbp]
-		 				
-		 				\centering
-		 				% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
-		 				\includegraphics[width = \textwidth]{Figures_Images/ZurDNA}
-		 				\caption[Structure of \textit{E. coli} Zur Protein Bound to DNA]{Structure of \textit{E. coli} Zur protein bound to DNA.}
-		 				% square brackets here correspond to what is written in the list of figures
-		 				\label{ZurDNA}
-		 				% this is label for the figure
-		 			\end{figure}
-		 	\clearpage
+		 	
 		
+		\clearpage
 		 
 		 		 	\begin{figure}[h]
 		 		 		% the options are h = here, t = top, b = bottom, p = page of figures. 
@@ -310,12 +279,29 @@ singlelinecheck=false % <-- important
 		 		 		\centering
 		 		 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
 		 		 		\includegraphics[width = \textwidth]{Figures_Images/proteinalignment}
-		 		 		\caption[BosR Protein Multiple Alignment]{Multiple alignment of protein sequences that are most similiar to BosR. Structural characterizations correspond to the results of Phyre2 prediction of BosR with the template $4MTD$ (\textit{E. coli} Zur).}
+		 		 		\caption[BosR Protein Multiple Alignment]{Multiple alignment of protein sequences that are most similar to BosR. Conserved cysteine residues (light pink) form the structural zinc binding site. Position 39 contains the conserved arginine residue important for DNA-binding (green). Structural characterizations correspond to the results of Phyre2 prediction of BosR with Zur from \textit{E. coli} (PDB ID 4MTD) as the template protein. Alignment was performed in R statistical software using the msa package via Bioconductor (Bodenhofer et al., 2015). } 
 		 		 		% square brackets here correspond to what is written in the list of figures
 		 		 		\label{Alignnment}
 		 		 		% this is label for the figure
 		 		 	\end{figure}
-		 	 
+		 		 	
+		 		 	
+		 		 			 			\begin{figure}[h!tbp]
+		 		 			 				% the options are h = here, t = top, b = bottom, p = page of figures. 
+		 		 			 				% you can add an exclamation mark to make it try harder, and multiple
+		 		 			 				% options if you have an order of preference, e.g.
+		 		 			 				% \begin{figure}[h!tbp]
+		 		 			 				
+		 		 			 				\centering
+		 		 			 				% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
+		 		 			 				\includegraphics[width = \textwidth]{Figures_Images/ZurDNA}
+		 		 			 				\caption[Structure of \textit{E. coli} Zur Protein Bound to DNA]{Structure of \textit{E. coli} Zur protein (PDB ID 4MTD) bound to its cognate DNA. This figure was generated with PyMOL.}
+		 		 			 				% square brackets here correspond to what is written in the list of figures
+		 		 			 				\label{ZurDNA}
+		 		 			 				% this is label for the figure
+		 		 			 			\end{figure}
+		 		 			 			
+		 		 			 			\clearpage
 	
 	
 	%texshade, msa alignment r, pymol, phyre (The Phyre2 web portal for protein modeling, prediction and analysis Kelley LA et al. Nature Protocols 10, 845-858 (2015))
@@ -326,10 +312,10 @@ singlelinecheck=false % <-- important
 		  
 \section{Aims of this Work}
 
-Determining the DNA binding sequence of BosR is critical for identification of other genes that BosR might regulate. 	 Given the amount of conflicting evidence from multiple research groups, a consensus target sequence for BosR has not been clearly identified. Prior work has primarily used mutational or competitive binding approaches to tackle this issue. This thesis employs the CASTing (cyclic amplification and selection of targets) technique to determine the sequence(s) for which BosR has the highest affinity. 
+Determining the DNA binding sequence of BosR is critical for identification of other genes that BosR might regulate. Given the amount of conflicting evidence from multiple research groups, a consensus target sequence for BosR has not been clearly identified. Prior work has primarily used mutational or competitive binding approaches to tackle this issue. This thesis employs the CASTing (cyclic amplification and selection of targets) technique in an attempt to determine the sequence(s) for which BosR has the highest affinity. 
 
 
-CASTing is an \textit{in vitro} selection tool that utilizes a random DNA library as a starting pool for selection. An immobilized protein of interest is incubated with the DNA library, and the sequences that bind are reserved while others are washed away. PCR is used to amplify the DNA to create the DNA pool for the next round of selection. After four to six cycles of this process, the remaining DNA pool should contain only sequences that bind with high affinity, hopefully leading to a consensus sequence. EMSAs can be performed for each cycle and the DNA  can be cloned and sequenced. 
+CASTing is an \textit{in vitro} selection tool that utilizes a random DNA library as a starting pool for selection (Figure \ref{DNALibrary}). An immobilized protein of interest is incubated with the DNA library, and the sequences that bind are retained while others are washed away (Figure \ref{CASTingScheme}). PCR is used to amplify the DNA to create the DNA pool for the next round of selection. After four to six cycles of this process, the remaining DNA pool should contain only sequences that bind with high affinity, hopefully leading to a consensus sequence. EMSAs can be performed for each cycle and the DNA recovered can be cloned and sequenced. The consensus sequence can be determined from the pool of random DNA.
 		 	 	\begin{figure}[h]
 		 	 		% the options are h = here, t = top, b = bottom, p = page of figures.
 		 	 		% you can add an exclamation mark to make it try harder, and multiple
@@ -339,7 +325,7 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
 		 	 		\centering
 		 	 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
 		 	 		\includegraphics{Figures_Images/DNA_library_creation}
-		 	 		\caption[DNA Library Creation]{Scheme of PCR to create DNA Library}
+		 	 		\caption[DNA Library Creation]{PCR scheme to create DNA library of double stranded Ran76 duplex DNA from single stranded Ran 76 DNA.}
 		 	 		 % square brackets here correspond to what is written in the list of figures
 		 	 		\label{DNALibrary}
 		 	 		 % this is label for the figure
@@ -354,14 +340,11 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
 		 		\centering
 		 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
 		 		\includegraphics[width = \textwidth]{Figures_Images/Blown_up_Casting}
-		 		\caption[Binding Reaction and Immunoprecipitation Scheme ]{CASTing scheme}
+		 		\caption[Binding Reaction and Immunoprecipitation Scheme ]{Scheme for immobilization of BosR-FLAG for use in CASTing experiment.}
 		 		\label{CASTingScheme}
 		 	\end{figure}
 		 	
-		 	$*$ will fill out captions and add surface entropy reduction mutation goals.$*$
-		 	
-		 	
-		 	$*$ Sorry!! Will definitely work up intro, haven't really changed much yet$*$
+		 Surface entropy reduction has been shown to aid in crystallization of proteins (Derewenda and Vekilov, 2006). The SERp server predicts sites where mutagenesis to alanine would reduce the surface entropy based on protein sequence. In an effort to crystallize BosR, this thesis uses site-directed mutagenesis to reduce surface entropy for WT and CNDT (C and N terminal doubly truncated) BosR. QKE (96-98) were chosen for mutations to alanine (A) based on the SERp server predictions for BosR (Figure \ref{BosRMonomer}) (Goldschmidt et al., 2007).  
 		 	
 		 
 %\section*{Personal Thesis Notes From Reading with Refs}
@@ -369,12 +352,21 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
 
 %Anyone who needs to use math, tables, a lot of figures, complex cross-references, IPA or who just cares about the final appearance of their document should use \LaTeX. At Reed, math majors are required to use it, most physics majors will want to use it, and many other science majors may want it also.
     \sofiachapter{Materials and Methods}
-    \addcontentsline{toc}{chapter}{Materials and Methods}
-    \chaptermark{Materials and Methods}
-    \markboth{Materials and Methods}{Materials and Methods}
+   
     % The three lines above are to make sure that the headers are right, that the intro gets included in the table of contents, and that it doesn't get numbered 1 so that chapter one is 1.
     
-    $*$ Will fill this out a bit more with specific machines, reagents, etc. Also will add CASTing methods and write actual figure captions. Any weird formatting I will talk to CUS (or Jazz) about. Some placements will change once all text is added.$*$
+%    $*$ Will fill this out a bit more with specific machines, reagents, etc. Also will add CASTing methods and write actual figure captions. Any weird formatting I will talk to CUS (or Jazz) about. Some placements will change once all text is added.$*$
+%    
+% TBE, 1X ( 89 mM Tris, 89 mM boric acid, 2 mM EDTA)
+% TB, 1x for gel shifts (89 mM Tris, 89 mM boric acid)
+% TAE, 1X ( 40 mM Tris acetate, 2 mM EDTA)
+% 
+%Destain Solution (7\% acetic acid, 5\% methanol, 88\% $H_{2}O$)  
+%Coomassie Blue Solution (50\% methanol, 0.05\% Coomassie Brilliant Blue R, 10\% acetic acid, 40\% $H_{2}O$)
+%SDS Loading Buffer (2x 1.52g tris, 20 ml glycerol, 2 g sds, 2 ml bme, 1 mg bromophenol blue, pH adjusted to 6.8 with HCL add water to 100 ml) 
+%
+%SDS Electrophoresis Buffer (5x 15.1g Tris, 72.0 g glycine, 5.0g SDS, $H_{2}O$ to 1L  at 1x pH 8.3)
+ 
    \section{Recombinant DNA Constructs}
    
    \subsection{pSMT3 Vector}
@@ -388,65 +380,121 @@ CASTing is an \textit{in vitro} selection tool that utilizes a random DNA librar
    		\centering
    		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
    		\includegraphics[width = 0.5\textwidth]{Figures_Images/pET_SUMO}
-   		\caption[pET SUMO Vector with BosR Insert]{The pET SUMO vector with BosR gene insert. Figure borrowed from Levitz, 2014. fig cap from tallys thesis = Map of the pSMT3 vector containing a BosR sequence used in this study.
-   			Vector map partially created using SnapGene Viewer™.}
+   		\caption[Map of pSMT3-BosR]{Vector map of pSMT3 with BosR gene insert. The figure is taken from Levitz (2014) and was created using SnapGene Viewer\textsuperscript{TM}.}
    		% square brackets here correspond to what is written in the list of figures
    		\label{pETSUMOBosR}
    		% this is label for the figure
    	\end{figure}
    	
-   The pSMT3 vector was used for all cloning and expression if of all constructs in this study (Figure ~\ref{pETSUMOBosR}). An N terminal His$_{6}$ tagged SMT3 is located upstream of the protein encoding the gene of interest (GOI). The His-SUMO-GOI is downstream of a T7 promoter and  under control of a \textit{lac} operator. Addition of isopropyl $\beta$-D-1-thiogalactopyranoside (IPTG) inhibits activity of the \textit{lac} repressor, allowing for the expression of the construct. The hexahistidine tag aides in purifying the protein using immobilized metal ion affinity chromatography (IMAC). The His-SUMO domain can be cleaved from the protein of interest by ULP-1 (Ubl-specific protease 1). The pSMT3 vector also contains a kanamycin resistance gene for plasmid selection. All plasmids in this study were sequenced through genscript to confirm desired inserts. 
+   The pSMT3 vector was used for all cloning and expression of all constructs in this study (Figure ~\ref{pETSUMOBosR}). The plasmid encodes an N-terminal-His$_{6}$ tagged SMT3 domain upstream of the gene of interest (GOI). Expression of the fusion protein is under the control of a T7 promoter and relies on the activity of T7 RNA polymerase. Addition of isopropyl $\beta$-D-1-thiogalactopyranoside (IPTG) induces expression from the \textit{lac} operator, allowing for the expression of the construct. The hexahistidine tag aides in purifying the protein using immobilized metal ion affinity chromatography (IMAC). The His$_{6}$-SMT3 domain can be cleaved from the protein of interest by Ulp-1 (Ubl-specific protease 1). The pSMT3 vector also contains a kanamycin resistance gene for plasmid selection. All constructs prepared in this study were sequenced through GenScript\textsuperscript{\textregistered} to confirm desired inserts. 
    
    \subsection{\textit{E. coli} Strains}
    
-   DH5$\alpha$ and NiCo21 competent \textit{E. coli} cells (New England Biolabs) were used in this study. Plasmid was transformed into DH5$\alpha$ cells, which do not contain a T7 RNA polymerase, when preparing samples for sequencing or making more plasmid. Plasmid was transformed into NiCo21 cells containing a T7 RNA polymerase when creating glycerol stocks for plasmid expression. 
+   NEB 5-$\alpha$ and NiCo21(DE3) competent \textit{E. coli} cells (New England Biolabs) were used in this study. Plasmid was transformed into NEB 5-$\alpha$ cells, which do not contain a T7 RNA polymerase, for preparation of samples for sequencing or regenerating stocks of plasmid. Plasmid was transformed into NiCo21(DE3) cells containing a T7 RNA polymerase when creating glycerol stocks for plasmid expression.
    
    \subsection{\textit{E. coli} Growth Conditions}
-   \textit{E. coli} cells were grown in sterile Luria  Broth (LB) (25 g per L DI water). All cells in this study were incubated at 37 $^\circ$C. Shaking incubations were at ~200-250 RPM
+   \textit{E. coli} cells were grown in sterile lysogeny  broth (LB) (10 g Tryptone, 
+   10 g NaCl, 5 g Yeast Extract per L DI water, Sigma) with 50 \micro g/ml kanamycin. All cells in this study were incubated at 37 $^\circ$C in a shaking incubator at ~200-250 RPM. LB was inoculated with a single colony picked from a plate, a glycerol stock, or an appropriate volume of an overnight culture. 
    
    \subsection{Transformation}
-   Plasmid was transformed into competent cells. Aliquots of competent cells (50 $\mu$l) stored at -80 $^\circ$C were thawed on ice for 15 minutes. Plasmid (1 or 5 $\mu$l, depending on plasmid prep) was added to cell pellet at the bottom of the tube. Cells were let rest on ice for 30 minutes. Cells were incubated in a 42 $^\circ$C water bath for 30 seconds. Sterile LB (950 $\mu$l) was added to the cells. Cells were put in a shaking incubator (200 RPM) at 37 $^\circ$C for 1 hour and then 250 $\mu$l of culture was plated on LB agar plates containing kanamycin. Plates were allowed to dry and put in a stationary incubator at 37 $^\circ$C overnight. 
+   Plasmids were transformed into commercially obtained competent cells of \textit{E. coli} strains. Aliquots of competent cells (50 $\mu$l) stored at -80 $^\circ$C were thawed on ice for 15 minutes. Approximately 50 ng of plasmid was added to the cell suspension at the bottom of the tube. The suspension was incubated on ice for 30 minutes, followed by heat shock at 42 $^\circ$C for 30 seconds. Sterile LB (950 $\mu$l) was added to the transformation suspension and incubated at 37 $^\circ$C for 1 hour in a shaking incubator (200 RPM). The culture (250 $\mu$l) was plated on LB agar plates containing kanamycin. Plates were allowed to dry and put in a stationary incubator at 37 $^\circ$C overnight. 
    
-   \subsection{Plasmid Mini-Prep}
-   Overnight cultures were spun down for 10 minutes at 4 $^\circ$C between 2000-3260 xg. Supernatant was carefully decanted off and 1.2 mL of sterile H$_{2}$O was added. Pellet was resuspended in water and 600 $\mu$l was used with Zymogen mini-prep kit. Kit instructions were followed to isolate plasmid, with the exception of an additional wash with zyppy wash buffer. 
+    \subsection{Preparation of Glycerol Stocks}
+   Overnight cultures (3 ml, 8-12 hours) were grown from inoculation with a single colony picked from a plate. Sterile glycerol (300 \micro l) mixed with the overnight culture (700 \micro l) was flash frozen with liquid nitrogen and stored at -80 $^\circ$C. 
    
-   \section{Polymerase Chain Reaction}
+     \section{Handling of DNA }
+   \subsection{Plasmid Purification}
+   Overnight cultures (3 ml) were centrifuged for 10 minutes at 4 $^\circ$C between 2000-3260 x g. Supernatant was carefully decanted off and the cells were resuspended in 1.2 ml of sterile H$_{2}$O. The suspension was split in two and 600 $\mu$l was used with the Zyppy\textsuperscript{TM} Plasmid Mini-prep Kit (Zymo Research). Kit instructions were followed to isolate plasmid, with the exception of an additional wash with Zyppy\textsuperscript{TM} wash buffer (Zymo Research). The plasmid was eluted with either 20 or 30 \micro l of Zyppy\textsuperscript{TM} Elution Buffer (Zymo Research) depending on the need for a higher concentration of plasmid. 
    
-   \subsection{Amplification and Quantification of Ran76 for CASTing}
+
+   \section{Agarose Gel Electrophoresis}
    
+   The gels used to visualize Ran76 DNA contained 3\% agarose with 0.5X TBE (44.5 mM Tris, 45.5 mM boric acid, 1 mM EDTA) buffer. The gels to visualize all other DNA in this study contained 1.5\% agarose with 1X TAE (40 mM Tris acetate, 2 mM EDTA) buffer. All DNA gels in this study contained 1X SYBR\textsuperscript{\textregistered} Safe DNA Gel Stain (Invitrogen). All DNA gels were run at $\sim$ 100 V, then exposed to UV light and imaged with a 590 nm filter by the GelLogic 100 Imaging System (Kodak). 
+   
+   \section{CASTing}
+   
+   \subsection{Amplification of ssRan76 for CASTing}
+   The first step of CASTing is to create a pool of double stranded DNA with random base pairs flanked by known sequences. Single stranded DNA (Ran76, Table \ref{DNAsequences}) containing 26 base pairs that could be either A, G, C, or T along with known flanking sequences was synthesized by Integrated DNA Technologies (IDT). Primers were designed to amplify the single stranded Ran76 into double stranded DNA (Pollock, 2001) using PCR (Table \ref{Ran76PCR}). 
+   
+    
 \begin{table}[H]
-	\caption{Conditions for Ran76 PCR to Create Pool of Random DNA Sequences and Conditions of qPCR to Quantify Amount of Recovered Ran76} 
-	\label{Ran76PCRandqPCR}
-	\begin{tabular}{|l | l| |l| l|}
+	\caption[Ran76 PCR Conditions]{Conditions for Ran76 PCR to Create Pool of Random DNA Sequences} 
+	\centering
+	\label{Ran76PCR}
+	\begin{tabular}{|c | c|}
 		\hline
-		Ran76 PCR & Volume ($\mu$l) & Ran76 qPCR & Volume ($\mu$l) \\
+		Ran76 PCR & Volume ($\mu$l) \\
 		\hline 
-		PrimF (10 $\mu$M) & 1 & PrimF (10 $\mu$M) & 1   \\ 
-		Primer R (10 $\mu$M) & 1  & Primer R (10 $\mu$M) & 1  \\  			
-		ds Ran76 (1 pg/$\mu$l) & 10  & Template &  1  \\
-		Taq Buffer (10X) & 5 & Sterile H$_{2}$O & 7.8 \\ 
-		MgCl$_{2}$ (25 mM) & 3 & DMSO & 0.6 \\  
-		dNTPs (10 mM) & 1 & Sybr Green (50X) & 0.2 \\     
-		Sterile H$_{2}$O & 28.75 & 2X Phusion & 10 \\
-		Taq Polymerase (5 units/$\mu$l) & 0.25 & & \\
+		PrimF (10 $\mu$M) & 1    \\ 
+		Primer R (10 $\mu$M) & 1   \\  			
+		ds Ran76 (1 pg/$\mu$l) & 10   \\
+		Taq Buffer (10X) & 5  \\ 
+		MgCl$_{2}$ (25 mM) & 3 \\  
+		dNTPs (10 mM) & 1 \\     
+		Sterile H$_{2}$O & 28.75  \\
+		Taq Polymerase (5 units/$\mu$l) & 0.25  \\
 		\hline   
-		Total Volume & 50 & Total Volume & 20  \\
+		Total Volume & 50   \\
 		\hline
 	\end{tabular}
 \end{table}
 
-The cycling protocol for Ran76 has an initial denaturation for 30 seconds at 95 $^{\circ}$C, denaturation for 15 seconds at 95 $^{\circ}$C, annealing for 15 seconds at 60 $^{\circ}$C, elongation for 10 seconds at 68 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 68 $^{\circ}$C. 
+The cycling protocol for amplification of Ran76 has an initial denaturation for 30 seconds at 95 $^{\circ}$C, denaturation for 15 seconds at 95 $^{\circ}$C, annealing for 15 seconds at 60 $^{\circ}$C, elongation for 10 seconds at 68 $^{\circ}$C, repeat from denaturation 29 times, and final extension for 5 minutes at 68 $^{\circ}$C. 
 
-Quanitative PCR (qPCR) templates include H$_{2}$O, poly dI$\cdot$dC (100 ng/\micro l), recovered DNA from no BosR-FLAG CASTing, recovered DNA from no FLAG antibody CASTing, recovered DNA from BosR-FLAG and FLAG antibody CASTing, and an internal standard of Ran76 (2 pg). The cycling protocol for qPCR has an initial denaturation for 30 seconds at 98 $^{\circ}$C, denaturation for 10 seconds at 98 $^{\circ}$C, annealing for 10 seconds at 60 $^{\circ}$C, elongation for 15 seconds at 72 $^{\circ}$C, repeat from denaturation 29 times, melt from 55 $^{\circ}$C to 95 $^{\circ}$C at a ramp rate of 0.11 $^{\circ}$C/s taking 5 acquistions/$^{\circ}$C.
-
- \subsection{Creation of MntR-FLAG}
+Approximately 20 reactions were run and combined for concentration with the DNA Clean \& Concentrator\textsuperscript{TM} (Zymo Research). Ran76 PCR product was confirmed with agarose gel electrophoresis and quantified by gel comparison and NanoDrop\textsuperscript{\textregistered} (ND-1000 Spectrophotometer). 
 
 
+\section{CASTing Cycle}
+Each cycle of CASTing involves amplification of random DNA, a DNA-Protein binding reaction, selection by magnetic resin, elution of complex from the resin, recovery of bound DNA and quantification of bound DNA. 
+\subsection{Binding Reaction}
+To prepare resin for the binding reaction, a 25\% slurry of protein A magnetic resin (Genscript\textsuperscript{\textregistered}) (40 \micro l) was washed twice with 50 volumes of wash buffer (20 mM HEPES, pH 7.9, 100 mM KCl, 0.2 mM EDTA, 0.2 mM EGTA, 20\% v/v glycerol). After the second wash, 10 \micro l of wash buffer with 50 \micro g/ml of BSA was added to the resin to create a 50\% v/v slurry. The slurry was stored at 4 $^{\circ}$C and ready for use after equilibrating for 2-3 hours. 
 
+Binding reactions require the presence of BosR-FLAG with antibody against FLAG. In addition, controls were performed in which antibody against FLAG or BosR-FLAG was omitted. Binding buffer (20 mM HEPES, pH 7.9, 100 mM KCl, 0.2 mM EDTA, 0.2 mM EGTA, 20\% v/v glycerol, 0.1\% Nonidet P-40 (NP-40), 0.5 mM DTT) with 50 \micro g/ml of BSA (20 \micro l), poly dI$\cdot$dC (200 ng), dsRan76 ($\sim$ 1.5 \micro g), and, if appropriate, BosR-FLAG (5 \micro g) were incubated on ice for 1 hour to allow DNA-protein complexes to form. The equilibrated resin slurry was washed with 250 \micro l of wash buffer (4 $^{\circ}$C). The binding reaction and, if appropriate, antibody against FLAG (5 \micro g) were added to the washed resin. The resin was mixed with solution by gentle pipetting and incubated overnight ($\sim$ 12 hours) with shaking at 4 $^{\circ}$C. 
+
+
+\subsection{Wash and Elution of DNA-Protein Complex from Magnetic Resin}
+
+The resin was washed with 250 \micro l of binding buffer (4 $^{\circ}$C) three times, then resuspended in 200 \micro l of recovery buffer (50 mM Tris$\cdot$Cl, pH 8, 100 mM sodium acetate, 5 mM EDTA, 0.5\% SDS, room temperature) and incubated in at 45 $^{\circ}$C in a heat block for 1 hour. The solution containing protein and DNA was separated from the resin. 
+
+\subsection{Phenol-Chloroform Extraction of DNA}
+The DNA was separated from protein by phenol-chloroform extraction. Phenol: chloroform:isoamyl alcohol (25:24:1, UltraPure) (200 \micro l) was added to the solution containing protein and DNA and vortexed for 20 seconds to emulsify. The solution was centrifuged for 5 minutes at 25 $^{\circ}$C), 16,000 x g. The aqueous phase was transferred to a new tube. 
+\subsection{Ethanol Precipitation of DNA}
+
+ Glycogen (1 \micro g, Amresco), 2.5 M sodium acetate (12 \micro l ), and 100\% ice cold ethanol (25 volumes) were added to the aqueous phase and left at -20 $^{\circ}$C for at least 12 hours. The sample was centrifuged at 16,000 x g at 4 $^{\circ}$C for 30 minutes. The supernatant was carefully removed from the pellet and ice cold 70\% ethanol was added to wash the pellet (150 \micro l). The sample was centrifuged for 2 minutes at 16,000 x g, at 4 $^{\circ}$C and the supernatant was carefully removed again. To re-pellet, the sample was centrifuged again for 30 minutes at 16,000 x g at 4 $^{\circ}$C. The pellet was air dried and resuspended in 10 \micro l of sterile $H_{2}O$. 
+
+\subsection{qPCR to Quantify Recovered DNA}
+Quantitative PCR was used to quantify how much DNA was recovered from a CASTing cycle. Known concentrations of dsRan76 between 0.2 nanograms and 20 attograms were used as template for qPCR to create a standard curve (see Appendix: Summer Research).  Recovered dsRan76 from the ethanol precipitation was used as template for qPCR (Table \ref{qPCRRan76}). For each qPCR assay, controls with either sterile $H_{2}O$ in place of template or 100 ng of poly dI$\cdot$dC were run. A standard of 2 pg of dsRan76 was also included and each condition was run in duplicate.
+
+ The cycling protocol for qPCR has an initial denaturation for 30 seconds at 98 $^{\circ}$C, denaturation for 10 seconds at 98 $^{\circ}$C, annealing for 10 seconds at 60 $^{\circ}$C, elongation for 15 seconds at 72 $^{\circ}$C, repeat from denaturation 29 times, and melt from 55 $^{\circ}$C to 95 $^{\circ}$C at a ramp rate of 0.11 $^{\circ}$C/s taking 5 acquistions/$^{\circ}$C. QPCR was performed in a LightCycler\textsuperscript{\textregistered} 480 Real-Time PCR System (Roche) and analyzed with the system software. 
 
 
 \begin{table}[H]
-	\caption{PCR Conditions to Create MntR-FLAG} 
+	\caption[qPCR Conditions for Ran76]{Conditions of qPCR to Quantify Amount of Recovered Ran76} 
+	\centering
+	\label{qPCRRan76}
+	\begin{tabular}{|c | c|}
+		\hline
+		 Ran76 qPCR & Volume ($\mu$l) \\
+		\hline 
+		 PrimF (10 $\mu$M) & 1   \\ 
+		 Primer R (10 $\mu$M) & 1  \\  			
+		Template &  1  \\
+		 Sterile H$_{2}$O & 7.8 \\ 
+		 DMSO & 0.6 \\  
+		 Sybr Green (50X) & 0.2 \\     
+		 2X Phusion & 10 \\
+		\hline   
+		 Total Volume & 20  \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+ \section{Creation of MntR-FLAG}
+PCR was used to add a FLAG tag (DYKDDDDK) to MntR. Forward primer (MntRFF) is complementary to a portion of the DNA sequence that encodes the SMT3 domain, the BamHI restriction site, and a portion of the DNA sequence that encodes MntR. The reverse primer for the first PCR is complementary to the 3$'$ end of the MntR gene and has the DNA sequence that encodes DYKDDDD. 
+\begin{table}[H]
+	\caption[PCR Conditions to Create MntR-FLAG]{PCR Conditions to Create MntR-FLAG} 
+	\centering
 	\label{MntRFLAGPCR}
 	\begin{tabular}{|l | l| |l| l|}
 		\hline
@@ -467,16 +515,68 @@ Quanitative PCR (qPCR) templates include H$_{2}$O, poly dI$\cdot$dC (100 ng/\mic
 	\end{tabular}
 \end{table}
 
-The cycling protocol for MntR-FLAG PCR has an initial denaturation for 30 seconds at 98 $^{\circ}$C, denaturation for 10 seconds at 98 $^{\circ}$C, annealing for 10 seconds at 60 $^{\circ}$C, elongation for 30 seconds at 72 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 72 $^{\circ}$C. 
+ 
+The first PCR was run with pSMT3-MntR as template and the product was evaluated by agarose gel electrophoresis (Table \ref{MntRFLAGPCR}). PCR product from MntR-FLAG PCR 1 was gel purified using the Zymoclean\textsuperscript{TM} Gel DNA Recovery Kit according to kit instructions. DNA was eluted with 15 \micro l of sterile $H_{2}O$. The gel purified DNA was used as the template for the second PCR which used the same forward primer (MntRFF) and a reverse primer (MntRF3) that was complementary to the sequence encoding DYKDDDDK, the stop codon, the HindIII restriction site, and the sequence from the pSMT3 plasmid. MntR-FLAG PCR 2 was run and the product was evaluated by agarose gel electrophoresis (Table \ref{MntRFLAGPCR}). 
 
+The cycling protocol for amplifying the amplicon encoding MntR-FLAG has an initial denaturation for 30 seconds at 98 $^{\circ}$C, a denaturation for 10 seconds at 98 $^{\circ}$C, an annealing step for 10 seconds at 60 $^{\circ}$C, and an elongation step for 30 seconds at 72 $^{\circ}$C. From the denaturation step, the cycle repeats 29 times, which is followed by a final extension for 5 minutes at 72 $^{\circ}$C. 
+\subsection{Gibson Cloning}
+Using the Gibson Assembly\textsuperscript{\textregistered} Master Mix, the amplicon containing the sequence encoding MntR-FLAG was cloned into a linearized pSMT3 plasmid that was digested with BamHI and HindIII. A three-fold molar excess of insert (MntR-FLAG PCR 2 product) to plasmid was used. The Gibson assembly reaction was performed in a thermocycler set to 50 $^\circ$C for 20 minutes. 
+
+\subsection{Purification of MntR-FLAG}
+
+An overnight culture (10 ml LB plus 50 \micro g/ml kanamycin) of cells harboring the pSMT3-MntR-FLAG were inoculated from a glycerol stock and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM. One liter cultures containing 50 \micro g/ml kanamycin were inoculated with 5 ml of overnight culture and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM until OD 600 between 0.06-0.1 was reached. The cultures were induced with 0.15 g IPTG per liter and returned to the shaking incubator for 3 hours. The cultures were centrifuged at 6700 x g in a F8s-4x1000y FiberLite\textsuperscript{\textregistered} rotor (Sorvall) for 10 minutes at 4 $^\circ$C. The pellets were scraped out and the centrifuge bottles were rinsed with $\sim$ 20 ml of chilled MntR lysis buffer (25 mM HEPES, 300 mM NaCl, 10 mM imidazole, 5\% v/v glycerol, pH 7.5). The tubes were centrifuged at 4 $^\circ$C for 10 minutes at 3850 x g in a Hettich Universal 320 R benchtop centrifuge and the buffer was poured off. The pellet was either stored at -80 $^\circ$C or resuspended directly in 25 ml chilled MntR lysis buffer with PMSF (phenylmethylsulfonyl chloride, 2.5 mg) and 15.5 mg lysozyme. 
+
+
+The cells were lysed by sonication at 70\% amplitude (eight 30 second intervals, 10 seconds on, 20 seconds off with a 2 minute break between the fourth and fifth interval). The lysed cells were centrifuged for 20 min, 17, 200 x g at 4 $^\circ$C SORVALL\textsuperscript{\textregistered} RC 5B Plus centrifuge (SS-34 rotor). The lysate was loaded onto a Co$^{2+}$ column (TALON\textsuperscript{\textregistered} Metal Affinity Resin, Clontech) pre-equilibrated with 50 ml of MntR lysis buffer at 1.5 ml/min, with fractions collected over 5 minute intervals. The column was washed with 50 ml of MntR lysis buffer and eluted with 50 ml of MntR elution buffer (25 mM HEPES, 300 mM NaCl, 300 mM imidazole, 5\% v/v glycerol, pH 7.5). A dot blot of fractions was used to determine which fractions to combine for dialysis. Fractions likely containing SMT3-MntR-FLAG were pooled and dialyzed with 50 \micro l of Ulp against 1 L of MntR dialysis buffer (25 mM HEPES, 300 mM NaCl, 10\% v/v glycerol, pH 7.5) overnight. The dialyzed protein solution was added to a Ni$^{2+}$ column (His60 Ni Superflow Resin, Clontech) pre-equilibrated with chilled MntR lysis buffer at 1.5 ml/min, with fractions collected over 5 minute intervals. The column was washed with 30 ml of MntR lysis buffer and eluted with 50 ml MntR elution buffer. Fractions likely containing MntR-FLAG were combined after analysis by dot blot and dialyzed overnight against MntR dialysis buffer with 75 \micro l $\beta$-mercaptoethanol. The buffer was changed twice more and the protein was concentrated using an Amicon\textsuperscript{\textregistered} Ultra Centrifugal Filter with a 3,000 Da molecular weight cut off. Protein concentration was determined by absorbance at 280 nm using the NanoDrop\textsuperscript{\textregistered} ND-1000 Spectrophotometer. The protein was aliquoted and stored at -20 $^{\circ}$C. 
+
+
+   \section{Fluorescence Anisotropy}
+   All fluorescence anisotropy (FA) experiments were performed with the Beacon\textsuperscript{\textregistered} 2000 Variable Temperature Fluorescence Polarization System with filters appropriate for detection of fluorescence by fluoroscein.  The instrument was blanked on 1 ml of either MntR FA Buffer (25 mM HEPES, 300 mM NaCl, 10\% v/v glycerol, pH 7.5) or BosR FA Buffer (25 mM HEPES, 100 mM NaCl, pH 7.5). Three recordings were taken after adding 1 \micro l of 1 \micro M fluoresceinated DNA to the tube (in addition to 1 \micro l of 1 M manganese chloride for MntR-FLAG). Intensity was monitored and the last mP value was used in the analysis as a zero point. Protein was added in the following increments: 0.5, 0.6, 0.9, 1.2, 1.8, 3.4, 4.7, 7.3, 11.6, 18 \micro l. Readings were taken after 30 seconds and samples were gently vortexed after each addition.  
+   
+   \section{Size Exclusion Chromatography}
+   
+   BosR-FLAG was run through a size exclusion column (Superdex\textsuperscript{TM} 200, 10/300 GL) on a FPLC (fast protein liquid chromatography) system ({\"A}KTA\textsuperscript{TM}). The protein sample, diluted to 1 mg/ml in 25 mM HEPES, 100 mM NaCl, pH 7.5, was sterile filtered (0.1 \micro m) and injected into the column (300 \micro l) at 0.5 ml/min.
+
+\section{Gel Shift and Gel Supershift Assay}
+
+Binding reaction conditions include the following: fluoresceinated DNA (F-DNA) without any protein or antibody, F-DNA with antibody, F-DNA with protein, and F-DNA with protein and antibody. All binding reactions were performed in binding buffer (pH 7.4, 10 mM Tris, 5 mM NaCl, 50 mM KCl, 50 \micro g/ml BSA, 1 mM DTT; 1 mM MnCl for use with MntR-FLAG) and contained $\sim$ 100 ng of fluoresceinated DNA and 1 \micro g of poly dI$\cdot$dC. For the relevant conditions 1 \micro g of protein and/or 1 \micro g of FLAG antibody was added (Table \ref{shiftconditions}).
+
+
+\begin{table}[H]
+	\centering
+	\caption[General Gel Shift Binding Reaction Conditions]{General Gel Shift Binding Reaction Conditions} 
+	
+	\label{shiftconditions}
+	\begin{tabular}{|c|c|}
+		\hline
+		Binding Reaction Conditions & Volume ($\mu$l)  \\
+		\hline 
+		Poly dI$\cdot$dC (1 \micro g/\micro l) & 1   \\ 
+		5X Binding Buffer & 2 \\  			
+		F-DNA (15 \micro M) & 1   \\
+		Protein (if applicable, 1 \micro g/\micro l)) & 1 \\  
+		Sterile H$_{2}$O & add up to total volume   \\     
+		\hline   
+		Total Volume & 10  \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+Binding reactions were performed at room temperature for 30 minutes. Antibody was added and then incubated for another 30 minutes at room temperature. Glycerol (2.5\% v/v) was added to binding reactions prior to gel loading. 
+
+DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels in TB buffer (89 mM Tris, 89 mM boric acid) at 4 $^\circ$C and $\sim$ 35 V for $\sim$ 5 hours. 
+%\clearpage
+
+\section{Reduced Surface Entropy}
 
  \subsection{Site-directed Mutagenesis of BosR}
- 
- 
+ PCR, with primers containing the bases to convert glutamine (Q) 96, lysine (K) 97, and glutamate (E) 98 to alanine, was used to site specifically mutate pSMT3-WT-BosR and pSMT3-CNDT-BosR. Plasmid with either the gene encoding WT BosR or CNDT BosR was the template for PCR and the entire plasmid was amplified to generate plasmid with the mutation (Table \ref{BosRmutpcr}). 
 \begin{table}[H]
-	\caption{BosR Mutagenesis PCR} 
+	\caption{BosR Mutagenesis PCR Conditions} 
+	\centering
 	\label{BosRmutpcr}
-	\begin{tabular}{|l| | l|}
+	\begin{tabular}{|c|c|}
 		\hline
 		BosR Mutagenesis PCR & Volume ($\mu$l)  \\
 		\hline 
@@ -492,65 +592,36 @@ The cycling protocol for MntR-FLAG PCR has an initial denaturation for 30 second
 	\end{tabular}
 \end{table}
 
-The cycling protocol for BosR mutagenesis PCR has an initial denaturation for 30 seconds at 98 $^{\circ}$C, denaturation for 10 seconds at 98 $^{\circ}$C, annealing for 10 seconds at 50 $^{\circ}$C, elongation for 3 minutes at 72 $^{\circ}$C, repeat from denaturation 29 times, final extension for 5 minutes at 72 $^{\circ}$C. 
+The cycling protocol for BosR mutagenesis PCR has an initial denaturation for 30 seconds at 98 $^{\circ}$C, a denaturation for 10 seconds at 98 $^{\circ}$C, an annealing step for 10 seconds at 50 $^{\circ}$C, an elongation step for 3 minutes at 72 $^{\circ}$C. From the denaturation step, the cycle repeats 29 times, which is followed by a final extension for 5 minutes at 72 $^{\circ}$C. 
+
+Plasmid PCR product (pSMT3-BosR-CNDT-AAA) was digested by incubation  with 1 \micro l DpnI (NEB) and 1 mM DTT at 37 $^{\circ}$C for 2 hours. Digested plasmids were transformed into, purified from \textit{E. coli} (NEB 5-$\alpha$), and sequenced to confirm the mutations. 
 
 
-\section{Gel Purification of DNA and Cleaning DNA}
+\subsection{Purification of BosR CNDT QKE to AAA Mutant}
 
-MntR-FLAG PCR 1 was gel purified using the Zymo Clean Gel DNA Recovery Kit according to kit instructions. DNA was eluted with 15 \micro l of sterile $H_{2}O$. All DNA in this study that was cleaned and concentrated was performed with DNA Clean and Concentrator (Zymo Research) according to manufacturer instructions.  
+An overnight culture (10 ml LB plus 50 \micro g/ml) of cells expressing pSMT3-BosR-CNDT-AAA were inoculated from a glycerol stock and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM. Two one liter cultures containing 50 \micro g/ml kanamycin were inoculated with 5 ml of overnight culture and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM until OD 600 between 0.06-0.1 was reached. The cultures were induced with 0.2 g IPTG and returned to the shaking incubator for 2-3 hours. The cultures were centrifuged at 6700 x g in F8s-4x1000y FiberLite\textsuperscript{\textregistered} rotor (Sorvall) for 10 minutes at 4 $^\circ$C. The pellets were scraped out and the centrifuge bottles were rinsed with $\sim$ 20 ml of chilled BosR lysis buffer (25 mM HEPES, 300 mM NaCl, 10 mM imidazole, 5\% v/v glycerol, pH 7.0). The tubes was centrifuged at 4 $^\circ$C for 10 minutes at 3850 x g in a Hettich Universal 320 R benchtop centrifuge and the buffer was poured off. The pellets were stored at -80 $^\circ$C. 
 
-\section{Gibson Cloning}
-MntR-FLAG PCR product was cloned into a linearized pSMT3 plasmid using the Gibson Assembly master mix. Three times excess of insert (MntR-FLAG PCR 2 product) to plasmid was used. Gibson Assembly reaction was performed in a thermocycler set to 50 $^\circ$C for 20 minutes. 
-
-
- 
-\section{Agarose Gel Electrophoresis}
-
-Gels to visualize Ran76 DNA contained 3\% agarose with 0.5x TBE (Tris-borate-EDTA) buffer. Gels to visualize all other DNA in this study contained 1.5\% agarose with 1x TAE (Tris-acetate-EDTA) buffer. All gels in this study contained 1x SYBR Safe DNA stain from Invitrogen. Gels were run at $\sim$ 100 V. 
-
-\section{Protein Purification}
-
-\subsection{MntR-FLAG}
-
-An overnight culture (10 mL LB + 10 \micro l 50 \micro g/mL) of cells expressing pSMT3-MntR-FLAG were inoculated from a glycerol stock and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM. Liter cultures containing 50 \micro g/L kanamycin were inoculated with 5 mL of overnight culture and grown at 37 $^\circ$C, shaking at $\sim$ 250 RPM until OD between 0.06-0.1 was reached. Cells were induced with 0.15 g IPTG and returned to the shaking incubator for 3 hours. Cultures were spun down at 5000 RPM in big centrifuge for 10 minutes. Pellets were scraped out and the centrifuge bottles were rinsed with $\sim$ 20 mL of chilled MntR lysis buffer (25 mM HEPES, 300 mM NaCl, 10 mM imidazole, 5\% v/v glycerol, pH 7.5). Tube was spun down at 4 $^\circ$C for 10 minutes at 3850 xg and buffer was poured off. Pellet was either stored at -80 $^\circ$C or resuspended in 25 mL chilled MntR lysis buffer. PMSF (phenyl-methyl-sulfonyl chloride, 2.5 mg) and 15.5 mg lysozyme were added to the buffer. Cells were lysed by sonication (see Appendix for protocol). Lysed cells were centrifuged for 20 min, 12,000 RPM in SS-34 rotor at 4 $^\circ$C. Lysate was loaded onto a Co$^{2+}$ column pre-equilibrated with 50 mLs of MntR lysis buffer. The flow through was pumped out at 1.5 mL/min and 5 minute fractions were collected. The column was washed with 50 mL of MntR lysis buffer and eluted with 50 mLs of MntR elution buffer (25 mM HEPES, 300 mM NaCl, 300 mM imidazole, 5\% v/v glycerol, pH 7.5). A dot blot of fractions was used to determine which fractions to combine for dialysis. Fractions 10-13 were pooled and dialyzed with 50 \micro l of Ulp against 1 L of MntR dialysis buffer (25 mM HEPES, 300 mM NaCl, 10\% v/v glycerol, pH 7.5) overnight. The protein was added to a Ni$^{2+}$ column pre-equilibrated with chilled MntR lysis buffer. The flow rate was 1.5 mL/min and 5 minute fractions were collected. The column was washed with 30 mLs of MntR lysis buffer and eluted with 50 mLs MntR elution buffer. Fractions 2-7 were combined after analysis by dot blot and dialyzed overnight against MntR dialysis buffer with 75 \micro l $\beta$-mercaptoethanol. The buffer was changed twice more and the protein was concentrated using an Amicon filter... . Protein was frozen and stored at -20 $^{\circ}$C. 
-
-
-\section{Fluorescence Anisotropy}
-All FA experiments were performed with the Beacon... The machine was blanked on 1 mL of buffer. Three recordings were taken after adding 1 \micro l of 1 \micro M fluorinated DNA to the tube. Intensity was monitored to ensure a decrease and the last mP value was used in the analysis as a zero point. Protein was added in the following increments: 0.5, 0.6, 0.9, 1.2, 1.8, 3.4, 4.7, 7.3, 11.6, 18 \micro l. Readings were taken after 30 seconds and samples were gently vortexed after each addition. * Add what filter was used *  
-
-\section{CASTing}
-
-Binding buffer (20 mM HEPES, pH 7.9, 100 mM KCl, 0.2 mM EDTA, 0.2 mM EGTA, 20\% v/v glycerol, 0.1\% Nonidet P-40 (NP-40), 0.5 mM DTT)
-
-Wash buffer (20 mM HEPES, pH 7.9, 100 mM KCl, 0.2 mM EDTA, 0.2 mM EGTA, 20\% v/v glycerol)
-
-Elution buffer (0.5 mM ammonium acetate, 1 mM EDTA, 0.1\% SDS)
-
-Recovery buffer(50 mM Tris$\cdot$Cl, pH 8, 100 mM sodium acetate, 5 mM EDTA, 0.5\% SDS)
-
-
+Both pellets were resuspended in 25 ml chilled BosR lysis buffer with a dash of lysozyme and combined. The cells were lysed by sonication at 20\% amplitude (eight 30 second intervals, 10 seconds on, 20 seconds off with a 2 minute break between the fourth and fifth interval). The lysed cells were centrifuged for 20 min, 17,200 x g at 4 $^\circ$C SORVALL\textsuperscript{\textregistered} RC 5B Plus centrifuge (SS-34 rotor). The lysate was loaded onto a Co$^{2+}$ column (TALON\textsuperscript{\textregistered} Metal Affinity Resin, Clontech) pre-equilibrated with 50 ml of MntR lysis buffer at 1.5 ml/min, with fractions collected over 5 minute intervals. The column was washed with 50 ml of BosR lysis buffer and eluted with 50 ml of BosR elution buffer (25 mM HEPES, 300 mM NaCl, 300 mM imidazole, 5\% v/v glycerol, pH 7.0), with fractions collected at 3 minute intervals. A dot blot of fractions was used to determine which fractions to combine for dialysis. Fractions likely containing SMT3-BosR-CNDT-AAA were pooled and dialyzed with 150 \micro l of Ulp against 1 L of BosR dialysis buffer (25 mM HEPES, 300 mM NaCl, 10\% v/v glycerol, pH 7.0) with 70 \micro l $\beta$-mercaptoethanol overnight. The protein solution was added to a Ni$^{2+}$ column (His60 Ni Superflow Resin, Clontech) pre-equilibrated with chilled MntR lysis buffer at 1.5 ml/min, with fractions collected over 3 minute intervals. The column was washed with 30 ml of BosR lysis buffer and eluted with 50 ml BosR elution buffer. Fractions likely containing BosR-CNDT-AAA were combined after analysis by dot blot and dialyzed overnight against BosR dialysis buffer with 1 mM DTT. The buffer was changed twice more and the protein was concentrated using an Amicon\textsuperscript{\textregistered} Ultra Centrifugal Filter with a 3,000 Da molecular weight cut off. Protein was aliquoted and stored at -80 $^{\circ}$C. 
 
 
 \clearpage
 
 
-\section{Gel Shift and Gel Supershift Assay}
 
-Binding reaction conditions include the following: fluorinated DNA (F-DNA) with expected specific binding alone, with antibody, with protein, with protein and antibody, non-binding F-DNA alone, with antibody, with protein and antibody. All binding reactions were performed in binding buffer (pH 7.4, 10 mM Tris, 5 mM NaCl, 50 mM KCl, 50 \micro g/mL BSA, 1 mM DTT; 1 mM MnCl for use with MntR-FLAG) and contained $\sim$ 100 ng of fluorinated DNA and 1 \micro g of poly dI$\cdot$dC. For the relevant conditions 1 \micro g of protein and/or 1 \micro g of FLAG antibody was added.
-
-Binding reactions were performed at room temperature for 30 minutes. Antibody was added and then incubated for another 30 minutes at room temperature. Glycerol (2.5\% v/v) was added to binding reactions prior to gel loading. 
-
-DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels in either Tris-borate buffer (MntR-FLAG) or Tris-borate-EDTA buffer (BosR-FLAG) at 4 $^\circ$C and $\sim$ 35 V for $\sim$ 5 hours. 
   
  
 
    
-\sofiachapter{Results}
-  
-  $*$ Just lots of figures, will write actual captions and fill in info about what figures mean! $*$
+\sofiachapter{Results and Discussion}
   
     \section{CASTing} 
+    \subsection{Overview of Process}
+    Cyclic Amplification and Selection of Targets (CASTing) is a technique used to determine consensus operator DNA sequences for DNA binding proteins. The technique employs a cyclic process of elimination to isolate the DNA duplexes for which the protein has the greatest affinity (Figure \ref{overallcastingscheme}). Assuming that the protein binds its consensus operator more tightly than any other sequence of DNA, the dominant DNA sequence at the end of process will be the consensus binding sequence. 
     
+    To begin the CASTing process, a pool of random DNA sequences is amplified and presented to an immobilized DNA-binding protein. The non-binding or weakly binding DNA duplexes are washed away and the DNA duplexes bound to protein are isolated. The isolated DNA is quantified by qPCR to monitor the selection process over multiple rounds and isolated DNA is then amplified to generate a pool of random DNA for the subsequent CASTing cycle. After 4 to 6 cycles of CASTing the isolated DNA from the last cycle is sequenced. Based on which sequence(s) are most common, a consensus sequence can be determined. 
+      	
+      	\clearpage 
+    	
           	\begin{figure}[[h!tbp]
           		% the options are h = here, t = top, b = bottom, p = page of figures. 
           		% you can add an exclamation mark to make it try harder, and multiple
@@ -558,13 +629,19 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
           		% \begin{figure}[h!tbp]
           		\centering
           		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
-          		\includegraphics[width = \textwidth]{Figures_Images/Casting_cycle.pdf}
-          		\caption[CASTing Overal Cycle Scheme]{CASTing Process}
+          		\includegraphics[width = \textwidth]{Figures_Images/Casting_cycle_2}
+          		\caption[CASTing Overall Cycle Scheme]{Overview of CASTing  Process. CASTing involves A) amplification to generate a pool of DNA duplexes, B) selection of DNA duplexes to which BosR-FLAG binds by immobilization of the protein, C) isolation of the DNA duplexes to which BosR-FLAG bound, D) quantification of how much DNA was isolated. Amplification of the isolated DNA creates a pool of DNA for the next round of CASTing. After 4-6 cycles, the isolated DNA is sequenced and analyzed to identify a consensus sequence.}
           		% square brackets here correspond to what is written in the list of figures
           		\label{overallcastingscheme}
           		% this is label for the figure
           	\end{figure}
           	
+          	
+          	In this study, magnetic resin complexed with protein A was incubated with antibody against FLAG to immobilize a variant of BosR containing a C terminal FLAG tag (BosR-FLAG). BosR-FLAG was incubated with a pool of random DNA along with poly dI$\cdot$dC to eliminate non-specific DNA binding. The magnetic resin allowed for good separation of the DNA-protein complex from the DNA to which BosR-FLAG did not bind. The un-bound DNA was removed and the bound DNA was recovered and quantified (Figure \ref{Selectionscheme}). 
+          	
+          \clearpage
+        
+          	 
           	\begin{figure}[[h!tbp]
           		% the options are h = here, t = top, b = bottom, p = page of figures. 
           		% you can add an exclamation mark to make it try harder, and multiple
@@ -573,12 +650,17 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
           		\centering
           		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
           		\includegraphics[width = \textwidth]{Figures_Images/Casting_Limited}
-          		\caption[CASTing Selection Scheme]{Selection Step of CASTing Process}
+          		\caption[CASTing Selection Scheme]{The selection step of the CASTing process involves immobilizing the DNA-binding protein and exposing the protein to the pool of random DNA. A magnet is used to separate the resin complexed with BosR-FLAG bound to DNA from the solution with non-binding DNA.}
           		% square brackets here correspond to what is written in the list of figures
           		\label{Selectionscheme}
           		% this is label for the figure
           	\end{figure}
+          	
+         
+          		
+          	 \subsection{Generation of Random DNA Pool}
     
+      To create a pool of random double stranded DNA, a single stranded oligonucleotide with 26 random bases flanked by known bases was amplified by PCR. The forward primer shares the sequence of the 5$'$ end of ssRan76, while the reverse primer is complementary to the 3$'$ end of ssRan76. Once the reverse primer anneals to ssRan76 and creates one copy of dsRan76 then the PCR proceeds normally with both forward and reverse primers annealing (Figure ~\ref{DNALibrary}). Following amplification and purification, duplex Ran76 was quantified by agarose gel electrophoresis and absorbance at 260 nm (NanoDrop\textsuperscript{\textregistered}, ND-1000 Spectrophotometer)(Figure \ref{PCRRan76}). The double stranded Ran76 served as the pool of random DNA for the first round of CASTing. 
     %\begin{figure}[h]
     % the options are h = here, t = top, b = bottom, p = page of figures. 
     % you can add an exclamation mark to make it try harder, and multiple
@@ -587,14 +669,18 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
     	\centering
     	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
     	\includegraphics[width = 0.5\textwidth]{Figures_Images/PCR_9_26_15.pdf}
-    	\caption[PCR to Create Pool of Random DNA]{PCR Ran 76 with 10 pg of Ran76 template cleaned and concentrated}
+    	\caption[PCR to Create Pool of Random DNA]{Agarose gel electrophoresis of duplex Ran76 obtained by PCR amplification. A 1.5\% agarose/TBE gel at $\sim$ 100 V. L2 and L1 contain 2 \micro l and 1 \micro l of NEB 2-log ladder, respectively. Lane 1 contains purified dsRan76.}
     	% square brackets here correspond to what is written in the list of figures
     	\label{PCRRan76}
     	% this is label for the figure
     \end{figure}
     
-      \section{BosR-FLAG}
+    
+    \clearpage
+    	  
+      \subsection{Confirmation of Active BosR-FLAG}
       
+    Before using BosR-FLAG in a CASTing experiment, it was necessary to ensure that adding the FLAG tag did not affect the ability of the protein to bind to DNA. Previous work demonstrated that BosR weakly binds to a 37 bp duplex designed as a high affinity target for an unrelated protein, SloR\_SRE (Table \ref{DNAsequences}) (Levitz, 2014). A fluorescence anisotropy (FA) experiment was performed to test if BosR-FLAG retains affinity for the SloR\_SRE. BosR-FLAG binds to the SloR\_SRE with a $K_{d}$ of 0.97 $\pm$ 0.09 $\mu$M, demonstrating that BosR-FLAG has DNA-binding activity (Figure \ref{BosRFLAGFApoly}). WT BosR has been previously reported to bind to SloR\_SRE with a $K_{H}$ of 56 $\pm$ 1 nM at pH 7.5 and 236 $\pm$ 2 nM at pH 8.5. Since FA was performed in CASTing binding buffer which is pH 7.9, BosR-FLAG has DNA-binding activity similar to WT BosR.  
       \begin{figure}[h]
       	% the options are h = here, t = top, b = bottom, p = page of figures. 
       	% you can add an exclamation mark to make it try harder, and multiple
@@ -603,12 +689,16 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
       	\centering
       	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
       	\includegraphics[width = \textwidth]{Figures_Images/FA_BosR_poly.pdf}
-      	\caption[Determining DNA Activity of BosR-FLAG by Fluorescence Anistropy]{Fluorescence Anistropy for BosR-FLAG with F-SREzy and 2 $\mu$g of poly dI$\cdot$dC in CASTing Binding Buffer  a $K_{d}$ of 0.97 $\pm$ 0.09 $\mu$M based on fit to the equation \FAstdfit , where P refers to protein concentration.}
+      	\caption[Determining Activity of BosR-FLAG by Fluorescence Anistropy]{[BosR-FLAG] vs anisotropy for the titration of BosR-FLAG into F-SloR\_SRE and 2 $\mu$g of poly dI$\cdot$dC in CASTing binding Buffer, pH 7.9. A $K_{d}$ of 0.97 $\pm$ 0.09 $\mu$M was determined based on a binding model that assumes one-to-one stoichiometry. Data were analyzed using R statistical software.}
       	% square brackets here correspond to what is written in the list of figures
       	\label{BosRFLAGFApoly}
       	% this is label for the figure
       \end{figure}
       
+      \clearpage
+      
+    
+       \subsection{Presence of BosR-FLAG Dimers}
             \begin{figure}[h]
             	% the options are h = here, t = top, b = bottom, p = page of figures. 
             	% you can add an exclamation mark to make it try harder, and multiple
@@ -617,23 +707,31 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
             	\centering
             	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
             	\includegraphics[width = \textwidth]{Figures_Images/size_exclusion}
-            	\caption[Size Exclusion Chromatography of BosR-FLAG]{Size Exclusion Chromatography of BosR-FLAG. Protein observed by absorbance at 280 nm.}
+            	\caption[Size Exclusion Chromatography of BosR-FLAG]{BosR-FLAG was run on a size exclusion column (Superdex\textsuperscript{TM} 200, 10/300 GL). Protein was monitored by absorbance at 280 nm. The peak at 16.17 minutes corresponds to the void volume, while the peaks at 28.77 minutes and 32.60 minutes, likely correspond to BosR-FLAG dimers and monomers, respectively.}
             	% square brackets here correspond to what is written in the list of figures
             	\label{BosRFLAGSizeEx}
             	% this is label for the figure
             \end{figure}
       
+      BosR is expected to bind to DNA as a dimer. Previous work has shown that BosR binds cooperatively to DNA with a Hill coefficient of around 2 (Levitz, 2014). BosR-FLAG was run through a size exclusion column to determine if dimers are present in the purified protein sample (Figure \ref{BosRFLAGSizeEx}).  A BosR-FLAG subunit has a molecular weight of 21.2 kDa, while a dimer has a molecular weight of 42.4 kDa. After the void volume at 16.17 minutes, a peak at 28.77 minutes ($\sim$61 kDa), likely corresponding to dimers appeared and a peak at 32.6 minutes ($\sim$26 kDa), likely corresponding to disassociated subunits appeared (Figure \ref{BosRFLAGSizeEx}). These results suggest that BosR-FLAG dimers may be in equilibrium with disassociated subunits. The presence of BosR-FLAG dimers is corroborated by the FA results that demonstrate that BosR-FLAG is binding to DNA.   % Based on the precision of the column, these peaks likely correspond to dimers and monomers
       
-    \begin{figure}[h!tbp]
+       \subsection{Quantitative PCR of 1st CASTing Cycle DNA}
+       
+       One round of CASTing was performed with Ran76 (Figure \ref{PCRRan76}) and BosR-FLAG. Quantitative PCR was performed according to the conditions in Table \ref{qPCRRan76} to quantify the amount of DNA recovered after a phenol-chloroform extraction and ethanol precipitation. The fluorescence curves for the - BosR-FLAG, - FLAG Ab, and + BosR-FLAG with + FLAG Ab samples all resemble those with poly dI$\cdot$dC instead of template DNA (Figure \ref{qPCRcycle1fluorcurves}). This result suggests that BosR-FLAG failed to bind duplex DNA from the dsRan76 pool. The fluorescence curves for the 2 pg duplex Ran76 DNA standard and $H_{2}O$ instead of template DNA (Figure \ref{qPCRcycle1fluorcurves}) are both similar to those observed previously. A standard curve for a wide range of concentrations of Ran76 duplex DNA was made during previous research, with $H_{2}O$ instead of template DNA as a control (Appendix: Summer Research).
+       
+       
+    \begin{figure}[t]
     	\centering
     	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
     	\includegraphics[width =\textwidth]{Figures_Images/SC_qPCR_cycle1_Ran76_Fluor_curves.pdf}
-    	\caption[qPCR of 1st Cycle of CASTing Fluorescence Curves]{qPCR performed with different templates}
+    	\caption[qPCR of 1st Cycle of CASTing Fluorescence Curves]{Fluorescence curves from qPCR performed with samples recovered from the first round of CASTing. The blue, red, green, pink, gray, and yellow curves represent $H_{2}O$, poly dI$\cdot$dC, Ran76 recovered from no BosR-FLAG, no Ab FLAG, BosR-FLAG and Ab FLAG, and a 2 pg standard as template, respectively. Each sample was run in duplicate to check for internal consistency.}
     	% square brackets here correspond to what is written in the list of figures
     	\label{qPCRcycle1fluorcurves}
     	% this is label for the figure
     \end{figure}
     
+    
+    The quantitative PCR products (Figure \ref{qPCRcycle1fluorcurves}) were evaluated by agarose gel electrophoresis (Figure \ref{qPCRcycle1}). The poly dI$\cdot$dC is composed of long strands and appears in the gel as a band or smear just below the well (Figure \ref{qPCRcycle1}). The band in lane 6 appears to be slightly larger compared to the faint bands produced by $H_{2}O$ instead of DNA template (lane 1) (Figure \ref{qPCRcycle1}). The bands for the control lacking BosR-FLAG (lane 3), the control lacking antibody against FLAG (lane 4), and the experimental condition with BosR-FLAG and FLAG Ab (lane 5) do not appear to be different from the bands produced with $H_{2}O$ or poly dI$\cdot$dC instead of template DNA (Figure \ref{qPCRcycle1}). These results further suggest that no Ran76 duplex DNA was recovered from the control or experimental binding reactions. 
     
     
     %\begin{figure}[h]
@@ -644,17 +742,22 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
     	\centering
     	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
     	\includegraphics[width = 0.5\textwidth]{Figures_Images/qPCR_cycle1_10_19_15.pdf}
-    	\caption[qPCR of 1st Cycle of CASTing Gel Analysis]{qPCR samples run on 3\% agarose/TBE gel. Lane L contains 2 $\mu$l of 2-log ladder (NEB), lanes 1-6 are qPCR reactions with various templates. Template lane 1, $H_{2}O$, lane 2, poly dI $\cdot$ dC, lane 3, DNA from binding reaction without BosR-FLAG, lane 4, DNA from binding reaction without FLAG antibody, lane 5 DNA from binding reaction with 5 $\mu$g of both BosR-FLAG and FLAG antibody, lane 6, 2 pg standard of ds Ran76.}
+    	\caption[qPCR of 1st Cycle of CASTing Gel Analysis]{Products of qPCR run on a 3\% agarose/TBE gel. Lane L contains 2 $\mu$l of 2-log ladder (NEB), lanes 1-6 are qPCR reactions performed on various samples of CASTing. Template lane 1, $H_{2}O$, lane 2, poly dI $\cdot$ dC, lane 3, DNA from binding reaction without BosR-FLAG, lane 4, DNA from binding reaction without FLAG antibody, lane 5 DNA from binding reaction with 5 $\mu$g of both BosR-FLAG and FLAG antibody, lane 6, 2 pg standard of Ran76 duplex DNA.}
     	% square brackets here correspond to what is written in the list of figures
     	\label{qPCRcycle1}
     	% this is label for the figure
     \end{figure}
     
+    The failure of qPCR to reveal DNA bound to BosR-FLAG was concerning and prompted an effort to generate a positive control. A FLAG tag was added to MnrR, a DNA-binding protein of known structure and consensus operator sequence, to serve as the positive control for CASTing. 
     
-    
+  
     \clearpage
 
   \section{MntR-FLAG}
+  
+  
+  In order to add a FLAG tag to MntR, primers were designed to add the DNA sequence that encodes the FLAG sequence DYKDDDDK to pSMT3-MntR. The first round of PCR was used to append the DNA sequence encoding FLAG to \textit{mntR}. The second round of PCR was used to replace the stop codon and HindIII restriction site that was removed by the previous PCR (Figure \ref{MntRFLAG_Scheme}). 
+  
   
     	\begin{figure}[h]
     		% the options are h = here, t = top, b = bottom, p = page of figures.
@@ -665,18 +768,13 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
     		\centering
     		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
     		\includegraphics[width = \textwidth]{Figures_Images/mntR_FLAG_PCR_scheme_final}
-    		\caption[MntR-FLAG PCR Scheme]{MntR-FLAG was constructed by designing primers...}
+    		\caption[MntR-FLAG PCR Scheme]{Scheme for generation of pSMT3-MntR-FLAG. The plasmid was constructed through amplification of pSMT3-MntR with primers designed to add the sequence that encodes FLAG (green above) to end of the gene encoding MntR. The plasmid (black) also contains the SMT3 domain (orange), the \textit{mntR} gene (purple), BamHI and HindIII restriction sites (dark and light blue, respectively), and a stop codon (red).} 
     		\label{MntRFLAG_Scheme}
     	\end{figure}
     	
-    	
+  \clearpage
   
-
-   
-    	
-
-  
-
+  After confirming \textit{mntR} was present in pSMT3-MntR purified from \textit{E. coli} (Figure \ref{PCRMntRFLAG}, A. MntR ), a DNA duplex encoding MntR-FLAG was generated by PCR (Figure \ref{PCRMntRFLAG}, B. MntR-FLAG 1, C. MntR-FLAG 2). The DNA duplex was cloned back into the pSMT3 vector, using the Gibson assembly protocol (Figure \ref{MntRFLAG_Scheme}). Following cloning, pSMT3 -MntR was transformed into and purified from \textit{E. coli} (NEB 5-$\alpha$) then sequenced to confirm the addition of the sequence encoding FLAG to \textit{mntR}. 
         	%\begin{figure}[h]
         	% the options are h = here, t = top, b = bottom, p = page of figures. 
         	% you can add an exclamation mark to make it try harder, and multiple
@@ -685,22 +783,33 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
         		\centering
         		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
         		\includegraphics[width = \textwidth]{Figures_Images/SC_PCR_MntRFLAG.pdf}
-        		\caption[PCR to Create MntR-FLAG]{PCR to check MntR in pSMT3 plasmid. PCR 1 and 2 for final construct.}
+        		\caption[PCR to Create MntR-FLAG]{Agarose gel electrophoresis of duplex \textit{mntR} (MntR), and duplex \textit{mntR-FLAG} (MntR-FLAG 1 and MntR-FLAG 2) obtained by PCR amplification. A 1.5\% agarose/TAE gel was run at $\sim$ 100 V. Lanes labeled L contain 1 \micro l of NEB 2-log ladder.}
         		% square brackets here correspond to what is written in the list of figures
         		\label{PCRMntRFLAG}
         		% this is label for the figure
         	\end{figure}
+        	
+        	\clearpage
      
+     \subsection{Purification of MntR-FLAG}
+     
+     \textit{E. coli} (strain NiCo21(DE3)) was transformed with pSMT3-MntR-FLAG. A glycerol stock was made from overnight cultures harboring pSMT3-MntR-FLAG. One liter cultures of cells expressing MntR-FLAG were pelleted for purification of the FLAG labeled protein. SUMO-MntR-FLAG fusion protein was purified from lysed cells by Co$^{2+}$ metal affinity column chromatography. The SMT3 domain protein was cleaved from the purified fusion protein using Ulp-1 and MntR-FLAG was separated by Ni$^{2+}$ metal affinity column chromatography. Trace impurities were present in the purification of MntR-FLAG (Figure \ref{PurificationMntRFLAG}). 
         	\begin{figure}[h!tbp]
         		\centering
         		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
         		\includegraphics[width = \textwidth]{Figures_Images/MntR_FLAG_Protein.pdf}
-        		\caption[MntR-FLAG Purification]{SDS Page Gel of fractions for MntR-FLAG purification}
+        		\caption[MntR-FLAG Purification]{SDS-PAGE Gel (15\% acrylamide) of fractions collected during MntR-FLAG purification. Lanes 1-6 contain MntR-FLAG ($\sim$ 17 kDa) and some impurities at 26 kDa, 34 kDa, and 72 kDa. Lanes 7-10 contain SUMO and uncleaved SUMO-MntR-FLAG fusion protein eluted from the Ni$^{2+}$ column. Lane 11 contains the fusion protein eluted from the Co$^{2+}$ column. Lane 12 contains the lysate loaded onto the column. Lane L contains Spectra\textsuperscript{TM} Multicolor Broad Range Protein Ladder.}
         		% square brackets here correspond to what is written in the list of figures
         		\label{PurificationMntRFLAG}
         		% this is label for the figure
         	\end{figure}
+        	
+        	\clearpage
      
+      \subsection{Confirmation of Active MntR-FLAG}
+      
+      To ensure that adding the FLAG tag to MntR did not alter the protein's ability to bind DNA, a fluorescence anisotropy experiment was performed with a fluoresceinated cognate sequence, M21 (Table \ref{DNAsequences}). MntR-FLAG binds to M21 with a $K_{d}$ of 29 $\pm$ 3 nM, demonstrating that MntR-FLAG has retains DNA-binding activity (Figure \ref{MntRFLAGFA}). Wild-type MntR has been previously reported to bind M21 with a $K_{d}$ of 5.6 $\pm$ 0.8 nM (McGuire, 2013). 
+ 
        	\begin{figure}[h!tbp]
        		% the options are h = here, t = top, b = bottom, p = page of figures. 
        		% you can add an exclamation mark to make it try harder, and multiple
@@ -709,27 +818,37 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
        		\centering
        		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
        		\includegraphics[width = \textwidth]{Figures_Images/MntR_FLAG_FA.pdf}
-       		\caption[Determining DNA Activity of MntR-FLAG by Fluorescence Anistropy]{Fluorescence Anistropy for MntR-FLAG with 1 mM Mn$^2+$ F-M21 with a $K_{d}$ of 29 $\pm$ 3 nM based on fit to the equation \FAstdfit , where P refers to protein concentration.}
+       		\caption[Determining Activity of MntR-FLAG by Fluorescence Anistropy]{Anisotropy vs [MntR-FLAG]  for the titration of MntR-FLAG into F-M21 and 1 \micro M Mn$^{2+}$ in MntR FA buffer. Data were analyzed using R statistical software assuming a single site binding model and a $K_{d}$ of 29 $\pm$ 3 nM was determined.}
        		% square brackets here correspond to what is written in the list of figures
        		\label{MntRFLAGFA}
        		% this is label for the figure
        	\end{figure}
       
+      \clearpage
+      
+\section{Gel Shifts and Super Shifts}
+
 
   		\begin{figure}[h!tbp]
   			% the options are h = here, t = top, b = bottom, p = page of figures.
   			% you can add an exclamation mark to make it try harder, and multiple
   			% options if you have an order of preference, e.g.
   			% \begin{figure}[h!tbp]
-  			
+  		
   			\centering
   			% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
   			\includegraphics[width = \textwidth]{Figures_Images/Gel_Shift_BosR}
-  			\caption[Gel Shift and Super Shift]{Visual representation of gel shift and super shift for BosR-FLAG. The same shift was performed with MntR-FLAG with appropriate specific and non-specific fluorinated DNA.}
+  			\caption[Gel Shift and Super Shift]{Visual representation of a gel shift assay and super shift assay with BosR-FLAG and antibody against FLAG. The same assays were performed with MntR-FLAG with appropriate cognate and non-cognate fluoresceinated DNA (F-DNA). F-DNA is incubated with protein and protein and antibody. Controls include F-DNA alone and F-DNA with antibody. The formation of protein-DNA or antibody-protein-DNA complexes are observed by shifts on the gel that are different from controls.}
   			\label{GelShift_Scheme}
   		\end{figure}
+  		
+A gel shift assay is used to determine whether a protein is binding to DNA, while a super shift assay is used to determine whether antibody is binding to a protein-DNA complex. Fluoresceinated DNA (F-DNA) is incubated with protein. Ideally, if the protein binds the DNA, when the complex is run on a gel it will run slower than the F-DNA alone. If antibody, protein, and F-DNA are incubated and a complex forms it will run even slower than the protein-DNA complex (Figure \ref{GelShift_Scheme}). A non-cognate sequence of DNA that the protein will not bind is run as a control (Figure \ref{GelShift_Scheme}).  
 
-		\begin{figure}[h!tbp]
+
+A gel shift and super shift assay was performed in order to confirm that the anti-FLAG antibody was not interfering with the interaction of  BosR-FLAG and MntR-FLAG with DNA and that antibody against FLAG was capable of binding to BosR-FLAG and MntR-FLAG when complexed with DNA. 
+
+
+	\begin{figure}[h!tbp]
 			% the options are h = here, t = top, b = bottom, p = page of figures.
 			% you can add an exclamation mark to make it try harder, and multiple
 			% options if you have an order of preference, e.g.
@@ -738,9 +857,16 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
 			\centering
 			% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
 			\includegraphics[width = \textwidth]{Figures_Images/BosR_gel_shift_real}
-			\caption[BosR-FLAG Gel Shift]{Gel shift with BosR-FLAG. Controls included non-specific fluorinated DNA (Sca1.24) and lanes with F-DNA only and F-DNA with Anti-FLAG antibody.}
+			\caption[BosR-FLAG Gel Shift]{Gel shift and super shift with BosR-FLAG (P), F-SloR\_SRE, and anti-FLAG antibody (Ab). Controls included non-cognate fluoresceinated DNA (F-Sca1.24) and lanes with F-DNA (D) only and F-DNA with anti-FLAG antibody. A 5\% non-denaturing polyacrylamide gel was run in TB buffer at 4 $^{\circ}$C, 35 V. }
 			\label{GelShift_BosRFLAG}
 		\end{figure}
+		
+		 
+		 
+A gel shift and super shift assay with BosR-FLAG was performed with the F-SloR\_SRE as cognate DNA to which BosR-FLAG should bind and F-ScaC1.24, previously identified as a duplex that BosR does not have any appreciably affinity (Levitz, 2014) (Figure \ref{GelShift_BosRFLAG}). 
+
+The BosR-FLAG complexed with F-SloR\_SRE is shifted up from F-SloR\_SRE alone on the gel, providing further confirmation that BosR-FLAG is binding SloR\_SRE (Figure \ref{GelShift_BosRFLAG}). However, antibody to FLAG does not appear to bind the BosR-FLAG-DNA complex.  
+\subsection{MntR-FLAG Gel Shift and Super Shift}
 
 
 		\begin{figure}[h!tbp]
@@ -752,31 +878,43 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
 			\centering
 			% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
 			\includegraphics[width = \textwidth]{Figures_Images/MntRFLAG_gel_shift_real}
-			\caption[MntR-FLAG Gel Shift]{Gel shift with MntR-FLAG. Controls included non-specific fluorinated DNA (MDR1 oligos) and lanes with F-DNA only and F-DNA with Anti-FLAG antibody. Edited in Adobe Photo shop for better visualization of faint bands. The white spots are artifacts of the enhancement.} 
+			\caption[MntR-FLAG Gel Shift]{Gel shift and super shift with MntR-FLAG (P), F-M21, and anti-FLAG antibody. Controls included non-cognate fluoresceinated DNA (F-MDR1) and lanes with F-DNA (D) only and F-DNA with anti-FLAG antibody.  A 5\% non-denaturing polyacrylamide gel was run in TB buffer at 4 $^{\circ}$C, 35 V. Image was edited in Adobe Photo shop for better visualization of faint bands. The white spots are artifacts of the enhancement.} 
 			\label{GelShift_MntRFLAG}
 		\end{figure}
+		
+A gel shift and super shift assay with MntR-FLAG was performed with F-M21, a duplex containing a cognate binding sequence for MntR (Figure \ref{GelShift_MntRFLAG}). F-MDR1 (Table \ref{DNAsequences}), a duplex containing a non-cognate DNA sequence to which MntR-FLAG should not bind, was used as a control (Figure \ref{GelShift_MntRFLAG}). MntR is not expected to have any appreciably affinity for F-MDR1 (Arthur Glasfeld, personal communication). The MntR-FLAG complexed with F-M21 is shifted from F-M21 alone on the gel, providing further confirmation that MntR-FLAG binds M21 (Figure \ref{GelShift_MntRFLAG}). Unfortunately, antibody to FLAG does not appear to bind the MntR-FLAG-DNA complex. The ability of antibody-protein-DNA complex to form is crucial for the success of a CASTing experiment. These results provide an explanation for the failure to recover any DNA duplex Ran76 from the CASTing experiment performed in this study. 
 
+One explanation for the lack of antibody binding is that the antibody had gone bad, in which case, one could perform the gel and super shift with new antibody against FLAG. 
 
+A western blot of BosR-FLAG with antibody against FLAG under denaturing conditions revealed that the antibody was able to bind BosR-FLAG (Jazz Weisman and Arthur Glasfeld, personal communication). However, the FLAG tag may not be as available to the antibody in the native BosR conformation. To test this hypothesis, one could run the western blot again under native conditions.
 
-\clearpage
-
-   \section{BosR Reduced Surface Entropy}
+If under native conditions the antibody is capable of binding the FLAG tagged proteins, then the lack of antibody binding in the gel shifts could be explained by the FLAG tag placement relative to the dimerization domains of the proteins. Since both MntR and BosR bind to DNA as dimers and the super shift is performed by incubating protein and DNA together first and then adding antibody, it is possible that the antibody could recognize the FLAG tag for a subunit, but not a dimer. 
    
-   	 	\begin{figure}[t]
+   	\section{Surface Entropy Reduction of BosR}
+   	
+   	   The BosR sequence was run through the Surface Entropy Reduction prediction (SERp) server from UCLA, which is a tool that predicts suitable sites of mutation to protein surface entropy as method to aid in protein crystallization (Goldschmidt et al., 2007). Glutamine (Q) 96, lysine (K) 97, and glutamate (E) 98 were identified as residues that could be mutated to alanine (A) to reduce surface entropy without altering structure important for BosR function.
+   	    
+   	 	\begin{figure}[H]
    	 		% the options are h = here, t = top, b = bottom, p = page of figures.
    	 		% you can add an exclamation mark to make it try harder, and multiple
    	 		% options if you have an order of preference, e.g.
    	 		% \begin{figure}[h!tbp]
-   	 		
+ 
    	 		\centering
    	 		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
    	 		\includegraphics[width = 0.75\textwidth]{Figures_Images/finalBosRmonomer}
-   	 		\caption[Predicted structure BosR Monomer]{Structure of BosR monomer based on Phyre2 prediction given the template 4MTD}
+   	 			\caption[Predicted structure BosR Monomer]{Structure of BosR subunit based on Phyre2 prediction given Zur as the template protein (PDB ID 4MTD). This figure was generated with PyMOL.}
    	 		% square brackets here correspond to what is written in the list of figures
    	 		\label{BosRMonomer_results}
    	 		% this is label for the figure
    	 	\end{figure}
    	 	
+%   	 	\clearpage
+   	 	
+   
+   	 	
+   	 	PCR was used to generate a triple mutant (Q96A, K97A, and E98A) in pSMT3-WT BosR and pSMT3-CNDT BosR (Figure \ref{BosRMut_Scheme}). tag to MntR (Figure 18). Primers were designed mutate appropriate bases in order change the codons for glutamine (Q), lysine (K), and glutamate (E) to codons for alanine (A).  
+   	 	\clearpage
       	\begin{figure}[h!tbp]
       		% the options are h = here, t = top, b = bottom, p = page of figures.
       		% you can add an exclamation mark to make it try harder, and multiple
@@ -790,61 +928,73 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
       		\label{BosRMut_Scheme}
       	\end{figure}
       	
-   
+ The SMT3-WT BosR and SMT3-CNDT (C and N terminal doubly truncated) BosR plasmids were amplified to give rise to plasmids with the mutation (Figure \ref{BosRmutPCR}). Following PCR and DpnI digestion, the plasmids were transformed into and purified from \textit{E. coli} then sequenced to confirm the mutations. 
+ 
+
     		 \begin{figure}[h!tbp]
     		 	\centering
     		 	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
     		 	\includegraphics[width = 0.5\textwidth]{Figures_Images/SC_BosR_Mut_PCR.pdf}
-    		 	\caption[BosR QKE --> AAA Site Directed Mutagenesis PCR Gel]{PCR of pSMT3-BosR WT and CNDT for site directed mutagenesis, QKE to AAA. gradient}
+    		 	\caption[BosR QKE --> AAA Site Directed Mutagenesis PCR Gel]{ Figure 18: Agarose gel electrophoresis of PCR products from reaction to introduce the QKE to AAA mutation. Lanes 1-3 and 4-5 contain pSMT3-AAA-WT-BosR and pSMT3-AAA-CNDT-BosR obtained by PCR amplification, respectively. A 1.5\% agarose/TAE gel was run at $\sim$ 100 V. The lane labeled L contains 2 \micro l of NEB 2-log ladder.}
     		 	% square brackets here correspond to what is written in the list of figures
     		 	\label{BosRmutPCR}
     		 	% this is label for the figure
     		 \end{figure}
   
+  \clearpage
+    \subsection{Purification of CNDT BosR QKE to AAA Mutant}
+    
+     \textit{E. coli} (strain NiCo21(DE3)) was transformed with pSMT3-AAA-CNDT-BosR and cell expressing AAA-CNDT-BosR were pelleted for purification. SUMO-AAA-CNDT-BosR fusion protein was purified from lysed cells by Co$^{2+}$ metal affinity column chromatography. The SMT3 domain protein was cleaved from the purified fusion protein using Ulp-1 and AAA-CNDT-BosR was separated by Ni$^{2+}$ metal affinity column chromatography. Trace impurities around 72 kDa were present in the purification of AAA-CNDT-BosR (Figure \ref{BosRmutCNDTPurification}). Purified AAA-CNDT-BosR was concentrated to 8.54 mg/ml for crystallization.  
   		 \begin{figure}[h!tbp]
   		 	\centering
   		 	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
   		 	\includegraphics[width = 
   		 	\textwidth]{Figures_Images/BosRCNDTMUT}
-  		 	\caption[Purification of BosR CNDT Mutant QKE --> AAA]{SDS-PAGE (15\%) gel of fractions from BosR CNDT QKE to AAA mutant}
+  		 	\caption[Purification of BosR CNDT Mutant QKE --> AAA]{SDS-PAGE (15\%) gel of fractions from BosR CNDT QKE to AAA mutant 
+  		 		
+  		 		SDS-PAGE Gel (15\% acrylamide) of fractions collected during AAA-CNDT-BosR purification. Lanes 1-9 contain AAA-CNDT-BosR ($\sim$ 17 kDa) with trace impurities at 72 kDa. Lane 10 contains SUMO and uncleaved SUMO-AAA-CNDT-BosR fusion protein eluted from the Ni$^{2+}$ column. Lane 11 contains dialyzed protein loaded onto the Ni$^{2+}$ column. Lanes 13 and 12 contain the lysate prior and after loading onto the Co$^{2+}$ column, respectively. Lane L contains Spectra\textsuperscript{TM} Multicolor Broad Range Protein Ladder.}
   		 	% square brackets here correspond to what is written in the list of figures
   		 	\label{BosRmutCNDTPurification}
   		 	% this is label for the figure
   		 \end{figure}
-  
-  
-  
+  		 
+  		 
+  		 
+ This study began optimization of the CASTing experiment and employed qPCR as a novel method to monitor the selection process. Constructs to produce WT and CNDT BosR AAA mutant proteins were successfully made for use in future attempts at protein crystallization. Gel and super shift protocols compatible for use with metalloregulatory proteins were created. Future work includes further optimization of CASTing and tagged protein constructs. 
    
 \appendix
 
  \sofiachapter{Supplemental Methods}
  
  \begin{table}[!hp]
- 	\caption{DNA Sequences for Manipulation of DNA} 
+ 	\caption[Relevant DNA Sequences]{DNA sequences present in this study.} 
  	\label{DNAsequences}
  	\begin{tabular}{|l | p{12cm}|}
  		\hline
  		Label & Sequence \\
- 		\hline 
- 		PrimF & 5'-GCT GCA GTT GCA CTG AAT TCG CCT C-3'  \\ 
  		\hline
- 		Primer R  & 5'-CAG GTC AGT TCA GCG GAT CCT GTC G-3' \\  			
+ 		Ran76 &5$'$-CAG GTC AGT TCA GCG GAT CCT GTC G NNNNNNNNNNNNNNNNNNNNNNNNNN GAG GCG AAT TCA GTG 
+ 		CAA CTG CAG C-3$'$ \\
  		\hline
- 		MntRFF & 5'-ACA GAG AAC AGA TTG GTG GAA CAA CAC CAA G-3'    \\
+ 		PrimF & 5$'$-GCT GCA GTT GCA CTG AAT TCG CCT C-3$'$  \\ 
  		\hline
- 		MntRF1  & 5'-GTC GTC GTC GTC TTT GTA GTC CTG ATT ATG TTC TGT TTT CTT TTG GAT TG-3'  \\ 
+ 		Primer R  & 5$'$-CAG GTC AGT TCA GCG GAT CCT GTC G-3$'$ \\  			
  		\hline
- 		MntRF3 & 5'CGA AGT GCG GCC GCA AGC TTT TAT TTG TCG TCG TCG TCT TTG TAG TCC TG-3'  \\  
+ 		MntRFF & 5$'$-ACA GAG AAC AGA TTG GTG GAA CAA CAC CAA G-3$'$    \\
  		\hline
- 		AAAf & 5'-ACT GAT GCA GCA GCA ACA AAA TTT TAT CTA AGC TTG-3'  \\     
+ 		MntRF1  & 5$'$-GTC GTC GTC GTC TTT GTA GTC CTG ATT ATG TTC TGT TTT CTT TTG GAT TG-3$'$  \\ 
  		\hline
- 		AAAr & 5'-TTT TGT TGC TGC TGC ATC AGT AGT TTT TAT ATC TTT TAG-3' \\
+ 		MntRF3 & 5$'$CGA AGT GCG GCC GCA AGC TTT TAT TTG TCG TCG TCG TCT TTG TAG TCC TG-3$'$  \\  
  		\hline
- 		F-M21 & 5'-F-GAG TTT CCT TAA GGC AAA TTG-3'  \\
+ 		AAAf & 5$'$-ACT GAT GCA GCA GCA ACA AAA TTT TAT CTA AGC TTG-3$'$  \\     
  		\hline
- 		MDR1 & *need to find seq* \\  
+ 		AAAr & 5$'$-TTT TGT TGC TGC TGC ATC AGT AGT TTT TAT ATC TTT TAG-3$'$ \\
  		\hline
- 		SRE & *need to find seq*  \\
+ 		F-M21 & 5$'$-F-GAG TTT CCT TAA GGC AAA TTG-3$'$  \\
+ 		\hline
+ 		F-MDR1 & 5$'$-F-TAT GTT CGC TGT GCG AAC GAA-3$'$ \\  
+ 		\hline
+ 		F-SloR\_SRE & 5$'$-F-CAC ATC TAA TAT AAA AAT TAA CTT GAC TTA ATT TTC-3$'$  \\
  		\hline
  	\end{tabular}
  \end{table}
@@ -860,7 +1010,7 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
            		\centering
            		% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
            		\includegraphics[width = \textwidth]{Figures_Images/FA_BosR_active_sum.pdf}
-           		\caption[Determining DNA Activity of BosR-FLAG by Fluorescence Anistropy]{Fluorescence Anistropy for BosR-FLAG with F-SREzy in TL BosR FA Buffer  a $K_{d}$ of 0.99 $\pm$ 0.09 $\mu$M based on fit to the equation \FAstdfit , where P refers to protein concentration.}
+           		\caption[Determining Activity of BosR-FLAG by Fluorescence Anistropy]{Fluorescence Anistropy for BosR-FLAG with F-SREzy in TL BosR FA Buffer  a $K_{d}$ of 0.99 $\pm$ 0.09 $\mu$M based on fit to the equation \FAstdfit , where P refers to protein concentration.}
            		% square brackets here correspond to what is written in the list of figures
            		\label{BosRFLAGFAactive}
            		% this is label for the figure
@@ -868,11 +1018,13 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
            	
            	\section{qPCR}
            	
+           	
+           	In order to quantify how much Ran76 duplex DNA was recovered after each cycle of CASTing, a standard curve fo cycle thresholds vs log concentration of DNA duplex was made. tHe range of Ran76 duplex DNA used to create the standard curve was 0.2 nanograms to 20 attograms. 
        		 \begin{figure}[h!tbp]
        		 	\centering
        		 	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
        		 	\includegraphics[width =\textwidth]{Figures_Images/SC_Std_Fluorescence}
-       		 	\caption[qPCR Fluorescence Curves for Ran76 Standards]{qPCR Fluorescence Curves for Ran76 Standards. From left to right increasing concentration 0.002 ng, 0.0002 ng etc...}
+       		 	\caption[qPCR Fluorescence Curves for Ran76 Standards]{qPCR Fluorescence Curves for Ran76 Standards. Decreasing concentration of Ran76 duplex DNA, from left to right.}
        		 	% square brackets here correspond to what is written in the list of figures
        		 	\label{qPCRRan76Stds}
        		 	% this is label for the figure
@@ -883,7 +1035,7 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
        		     		 	\centering
        		     		 	% DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
        		     		 	\includegraphics[width =\textwidth]{Figures_Images/SC_Std_curve}
-       		     		 	\caption[qPCR Standard Curves for Ran76 Amplification]{qPCR standard curve for Ran76. From left to right decreasing concentration  to 0.2 ng}
+       		     		 	\caption[qPCR Standard Curves for Ran76 Amplification]{qPCR standard curve for Ran76.t Increasing concentration of Ran76 duplex DNA, from left to right.}
        		     		 	% square brackets here correspond to what is written in the list of figures
        		     		 	\label{qPCRRan76Stdcurve}
        		     		 	% this is label for the figure
@@ -892,324 +1044,8 @@ DNA and DNA-protein complexes were run on 5\% non-denaturing polyacrylamide gels
            		
 
 \clearpage
-\section{References, Labels, Custom Commands and Footnotes}
-It is easy to refer to anything within your document using the \texttt{label} and \texttt{ref} tags.  Labels must be unique and shouldn't use any odd characters; generally sticking to letters and numbers (no spaces) should be fine. Put the label on whatever you want to refer to, and put the reference where you want the reference. \LaTeX\ will keep track of the chapter, section, and figure or table numbers for you. 
-
-\subsection{References and Labels}
-Sometimes you'd like to refer to a table or figure, e.g. you can see in Figure \ref{subd2} that you can rotate figures . Start by labeling your figure or table with the label command (\verb=\label{labelvariable}=) below the caption (see the chapter on graphics and tables for examples). Then when you would like to refer to the table or figure, use the ref command (\verb=\ref{labelvariable}=). Make sure your label variables are unique; you can't have two elements named ``default." Also, since the reference command only puts the figure or table number, you will have to put  ``Table" or ``Figure" as appropriate, as seen in the following examples:
-
- As I showed in Table \ref{inheritance} many factors can be assumed to follow from inheritance. Also see the Figure \ref{subd} for an illustration.
- 
-\subsection{Custom Commands}\label{commands}
-Are you sick of writing the same complex equation or phrase over and over? 
-
-The custom commands should be placed in the preamble, or at least prior to the first usage of the command. The structure of the \verb=\newcommand= consists of the name of the new command in curly braces, the number of arguments to be made in square brackets and then, inside a new set of curly braces, the command(s) that make up the new command. The whole thing is sandwiched inside a larger set of curly braces. 
-% Note: you cannot use numbers in your commands!
-\newcommand{\hydro}{H$_2$SO$_4$}
 
 
-In other words, if you want to make a shorthand for H$_2$SO$_4$, which doesn't include an argument, you would write: \verb=\newcommand{\hydro}{H$_2$SO$_4$}= and then when you needed  to use the command you would type \verb=\hydro=. (sans verb and the equals sign brackets, if you're looking at the .tex version). For example: \hydro
-
-\subsection{Footnotes and Endnotes}
-	You might want to footnote something.\footnote{footnote text} Be sure to leave no spaces between the word immediately preceding the footnote command and the command itself. The footnote will be in a smaller font and placed appropriately. Endnotes work in much the same way. More information can be found about both on the CUS site.
-	
-\section{Bibliographies}
-	Of course you will need to cite things, and you will probably accumulate an armful of sources. This is why BibTeX was created. For more information about BibTeX and bibliographies, see our CUS site (\url{web.reed.edu/cis/help/latex/index.html})\footnote{\cite{reedweb:2007}}. There are three pages on this topic: {\it bibtex} (which talks about using BibTeX, at \url{/latex/bibtex.html}), {\it bibtexstyles} (about how to find and use the bibliography style that best suits your needs, at \url{/latex/bibtexstyles.html}) and {\it bibman} (which covers how to make and maintain a bibliography by hand, without BibTeX, at at \url{/latex/bibman.html}). The last page will not be useful unless you have only a few sources. There used to be APA stuff here, but we don't need it since I've fixed this with my apa-good natbib style file.
-	
-\subsection{Tips for Bibliographies}
-\begin{enumerate}
-\item Like with thesis formatting, the sooner you start compiling your bibliography for something as large as thesis, the better. Typing in source after source is mind-numbing enough; do you really want to do it for hours on end in late April? Think of it as procrastination.
-\item The cite key (a citation's label) needs to be unique from the other entries.
-\item When you have more than one author or editor, you need to separate each author's name by the word ``and'' e.g.\\ \verb+Author = {Noble, Sam and Youngberg, Jessica},+.
-\item Bibliographies made using BibTeX (whether manually or using a manager) accept LaTeX markup, so you can italicize and add symbols as necessary.
-\item To force capitalization in an article title or where all lowercase is generally used, bracket the capital letter in curly braces.
-\item You can add a Reed Thesis citation\footnote{\cite{noble:2002}} option. The best way to do this is to use the phdthesis type of citation, and use the optional ``type'' field to enter ``Reed thesis'' or ``Undergraduate thesis''. Here's a test of Chicago, showing the second cite in a row\footnote{\cite{noble:2002}} being different. Also the second time not in a row\footnote{\cite{reedweb:2007}} should be different. Of course in other styles they'll all look the same.
-\end{enumerate}
-\section{Anything else?}
-If you'd like to see examples of other things in this template, please contact CUS (email cus@reed.edu) with your suggestions. We love to see people using \LaTeX\ for their theses, and are happy to help.
-
-
-\chapter{Mathematics and Science}	
-\section{Math}
-	\TeX\ is the best way to typeset mathematics. Donald Knuth designed \TeX\ when he got frustrated at how long it was taking the typesetters to finish his book, which contained a lot of mathematics. 
-	
-	If you are doing a thesis that will involve lots of math, you will want to read the following section which has been commented out. If you're not going to use math, skip over this next big red section. (It's red in the .tex file but does not show up in the .pdf.)
-%	
-%% MATH and PHYSICS majors: Uncomment the following section	
-%	$$\sum_{j=1}^n (\delta\theta_j)^2 \leq {{\beta_i^2}\over{\delta_i^2 + \rho_i^2}}
-%\left[ 2\rho_i^2 + {\delta_i^2\beta_i^2\over{\delta_i^2 + \rho_i^2}} \right] \equiv \omega_i^2
-%$$
-
-%From Informational Dynamics, we have the following (Dave Braden):
-
-%After {\it n} such encounters the posterior density for $\theta$ is
-
-%$$
-%\pi(\theta|X_1< y_1,\dots,X_n<y_n) \varpropto \pi(\theta) \prod_{i=1}^n\int_{-\infty}^{y_i}
-%   \exp\left(-{(x-\theta)^2\over{2\sigma^2}}\right)\ dx
-%$$
-
-%
-
-%Another equation:
-
-%$$\det\left|\,\begin{matrix}%
-%c_0&c_1\hfill&c_2\hfill&\ldots&c_n\hfill\cr
-%c_1&c_2\hfill&c_3\hfill&\ldots&c_{n+1}\hfill\cr
-%c_2&c_3\hfill&c_4\hfill&\ldots&c_{n+2}\hfill\cr
-%\,\vdots\hfill&\,\vdots\hfill&
-%  \,\vdots\hfill&&\,\vdots\hfill\cr
-%c_n&c_{n+1}\hfill&c_{n+2}\hfill&\ldots&c_{2n}\hfill\cr
-%\end{matrix}\right|>0$$
-
-%
-%Lapidus and Pindar, Numerical Solution of Partial Differential Equations in Science and
-%Engineering.  Page 54
-
-%$$
-%\int_t\left\{\sum_{j=1}^3 T_j \left({d\phi_j\over dt}+k\phi_j\right)-kT_e\right\}w_i(t)\ dt=0,
-%   \qquad\quad i=1,2,3. 
-%$$
-
-%L\&P  Galerkin method weighting functions.  Page 55
-
-%$$
-%\sum_{j=1}^3 T_j\int_0^1\left\{{d\phi_j\over dt} + k\phi_j\right\} \phi_i\ dt 
-%   = \int_{0}^1k\,T_e\phi_idt, \qquad i=1,2,3 $$
-%   
-%Another L\&P (p145)
-
-%$$
-%\int_{-1}^1\!\int_{-1}^1\!\int_{-1}^1 f\big(\xi,\eta,\zeta\big) 
-%   = \sum_{k=1}^n\sum_{j=1}^n\sum_{i=1}^n w_i w_j w_k f\big( \xi,\eta,\zeta\big).
-%$$
-
-%Another L\&P (p126)
-
-%$$
-%\int_{A_e} (\,\cdot\,) dx dy = \int_{-1}^1\!\int_{-1}^1 (\,\cdot\,) \det[J] d\xi d\eta.
-%$$
-
-\section{Chemistry 101: Symbols}
-Chemical formulas will look best if they are not italicized. Get around math mode's automatic italicizing by using the argument \verb=$\mathrm{formula here}$=, with your formula inside the curly brackets.
-
-So, $\mathrm{Fe_2^{2+}Cr_2O_4}$ is written \verb=$\mathrm{Fe_2^{2+}Cr_2O_4}$=\\
-Exponent or Superscript: O$^{-}$\\
-Subscript: CH$_{4}$\\
-
-To stack numbers or letters as in $\mathrm{Fe_2^{2+}}$, the subscript is defined first, and then the superscript is defined.\\
-Angstrom: {\AA}\\
-Bullet: CuCl $\bullet$ 7H${_2}$O\\
-Double Dagger: \ddag \/\\
-Delta: $\Delta$\\
-Reaction Arrows: $\longrightarrow$ or  $\xrightarrow{solution}$\\
-Resonance Arrows: $\leftrightarrow$\\
-Reversible Reaction Arrows: $\rightleftharpoons$ or $\xrightleftharpoons[ ]{solution}$ (the latter requires the chemarr package)\\
-
-
-\subsection{Typesetting reactions}
-You may wish to put your reaction in a figure environment, which means that LaTeX will place the reaction where it fits and you can have a figure legend if desired:
-\begin{figure}[htbp]
-\begin{center}
-$\mathrm{C_6H_{12}O_6  + 6O_2} \longrightarrow \mathrm{6CO_2 + 6H_2O}$
-\caption{Combustion of glucose}
-\label{combustion of glucose}
-\end{center}
-\end{figure}
-
-\subsection{Other examples of reactions}
-$\mathrm{NH_4Cl_{(s)}} \rightleftharpoons \mathrm{NH_{3(g)}+HCl_{(g)}}$\\
-$\mathrm{MeCH_2Br + Mg} \xrightarrow[below]{above} \mathrm{MeCH_2\bullet Mg \bullet Br}$
-
-\section{Physics}
-
-Many of the symbols you will need can be found on the math page (\url{http://web.reed.edu/cis/help/latex/math.html}) and the Comprehensive \LaTeX\ Symbol Guide (enclosed in this template download).  You may wish to create custom commands for commonly used symbols, phrases or equations, as described in Chapter \ref{commands}.
-
-\section{Biology}
-You will probably find the resources at \url{http://www.lecb.ncifcrf.gov/~toms/latex.html} helpful, particularly the links to bsts for various journals. You may also be interested in TeXShade for nucleotide typesetting (\url{http://homepages.uni-tuebingen.de/beitz/txe.html}).  Be sure to read the proceeding chapter on graphics and tables, and remember that the thesis template has versions of Ecology and Science bsts which support webpage citation formats. 
-
-\chapter{Tables and Graphics}
-
-\section{Tables}
-	The following section contains examples of tables, most of which have been commented out for brevity. (They will show up in the .tex document in red, but not at all in the .pdf). For more help in constructing a table (or anything else in this document), please see the LaTeX pages on the CUS site. 
-
-
-	\clearpage 
-%% \clearpage ends the page, and also dumps out all floats. 
-%% Floats are things like tables and figures.
-
-If you want to make a table that is longer than a page, you will want to use the longtable environment. Uncomment the table below to see an example, or see our online documentation.
-
-%% An example of a long table, with headers that repeat on each subsequent page: Results from the summers of 1998 and 1999 work at Reed College done by Grace Brannigan, Robert Holiday and Lien Ngo in 1998 and Kate Brown and Christina Inman in 1999.
-
-	\begin{longtable}{||c|c|c|c||}
-	 	\caption[Chromium Hexacarbonyl Data Collected in 1998--1999]{Chromium Hexacarbonyl Data Collected in 1998--1999}\\ \hline
-	    	  \multicolumn{4}{||c||}{Chromium Hexacarbonyl} \\\hline
-		   State & Laser wavelength & Buffer gas & Ratio of $\frac{\textrm{Intensity
-at vapor pressure}}{\textrm{Intensity at 240 Torr}}$ \\ \hline
-		  \endfirsthead
-		\hline     State & Laser wavelength & Buffer gas & Ratio of
-$\frac{\textrm{Intensity at vapor pressure}}{\textrm{Intensity at 240 Torr}}$\\
-\hline
-		    \endhead
-
-	    $z^{7}P^{\circ}_{4}$ & 266 nm & Argon & 1.5 \\\hline
-	    $z^{7}P^{\circ}_{2}$ & 355 nm & Argon & 0.57 \\\hline
-	    $y^{7}P^{\circ}_{3}$ & 266 nm & Argon & 1 \\\hline
-	    $y^{7}P^{\circ}_{3}$ & 355 nm & Argon & 0.14 \\\hline
-	    $y^{7}P^{\circ}_{2}$ & 355 nm & Argon & 0.14 \\\hline
-	    $z^{5}P^{\circ}_{3}$ & 266 nm & Argon & 1.2 \\\hline
-	    $z^{5}P^{\circ}_{3}$ & 355 nm & Argon & 0.04 \\\hline
-	    $z^{5}P^{\circ}_{3}$ & 355 nm & Helium & 0.02 \\\hline
-	    $z^{5}P^{\circ}_{2}$ & 355 nm & Argon & 0.07 \\\hline
-	    $z^{5}P^{\circ}_{1}$ & 355 nm & Argon & 0.05 \\\hline
-	    $y^{5}P^{\circ}_{3}$ & 355 nm & Argon & 0.05, 0.4 \\\hline
-	    $y^{5}P^{\circ}_{3}$ & 355 nm & Helium & 0.25 \\\hline
-	    $z^{5}F^{\circ}_{4}$ & 266 nm & Argon & 1.4 \\\hline
-	    $z^{5}F^{\circ}_{4}$ & 355 nm & Argon & 0.29 \\\hline
-	    $z^{5}F^{\circ}_{4}$ & 355 nm & Helium & 1.02 \\\hline
-	    $z^{5}D^{\circ}_{4}$ & 355 nm & Argon & 0.3 \\\hline
-	    $z^{5}D^{\circ}_{4}$ & 355 nm & Helium & 0.65 \\\hline
-	    $y^{5}H^{\circ}_{7}$ & 266 nm & Argon & 0.17 \\\hline
-	    $y^{5}H^{\circ}_{7}$ & 355 nm & Argon & 0.13 \\\hline
-	    $y^{5}H^{\circ}_{7}$ & 355 nm & Helium & 0.11 \\\hline
-	    $a^{5}D_{3}$ & 266 nm & Argon & 0.71 \\\hline
-	    $a^{5}D_{2}$ & 266 nm & Argon & 0.77 \\\hline
-	    $a^{5}D_{2}$ & 355 nm & Argon & 0.63 \\\hline
-	    $a^{3}D_{3}$ & 355 nm & Argon & 0.05 \\\hline
-	    $a^{5}S_{2}$ & 266 nm & Argon & 2 \\\hline
-	    $a^{5}S_{2}$ & 355 nm & Argon & 1.5 \\\hline
-	    $a^{5}G_{6}$ & 355 nm & Argon & 0.91 \\\hline
-	    $a^{3}G_{4}$ & 355 nm & Argon & 0.08 \\\hline
-	    $e^{7}D_{5}$ & 355 nm & Helium & 3.5 \\\hline
-	    $e^{7}D_{3}$ & 355 nm & Helium & 3 \\\hline
-	    $f^{7}D_{5}$ & 355 nm & Helium & 0.25 \\\hline
-	    $f^{7}D_{5}$ & 355 nm & Argon & 0.25 \\\hline
-	    $f^{7}D_{4}$ & 355 nm & Argon & 0.2 \\\hline
-	    $f^{7}D_{4}$ & 355 nm & Helium & 0.3 \\\hline
-	    \multicolumn{4}{||c||}{Propyl-ACT} \\\hline
-%	    State & Laser wavelength & Buffer gas & Ratio of $\frac{\textrm{Intensity
-%at vapor pressure}}{\textrm{Intensity at 240 Torr}}$\\ \hline
-	    $z^{7}P^{\circ}_{4}$ & 355 nm & Argon & 1.5 \\\hline
-	    $z^{7}P^{\circ}_{3}$ & 355 nm & Argon & 1.5 \\\hline
-	    $z^{7}P^{\circ}_{2}$ & 355 nm & Argon & 1.25 \\\hline
-	    $z^{7}F^{\circ}_{5}$ & 355 nm & Argon & 2.85 \\\hline
-	    $y^{7}P^{\circ}_{4}$ & 355 nm & Argon & 0.07 \\\hline
-	    $y^{7}P^{\circ}_{3}$ & 355 nm & Argon & 0.06 \\\hline
-	    $z^{5}P^{\circ}_{3}$ & 355 nm & Argon & 0.12 \\\hline
-	    $z^{5}P^{\circ}_{2}$ & 355 nm & Argon & 0.13 \\\hline
-	    $z^{5}P^{\circ}_{1}$ & 355 nm & Argon & 0.14 \\\hline
-	    \multicolumn{4}{||c||}{Methyl-ACT} \\\hline
-%	    State & Laser wavelength & Buffer gas & Ratio of $\frac{\textrm{Intensity
-% at vapor pressure}}{\textrm{Intensity at 240 Torr}}$\\ \hline
-	    $z^{7}P^{\circ}_{4}$ & 355 nm & Argon & 1.6, 2.5 \\\hline
-	    $z^{7}P^{\circ}_{4}$ & 355 nm & Helium & 3 \\\hline
-	    $z^{7}P^{\circ}_{4}$ & 266 nm & Argon & 1.33 \\\hline
-	    $z^{7}P^{\circ}_{3}$ & 355 nm & Argon & 1.5 \\\hline
-	    $z^{7}P^{\circ}_{2}$ & 355 nm & Argon & 1.25, 1.3 \\\hline
-	    $z^{7}F^{\circ}_{5}$ & 355 nm & Argon & 3 \\\hline
-	    $y^{7}P^{\circ}_{4}$ & 355 nm & Argon & 0.07, 0.08 \\\hline
-	    $y^{7}P^{\circ}_{4}$ & 355 nm & Helium & 0.2 \\\hline
-	    $y^{7}P^{\circ}_{3}$ & 266 nm & Argon & 1.22 \\\hline
-	    $y^{7}P^{\circ}_{3}$ & 355 nm & Argon & 0.08 \\\hline
-	    $y^{7}P^{\circ}_{2}$ & 355 nm & Argon & 0.1 \\\hline
-	    $z^{5}P^{\circ}_{3}$ & 266 nm & Argon & 0.67 \\\hline
-	    $z^{5}P^{\circ}_{3}$ & 355 nm & Argon & 0.08, 0.17 \\\hline
-	    $z^{5}P^{\circ}_{3}$ & 355 nm & Helium & 0.12 \\\hline
-	    $z^{5}P^{\circ}_{2}$ & 355 nm & Argon & 0.13 \\\hline
-	    $z^{5}P^{\circ}_{1}$ & 355 nm & Argon & 0.09 \\\hline
-	    $y^{5}H^{\circ}_{7}$ & 355 nm & Argon & 0.06, 0.05 \\\hline
-	    $a^{5}D_{3}$ & 266 nm & Argon & 2.5 \\\hline
-	    $a^{5}D_{2}$ & 266 nm & Argon & 1.9 \\\hline
-	    $a^{5}D_{2}$ & 355 nm & Argon & 1.17 \\\hline
-	    $a^{5}S_{2}$ & 266 nm & Argon & 2.3 \\\hline
-	    $a^{5}S_{2}$ & 355 nm & Argon & 1.11 \\\hline
-	    $a^{5}G_{6}$ & 355 nm & Argon & 1.6 \\\hline
-	    $e^{7}D_{5}$ & 355 nm & Argon & 1 \\\hline
-
-		\end{longtable}
-
-   
-   \section{Figures}
-   
-	If your thesis has a lot of figures, \LaTeX\ might behave better for you than that other word processor.  One thing that may be annoying is the way it handles ``floats'' like tables and figures. \LaTeX\ will try to find the best place to put your object based on the text around it and until you're really, truly done writing you should just leave it where it lies.   There are some optional arguments to the figure and table environments to specify where you want it to appear; see the comments in the first figure.
-
-	If you need a graphic or tabular material to be part of the text, you can just put it inline. If you need it to appear in the list of figures or tables, it should be placed in the floating environment. 
-	
-	To get a figure from StatView, JMP, SPSS or other statistics program into a figure, you can print to pdf or save the image as a jpg or png. Precisely how you will do this depends on the program: you may need to copy-paste figures into Photoshop or other graphic program, then save in the appropriate format.
-	
-	Below we have put a few examples of figures. For more help using graphics and the float environment, see our online documentation.
-	
-	And this is how you add a figure with a graphic:
-	\begin{figure}[h]
-	% the options are h = here, t = top, b = bottom, p = page of figures.
-	% you can add an exclamation mark to make it try harder, and multiple
-	% options if you have an order of preference, e.g.
-	% \begin{figure}[h!tbp]
-	   
-	       \centering
-	    % DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
-	    \includegraphics{subdivision}
-	     \caption{A Figure}
-	 \label{subd}
-	\end{figure}
-
-\clearpage %% starts a new page and stops trying to place floats such as tables and figures
-
-\section{More Figure Stuff}
-You can also scale and rotate figures.
- 	\begin{figure}[h!]
-	   
-	       \centering
-	    % DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
-	    \includegraphics[scale=0.5,angle=180]{subdivision}
-	    % if your figure shows up not where you want it, it may just be too big to fit. You can use the scale argument to shrink it, e.g. scale=0.85 is 85 percent of the original size. 
-	     \caption{A Smaller Figure, Flipped Upside Down}
-	 \label{subd2}
-	\end{figure}
-
-\section{Even More Figure Stuff}
-With some clever work you can crop a figure, which is handy if (for instance) your EPS or PDF is a little graphic on a whole sheet of paper. The viewport arguments are the lower-left and upper-right coordinates for the area you want to crop.
-
- 	\begin{figure}[h!]
-	    	       \centering
-	    % DO NOT ADD A FILENAME EXTENSION TO THE GRAPHIC FILE
-	   \includegraphics[clip=true, viewport=.0in .0in 1in 1in]{subdivision}
-	    \caption{A Cropped Figure}
-	 \label{subd3}
-	\end{figure}
-	
-      \subsection{Common Modifications}
-      The following figure features the more popular changes thesis students want to their figures. This information is also on the web at \url{web.reed.edu/cis/help/latex/graphics.html}.
-    %\renewcommand{\thefigure}{0.\arabic{figure}} 	% Renumbers the figure to the type 0.x
-    %\addtocounter{figure}{4} 						% starts the figure numbering at 4
-    \begin{figure}[htbp]
-    \begin{center}
-   \includegraphics[scale=0.5]{subdivision}
-    \caption[Subdivision of arc segments]{\footnotesize{Subdivision of arc segments. You can see that $ p_3 = p_6^\prime$.}} %the special ToC caption is in square brackets. The \footnotesize makes the figure caption smaller
-    \label{barplot}
-    \end{center}
-    \end{figure} 
-
-\chapter*{Conclusion}
-         \addcontentsline{toc}{chapter}{Conclusion}
-	\chaptermark{Conclusion}
-	\markboth{Conclusion}{Conclusion}
-	\setcounter{chapter}{4}
-	\setcounter{section}{0}
-	
-Here's a conclusion, demonstrating the use of all that manual incrementing and table of contents adding that has to happen if you use the starred form of the chapter command. The deal is, the chapter command in \LaTeX\ does a lot of things: it increments the chapter counter, it resets the section counter to zero, it puts the name of the chapter into the table of contents and the running headers, and probably some other stuff. 
-
-So, if you remove all that stuff because you don't like it to say ``Chapter 4: Conclusion'', then you have to manually add all the things \LaTeX\ would normally do for you. Maybe someday we'll write a new chapter macro that doesn't add ``Chapter X'' to the beginning of every chapter title.
-
-\section{More info}
-And here's some other random info: the first paragraph after a chapter title or section head \emph{shouldn't be} indented, because indents are to tell the reader that you're starting a new paragraph. Since that's obvious after a chapter or section title, proper typesetting doesn't add an indent there. 
-
-
-%If you feel it necessary to include an appendix, it goes here.
-    \appendix
-      \chapter{The First Appendix}
-      \chapter{The Second Appendix, for Fun}
 
 
 %This is where endnotes are supposed to go, if you have them.
@@ -1230,7 +1066,7 @@ And here's some other random info: the first paragraph after a chapter title or 
 % subfolder, e.g. 
  \bibliographystyle{APA/apa-good}  % or
  %\bibliography{thesis}
- \bibliography{Updated_Bib}
+ \bibliography{bib_final}
  % Comment the above two lines and uncomment the next line to use biblatex-chicago.
  %\printbibliography[heading=bibintoc]
 
